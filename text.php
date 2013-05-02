@@ -131,6 +131,26 @@ $("canvas").drawText({
 });
 </pre>
 
+<h3>Aligning text to a margin</h3>
+
+<p>With the above <code>align</code> property, the text will, by default, appear to align the text to either the left or right, but will still be centered relative to its <code>x</code> and <code>y</code> coordinates.</p>
+
+<p>The <code>respectAlign</code> property will ensure that the text's (x, y) coordinates are in line with either the left or right margin (depending of the value of the <code>align</code> property). Therefore, enabling this property will require you to adjust your <code>x</code> position accordingly.</p>
+
+<pre class="prettyprint lang-js demo">
+$("canvas").drawText({
+  fillStyle: "#36c",
+  fontStyle: "bold",
+  fontSize: "20pt",
+  fontFamily: "Trebuchet MS, sans-serif",
+  text: "The quick brown fox jumps over the lazy dog.",
+  x: 80, y: 100,
+  align: "left",
+  respectAlign: true,
+  maxWidth: 300
+});
+</pre>
+
 <h3>Changing line height</h3>
 
 <p>The <code>lineHeight</code> property will change the line height of your text. The value of this property is a multiple of the default line height (which is <code>1</code>).</p>
