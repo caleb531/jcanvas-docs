@@ -189,6 +189,11 @@ $props = array(
 	"methods"=> "All drawing methods",
 	"values"=> "<code>0</code>, any number",
 ),
+"shadowStroke"=> array(
+	"description"=> "Whether a shape's stroke adds to a shape's shadow",
+	"methods"=> "All drawing methods",
+	"values"=> "<code>false</code>, <code>true</code>",
+),
 "sides"=> array(
 	"description"=> "How many sides a polygon will have",
 	"methods"=> "<code>drawPolygon()</code>",
