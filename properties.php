@@ -179,6 +179,11 @@ $props = array(
 	"methods"=> "All drawing methods",
 	"values"=> "<code>\"transparent\"</code>, any valid color string",
 ),
+"shadowStroke"=> array(
+	"description"=> "Whether to include the stroke in the shadow size",
+	"methods"=> "All drawing methods",
+	"values"=> "<code>false</code>,<code>true</code>",
+),
 "shadowX"=> array(
 	"description"=> "The x-offset of a shadow",
 	"methods"=> "All drawing methods",
