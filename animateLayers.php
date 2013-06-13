@@ -36,7 +36,7 @@ $("canvas")
 .animateLayer(0, {
   x: 150, y: 150,
   width: 100, height: 50
-}, 1000, function(now, fx, layer) {
+}, 1000, function(layer) {
   // Callback function
   $(this).animateLayer("myBox", {
     fillStyle: "rgb(204, 51, 51)",
@@ -141,4 +141,5 @@ $("canvas").delayLayerGroup("myGroup", 500);
 
 <h3>Notes</h3>
 
+<p>The syntax for the <code>animateLayer()</code> method is almost identical to jQuery's <code>animate()</code> method. Therefore, callback functions such as <a href='http://api.jquery.com/animate/#step' target='_blank'><code>step</code></a> are still available for use.</p>
 <p>Multiple <code>animateLayer()</code> calls can be queued up rather than using multiple callback functions.</p>

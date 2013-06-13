@@ -304,6 +304,13 @@
 			),
 			"returns"=> "jQuery",
 		),
+		"detectPixelRatio" => array(
+			"url"=> "detectPixelRatio",
+			"defs"=> array(
+				"( [ callback ] )"
+			),
+			"returns"=> "jQuery",
+		),
 	);
 	ksort($methods);
 		

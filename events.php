@@ -144,7 +144,7 @@ $("canvas")
 .drawArc({
   layer: true,
   draggable: true,
-  fillStyle: "#36b",
+  fillStyle: "#36c",
   x: 150, y: 150,
   radius: 50
 })
@@ -165,7 +165,7 @@ $("canvas")
   layer: true,
   draggable: true,
   bringToFront: true,
-  fillStyle: "#36b",
+  fillStyle: "#36c",
   x: 150, y: 150,
   radius: 50
 })
@@ -233,7 +233,7 @@ $("canvas")
   draggable: true,
   group: 'shapes',
   dragGroupWithLayer: true,
-  fillStyle: "#36b",
+  fillStyle: "#36c",
   x: 150, y: 150,
   radius: 50
 })

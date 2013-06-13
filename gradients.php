@@ -55,5 +55,60 @@ $("canvas").drawArc({
 });
 </pre>
 
+<h3>Animating Layers with Gradients</h3>
+
+<p>There are cases where you may wish to animate a layer that has a gradient fill/stroke. However, animating the layer's position or size will leave the gradient unaffected, because gradients are relative to the canvas.</p>
+
+<p>To demonstrate this behavior, consider the following example:</p>
+
+<pre class="prettyprint lang-js demo">
+// Create and store a linear gradient
+var gradient = $("canvas").createGradient({
+  // Gradient is drawn relative to layer position
+  x1: 0, y1: 20,
+  x1: 0, y2: 140,
+  c1: '#36c', c2: '#c33'
+});
+// Create layer with gradient fill
+$("canvas").drawRect({
+  layer: true,
+  name: "box",
+  fillStyle: gradient,
+  x: 100, y: 80,
+  width: 100, height: 60
+});
+// Animate layer
+$("canvas").animateLayer("box", {
+  x: 220, y: 150
+}, 1000);
+</pre>
+
+
+<p>To solve this problem, by using a function as the layer's fill/stroke style, you can achieve a gradient which moves with its layer. Note that the below example assumes that the gradient's coordinates are relative to the layer's size and position.</p>
+
+<pre class="prettyprint lang-js demo">
+// Create layer with gradient fill
+$("canvas").drawRect({
+  layer: true,
+  name: "box",
+  // Define fill as a function
+  fillStyle: function(layer) {
+    return $(this).createGradient({
+      // Gradient is drawn relative to layer position
+      x1: 0, y1: layer.y - layer.height,
+      x1: 0, y2: layer.y + layer.height,
+      c1: '#36c', c2: '#c33'
+    });
+  },
+  x: 100, y: 80,
+  width: 100, height: 60
+});
+// Animate layer
+$("canvas").animateLayer("box", {
+  x: 220, y: 150
+}, 1000);
+</pre>
+
 <h3>Notes</h3>
+
 <p>Color stops are optional, and are measured from 0 to 1.</p>
