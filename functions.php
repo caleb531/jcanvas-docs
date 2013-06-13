@@ -11,11 +11,8 @@ $("canvas").drawArc({
   x: 50, y: 50,
   radius: 30,
   fillStyle: function(layer) {
-    console.log(layer.x);
     var value = Math.min(360, Math.round(layer.x / this.width * 360));
-    var str = 'hsl(' + value + ', 50%, 50%)';
-    console.log(str);
-    return str;
+    return 'hsl(' + value + ', 50%, 50%)';
   }
 });
 </pre>
