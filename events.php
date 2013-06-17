@@ -137,7 +137,7 @@ $("canvas").drawText({
 
 <p>Layers can also be made draggable using the <code>draggable</code> property.</p>
 
-<p>Please note that only layers can be made draggable (that is, the layer property must be set to <code>true</code>).</p>
+<p>Please note that only layers can be made draggable (that is, the <code>layer</code> property should be set to <code>true</code>).</p>
 
 <pre class='prettyprint lang-js demo'>
 $("canvas")
@@ -157,7 +157,7 @@ $("canvas")
 });
 </pre>
 
-<p>By default, draggable shapes will <strong>not</strong> move to the front when clicked. To change this behavior, set the <code>bringToFront</code> property to <code>true</code>.</p>
+<p>By default, draggable shapes will <em>not</em> move to the front when dragged. To change this behavior, set the <code>bringToFront</code> property to <code>true</code>.</p>
 
 <pre class='prettyprint lang-js demo'>
 $("canvas")
@@ -178,8 +178,17 @@ $("canvas")
   width: 100, height: 100
 });
 </pre>
+
+<h4>Drag Events</h4>
 
 <p>You can provide callbacks for when any drag event occurs by defining <code>dragstart</code>, <code>drag</code>, <code>dragstop</code>, and <code>dragcancel</code> callbacks.</p>
+
+<ul>
+	<li><dfn>dragstart</dfn>: Triggers when you start dragging a layer</li>
+	<li><dfn>drag</dfn>: Triggers as you drag a layer</li>
+	<li><dfn>dragstop</dfn>: Triggers when you stop dragging a layer</li>
+	<li><dfn>dragcancel</dfn>: Triggers when you drag a layer off the edge of the canvas</li>
+</ul>
 
 <div class='column'>
 <h3>Supported Methods</h3>

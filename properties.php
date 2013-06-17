@@ -364,6 +364,11 @@ $props = array(
 	"methods"=> "<code>drawText()</code>",
 	"values"=> "<code>true</code>, <code>false</code>",
 ),
+"intersects"=> array(
+	"description"=> "Determines if a layer's area intersects with the current mouse/touch coordinates. Note that the layer must have at least one event for this property to work.",
+	"methods"=> "All drawing methods",
+	"values"=> "<code>true</code>, <code>false</code>",
+),
 "type"=> array(
 	"description"=> "The type of a layer",
 	"methods"=> "All drawing methods",

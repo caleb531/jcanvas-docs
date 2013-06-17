@@ -30,7 +30,7 @@ $("canvas").drawRect({
   layer: true,
   draggable: true,
   mask: true,
-  fillStyle: "#36b",
+  fillStyle: "#36c",
   x: 150, y: 150,
   width: 150, height: 150
 })
@@ -41,12 +41,29 @@ $("canvas").drawRect({
   x: 200, y: 200,
   radius: 50
 })
-// Restore mask from initial redraw
-.restoreCanvas();
+// Restore mask after each redrawing of layers
+.restoreCanvasOnRedraw();
 </pre>
 
-<p>Because the mask must be restored after drawing initially, we can use the <code>restoreCanvas()</code> method.</p>
+<p>Because the mask must be restored after each redrawing of layers, we must use the <code>restoreCanvasOnRedraw()</code> method.
 
-<h3>Notes</h3>
+<p>You can also use this method whenever you wish to restore a layer mask. Consider the following example, in which the mask is restored before it is able to mask the second layer:</p>
 
-<p>As of version 13.04.05, jCanvas will automatically restore any masks after redrawing the canvas (if necessary).</p>
+<pre class='prettyprint lang-js demo'>
+$("canvas").drawRect({
+  layer: true,
+  draggable: true,
+  mask: true,
+  fillStyle: "#36c",
+  x: 150, y: 150,
+  width: 150, height: 150
+})
+.restoreCanvasOnRedraw()
+.drawArc({
+  layer: true,
+  draggable: true,
+  fillStyle: "#6c1",
+  x: 200, y: 200,
+  radius: 50
+})
+</pre>
