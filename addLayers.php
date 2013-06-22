@@ -1,5 +1,7 @@
 <h2>Adding layers</h2>
 
+<h3>Adding layers</h3>
+
 <p>The <code>addLayer()</code> method adds a layer to the canvas in the form of an object or a function. Since version 5.4, the layer is <strong>not</strong> drawn after calling this method.</p>
 
 <p>If the input is an object, you must specify the <code>method</code> property (i.e. the name of the method associated with the properties you specify). </p>

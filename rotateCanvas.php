@@ -1,4 +1,6 @@
-<h2>Rotate Canvas</h2>
+<h2>Rotating the canvas</h2>
+
+<h3>Rotating the canvas context</h3>
 
 <p>The <code>rotateCanvas()</code> method rotates the canvas from the included point.</p>
 

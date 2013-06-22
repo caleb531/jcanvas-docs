@@ -1,5 +1,7 @@
 <h2>Animating layers</h2>
 
+<h3>Animating layers</h3>
+
 <p>jCanvas provides an <code>animateLayer()</code> method for animating the properties of a jCanvas layer.</p>
 
 <p>The <code>animateLayer()</code> method accepts up to five arguments:</p>

@@ -1,4 +1,6 @@
-<h2>Scale Canvas</h2>
+<h2>Scaling the canvas</h2>
+
+<h3>Scaling the canvas context</h3>
 
 <p>The <code>scaleCanvas()</code> method scales the canvas from the included point.</p>
 
@@ -15,27 +17,9 @@ $("canvas").scaleCanvas({
 .restoreCanvas();
 </pre>
 
-<h3>The <code>scale</code> property</h3>
-
-<p>You can also set both the <code>scaleX</code> and <code>scaleY</code> properties using the <code>scale</code> property.</p>
-
-<pre class="prettyprint lang-js demo">
-// The scale property scales both the x- and y- axis
-$("canvas").scaleCanvas({
-  x: 100, y: 100,
-  scale: 3,
-})
-.drawArc({
-  fillStyle: "#000",
-  x: 100, y: 100,
-  radius: 20
-})
-.restoreCanvas();
-</pre>
-
 <h3>Scaling an individual shape</h3>
 
-<p>Rather than scaling the entire canvas, you can scale an individual shape using any of these three properties.</p>
+<p>Rather than scaling the entire canvas, you can scale an individual shape using any of these three properties: <code>scale</code>, <code>scaleX</code>, or <code>scaleY</code>.</p>
 
 <pre class="prettyprint lang-js demo">
 // This square is scaled to be a rectangle

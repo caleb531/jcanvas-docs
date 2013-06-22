@@ -9,10 +9,18 @@
 	<li>The object of properties to set.</li>
 </ol>
 
-<p>Also note that this method does not automatically redraw the canvas.</p>
-
 <pre class="prettyprint lang-js">
 $("canvas").setLayer("myBox", {
+  fillStyle: "#36b",
+  rotate: 30
+})
+.drawLayers();
+</pre>
+
+<p>You can also set properties on <em>all</em> layers using the <code>setLayers()</code> method.</p>
+
+<pre class="prettyprint lang-js">
+$("canvas").setLayers({
   fillStyle: "#36b",
   rotate: 30
 })
@@ -72,3 +80,7 @@ $("canvas").removeLayers();
 <pre class="prettyprint lang-js">
 $("canvas").removeLayerGroup("myBoxes");
 </pre>
+
+<h3>Notes</h3>
+
+<p>None of the above methods redraw the canvas after being called. Therefore, you will need to redraw the canvas using the  <code>drawLayers()</code> method to see the change visually.</p>

@@ -58,3 +58,11 @@ $("canvas").getLayerGroup("myBoxes");
 <pre class="prettyprint lang-js">
 $("canvas").getLayerGroup(/box/gi);
 </pre>
+
+<h3>Retrieving layer indices</h3>
+
+<p>You can retrieve a layer's index in the layers array using the <code>getLayerIndex()</code> method.</p>
+
+<pre class="prettyprint lang-js">
+$("canvas").getLayerIndex("box");
+</pre>

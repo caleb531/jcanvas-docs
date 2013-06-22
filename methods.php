@@ -15,14 +15,14 @@
 			"returns"=> "jQuery"
 		),
 		"addLayer" => array(
-			"url"=> "addLayers",
+			"url"=> "addLayers#adding-layers",
 			"defs"=> array(
 				"( [ properties ] )",
 			),
 			"returns"=> "jQuery"
 		),
 		"animateLayer" => array(
-			"url"=> "animateLayers",
+			"url"=> "animateLayers#animating-layers",
 			"defs"=> array(
 				"( layerId, properties [, duration ] [, easing ] [, callback ] )",
 				"( layerId, properties, options )",
@@ -30,7 +30,7 @@
 			"returns"=> "jQuery"
 		),
 		"animateLayerGroup" => array(
-			"url"=> "animateLayers",
+			"url"=> "animateLayers#animating-layer-groups",
 			"defs"=> array(
 				"( groupId, properties [, duration ] [, easing ] [, callback ] )",
 				"( groupId, properties, options )",
@@ -145,14 +145,14 @@
 		"restoreCanvas" => array(
 			"url"=> "restoreCanvas",
 			"defs"=> array(
-				"( )"
+				"( [ properties ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"restoreCanvasOnRedraw" => array(
 			"url"=> "masking#masking-draggable-shapes",
 			"defs"=> array(
-				"(  )"
+				"( [ properties ] )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -166,7 +166,7 @@
 		"saveCanvas" => array(
 			"url"=> "saveCanvas",
 			"defs"=> array(
-				"( )"
+				"( [ properties ] )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -192,63 +192,70 @@
 			"returns"=> "jQuery",
 		),
 		"getLayers" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "retrieveLayers#retrieving-all-layers",
 			"defs"=> array(
 				"( )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"setLayer" => array(
-			"url"=> "manipulateLayers",
+			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
 				"( layerId,  [ properties ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"setLayers" => array(
-			"url"=> "manipulateLayers",
+			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
-				"( properties  )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"setLayerGroup" => array(
-			"url"=> "manipulateLayers",
+			"url"=> "manipulateLayers#setting-layer-group-properties",
 			"defs"=> array(
 				"(  groupId, [ properties ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"getLayer" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "retrieveLayers#retrieving-a-single-layer",
 			"defs"=> array(
 				"( layerId )"
 			),
 			"returns"=> "Layer",			
 		),
+		"getLayerIndex" => array(
+			"url"=> "retrieveLayers#retrieving-layer-indices",
+			"defs"=> array(
+				"( layerId )"
+			),
+			"returns"=> "Number",			
+		),
 		"getLayerGroup" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "retrieveLayers#retrieving-layer-groups",
 			"defs"=> array(
 				"( groupId )"
 			),
 			"returns"=> "Layer",
 		),
 		"removeLayers" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"removeLayer" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( layerId )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"removeLayerGroup" => array(
-			"url"=> "retrieveLayers",
+			"url"=> "manipulateLayers#removing-layer-groups",
 			"defs"=> array(
 				"( groupId )"
 			),
@@ -262,21 +269,21 @@
 			"returns"=> "String",			
 		),
 		"stopLayer" => array(
-			"url"=> "animatingLayers",
+			"url"=> "animatingLayers#stopping-animation",
 			"defs"=> array(
 				"( layerId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"stopLayerGroup" => array(
-			"url"=> "animatingLayers",
+			"url"=> "animatingLayers#stopping-animation",
 			"defs"=> array(
 				"( groupId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"delayLayerGroup" => array(
-			"url"=> "animatingLayers",
+			"url"=> "animatingLayers#delaying-animation",
 			"defs"=> array(
 				"( groupId [, clearQueue ] )"
 			),
