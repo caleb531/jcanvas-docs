@@ -106,22 +106,19 @@ $("canvas").drawImage({
 <p>Beginning with version 13.04.05, image layers will always load completely before successive layers are drawn.</p>
 
 <pre class="prettyprint lang-js demo">
-// The circle will always loads after the image
-$("canvas").addLayer({
-  type: "image",
+// The image is always drawn before the circle
+$("canvas").drawImage({
   source: "images/big-fish.jpg",
   x: 150, y: 150,
   width: 200, height: 125
 })
-.addLayer({
-  type: "arc",
+.drawArc({
   fillStyle: "#69f",
   strokeStyle: "#000",
   strokeWidth: 2,
   x: 250, y: 100,
   radius: 50
-})
-.drawLayers();
+});
 </pre>
 
 <h3>Notes</h3>

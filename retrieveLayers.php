@@ -18,6 +18,13 @@ $("canvas").getLayer("myBox");
 $("canvas").getLayer(/box/gi);
 </pre>
 
+<p>Finally, a negative index are also acceptable, with <code>-1</code> being the index of the last (topmost) layer.</p>
+
+<pre class="prettyprint lang-js">
+// Get last layer
+$("canvas").getLayer(-1);
+</pre>
+
 <h3>Retrieving all layers</h3>
 
 <p>To retrieve all layers (as an array) for any canvas element, use the <code>getLayers()</code> method.</p>
@@ -59,7 +66,7 @@ $("canvas").getLayerGroup("myBoxes");
 $("canvas").getLayerGroup(/box/gi);
 </pre>
 
-<h3>Retrieving layer indices</h3>
+<h3>Retrieving layer indexes</h3>
 
 <p>You can retrieve a layer's index in the layers array using the <code>getLayerIndex()</code> method.</p>
 

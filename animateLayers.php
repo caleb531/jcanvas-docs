@@ -35,12 +35,12 @@ $("canvas").drawRect({
 
 // Animate layer properties
 $("canvas")
-.animateLayer(0, {
+.animateLayer("myBox", {
   x: 150, y: 150,
   width: 100, height: 50
 }, 1000, function(layer) {
   // Callback function
-  $(this).animateLayer("myBox", {
+  $(this).animateLayer(layer, {
     fillStyle: "rgb(204, 51, 51)",
     x: 280, y: 100,
     rotate: 360
@@ -66,7 +66,7 @@ $("canvas").animateLayer(0, {
 <p>As always, the value of <code>this</code> in your callback function is the canvas DOM element.</p>
 
 <pre class="prettyprint lang-js">
-$("canvas").animateLayer(0, {
+$("canvas").animateLayer("myLayer", {
   x: function(layer) {
     return Math.pow(params.x, 2);
   }
@@ -111,6 +111,10 @@ $("canvas")
 
 <pre class="prettyprint lang-js">
 $("canvas").stopLayer(0);
+</pre>
+
+<pre class="prettyprint lang-js">
+$("canvas").stopLayer("myBox");
 </pre>
 
 <p>Additionally, you may (optionally) pass in <code>true</code> as a second argument, which will also remove any queued animations.</p>

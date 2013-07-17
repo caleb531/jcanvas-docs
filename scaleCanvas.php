@@ -17,6 +17,23 @@ $("canvas").scaleCanvas({
 .restoreCanvas();
 </pre>
 
+<h3>The <code>scale</code> property</h3>
+
+<p>You can also set both the <code>scaleX</code> and <code>scaleY</code> properties using the <code>scale</code> property.</p>
+
+<pre class="prettyprint lang-js demo">
+$("canvas").scaleCanvas({
+  scale: 100
+})
+.drawRect({
+  fillStyle: "#000",
+  x: 100, y: 100,
+  width: 100, height: 50
+})
+.restoreCanvas();
+</pre>
+
+
 <h3>Scaling an individual shape</h3>
 
 <p>Rather than scaling the entire canvas, you can scale an individual shape using any of these three properties: <code>scale</code>, <code>scaleX</code>, or <code>scaleY</code>.</p>
