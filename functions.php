@@ -4,7 +4,8 @@
 
 <p>Functions as fill/stroke styles can be useful for dynamic computation of those styles.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawArc({
   layer: true,
   draggable: true,
@@ -16,6 +17,7 @@ $("canvas").drawArc({
   }
 });
 </pre>
+</div>
 
 
 <h3>Notes</h3>

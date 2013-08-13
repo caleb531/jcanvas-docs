@@ -4,9 +4,11 @@
 
 <p>The <code>saveCanvas()</code> method saves the current canvas transformation state. The method usually works in conjunction with the <code><a href="/projects/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").saveCanvas();
 </pre>
+</div>
 
 <p>The method also accepts a number of parameters as an object, discussed below.</p>
 
@@ -14,11 +16,13 @@ $("canvas").saveCanvas();
 
 <p>Setting the <code>count</code> property to a positive integer will save the canvas that many times. For example, if the <code>count</code> property has a value of <code>3</code>, the method would save the canvas three times.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").saveCanvas({
   count: 3
 });
 </pre>
+</div>
 
 <h3>Layers</h3>
 
@@ -26,9 +30,11 @@ $("canvas").saveCanvas({
 
 <p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").saveCanvas({
   layer: true,
   name: "save1"
 });
 </pre>
+</div>

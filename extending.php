@@ -15,7 +15,8 @@
 </li>
 </ul>
 
-<pre class="prettyprint lang-js">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $.jCanvas.extend({
   name: "pluginName",
   props: {
@@ -26,12 +27,14 @@ $.jCanvas.extend({
   }
 });
 </pre>
+</div>
 
 <h3>Example: drawHeart()</h3>
 
 <p>To demonstrate how this works, we'll be creating a method that draws a heart on the canvas.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create a drawHeart() method
 $.jCanvas.extend({
   name: "drawHeart",
@@ -75,6 +78,7 @@ $("canvas").drawHeart({
   x: 150, y: 130
 });
 </pre>
+</div>
 
 <h3>API Methods</h3>
 
@@ -89,13 +93,17 @@ $("canvas").drawHeart({
 	<li><dfn>closePath()</dfn>: This method closes the current path, and fills/strokes it if the respective properties have been set. This method accepts the same arguments as <code>detectEvents()</code>.</li>
 </ul>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $.jCanvas.detectEvents(this, ctx, params);
 </pre>
+</div>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $.jCanvas.closePath(this, ctx, params);
 </pre>
+</div>
 
 <h3>Notes</h3>
 

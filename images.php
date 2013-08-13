@@ -1,15 +1,18 @@
 <h2>Images</h2>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: "images/fish.jpg",
   x: 150, y: 150
 });
 </pre>
+</div>
 
 <h3>Custom Width/Height</h3>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: "images/fish.jpg",
   x: 50, y: 50,
@@ -18,22 +21,26 @@ $("canvas").drawImage({
   fromCenter: false
 });
 </pre>
+</div>
 
 <p>If you want to maintain proportions of an image, use the <code>scale</code> property (the scale is a multiple, with <code>1</code> as the baseline).</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: "images/fish.jpg",
   x: 150, y: 150,
   scale: 0.5
 });
 </pre>
+</div>
 
 <h3>Referencing an Image Element</h3>
 
 <p>You can also use an image DOM element as a value for the <code>source</code> property.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: $("#fish")[0],
   x: 50, y: 50,
@@ -41,12 +48,14 @@ $("canvas").drawImage({
   fromCenter: false
 });
 </pre>
+</div>
 
 <h3>On Image Load</h3>
 
 <p>A callback function may also be run when the image loads using the <code>load</code> callback property</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Function for drawing an arc
 function arc() {
   $("canvas").drawArc({
@@ -64,6 +73,7 @@ $("canvas").drawImage({
   load: arc
 });
 </pre>
+</div>
 
 <h3>Cropping</h3>
 
@@ -76,7 +86,8 @@ $("canvas").drawImage({
 	<li><code>sy:</code> Defines the y-position of the crop region</li>
 </ul>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: "images/fish.jpg",
   x: 150, y: 150,
@@ -85,10 +96,12 @@ $("canvas").drawImage({
   sx: 100, sy: 70
 });
 </pre>
+</div>
 
 <p>By default, the <code>sx</code> and <code>sy</code> properties defines the center of the crop region (for consistency). To change this, set the <code>cropFromCenter</code> property to <code>false</code>.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawImage({
   source: "images/fish.jpg",
   x: 150, y: 150,
@@ -98,6 +111,7 @@ $("canvas").drawImage({
   cropFromCenter: false
 });
 </pre>
+</div>
 
 <p>Now, the <code>sy</code> and <code>sy</code> properties define the top-left corner of the crop region, as you might expect.</p>
 
@@ -105,7 +119,8 @@ $("canvas").drawImage({
 
 <p>Beginning with version 13.04.05, image layers will always load completely before successive layers are drawn.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // The image is always drawn before the circle
 $("canvas").drawImage({
   source: "images/big-fish.jpg",
@@ -120,6 +135,7 @@ $("canvas").drawImage({
   radius: 50
 });
 </pre>
+</div>
 
 <h3>Notes</h3>
 

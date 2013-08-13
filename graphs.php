@@ -10,7 +10,8 @@
 
 <p>For example, the code below will draw a graph equivalent to the function <code>y&nbsp;=&nbsp;x&sup2;</code></p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   strokeStyle: "#c33",
   strokeWidth: 4,
@@ -22,6 +23,7 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <h3>Inverse graphs</h3>
 
@@ -29,7 +31,8 @@ $("canvas").drawGraph({
 
 <p></p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   strokeStyle: "#000",
   strokeWidth: 4,
@@ -40,12 +43,14 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <h3>Polar graphs</h3>
 
 <p>You can also draw polar graphs in the form <code>r = f(&theta;)</code> or <code>r = f(t)</code>. In this case, <code>r</code> is the radius at each point, which is determined by the angle <code>&theta;</code> (or <code>t</code>). </p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   strokeStyle: "#36c",
   strokeWidth: 4,
@@ -56,6 +61,7 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <h3>Domain and range</h3>
 
@@ -63,7 +69,8 @@ $("canvas").drawGraph({
 
 <p>Both properties accept a single list for a value, and both represent the rectangular constraints of the graph. For instance, the value of the domain property is a list consisting of two numbers (<var>a</var>, <var>b</var>) such that the graph's domain is never less than <var>a</var>, and is never greater than <var>b</var>.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   strokeStyle: "#c33",
   strokeWidth: 4,
@@ -76,10 +83,12 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <p>A value of <code>null</code> for either part of the <code>domain</code> or <code>range</code> signifies that the domain/range continues up to the boundaries of the canvas in that direction.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   strokeStyle: "#36c",
   strokeWidth: 4,
@@ -94,12 +103,14 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <h3>Using properties as variables</h3>
 
 <p>jCanvas enables any graph's function to use any other given jCanvas properties (for the purpose of manipulation). To utilize these properties, jCanvas passes a parameters object as a second argument to your function.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   layer: true,
   strokeStyle: "#36c",
@@ -118,12 +129,14 @@ $('canvas').animateLayer(0, {
   radius: 100
 }, 1000);
 </pre>
+</div>
 
 <h3>Draggable graphs</h3>
 
 <p>Because jCanvas calculates only the visible points on a graph, dragging a graph will change the region where it can be dragged.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Try dragging this parabola
 $("canvas").drawGraph({
   layer: true,
@@ -139,10 +152,12 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <p>Despite this behavior, the <code>drawGraph()</code> function still proves useful when drawing closed shapes, such as the polar clover below.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawGraph({
   layer: true,
   draggable: true,
@@ -157,12 +172,14 @@ $("canvas").drawGraph({
   }
 });
 </pre>
+</div>
 
 <h3>Notes</h3>
 
 <p>Because in a canvas coordinate grid system, <var>y</var> increases going down, rather than up like most Cartesian coordinate grid systems. However, this is easily fixable using the below code.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").scaleCanvas({
   scaleY: -1
 });
@@ -170,6 +187,7 @@ $("canvas").translateCanvas({
   translateY: -$("canvas").height()
 });
 </pre>
+</div>
 
 <h3>Resources</h3>
 

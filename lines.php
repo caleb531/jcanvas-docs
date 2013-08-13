@@ -1,8 +1,13 @@
 <h2>Lines</h2>
 
-<p>To draw a series of line segments on the canvas, use the <code>drawLine()</code> method. Coordinates are defined using <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code>, and so on.</p>
+<p>A line path in jCanvas is, essentially, one or more contiguous line segments.</p>
 
-<pre class="prettyprint lang-js demo">
+<h3>Basic Usage</h3>
+
+<p>You can draw a line path using the <code>drawLine()</code> method. Coordinates are defined using <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code>, and so on (as many as necessary).</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawLine({
   strokeStyle: "#000",
   strokeWidth: 10,
@@ -12,12 +17,14 @@ $("canvas").drawLine({
   x4: 150, y4: 200
 });
 </pre>
+</div>
 
-<h3>Closing a path</h3>
+<h3>Closing a line path</h3>
 
-<p>If you wish to close a path, use the <code>closed</code> property.</p>
+<p>You can, optionally, close a line path, which will connect its start and end points with an extra line. To do so, use the <code>closed</code> property.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawLine({
   strokeStyle: "#000",
   strokeWidth: 10,
@@ -28,13 +35,14 @@ $("canvas").drawLine({
   closed: true
 });
 </pre>
-
+</div>
 
 <h3>Rounded Corners</h3>
 
-<p>You can round the corners of a line using the <code>rounded</code> property.</p>
+<p>You can round the corners of a line path using the <code>rounded</code> property.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawLine({
   strokeStyle: "#000",
   strokeWidth: 10,
@@ -45,12 +53,14 @@ $("canvas").drawLine({
   x4: 150, y4: 200
 });
 </pre>
+</div>
 
 <h3>Plotting an array of points</h3>
 
 <p>If you wish to utilize an array containing your points, you can easily construct the <code>drawLine()</code> object using a loop.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // The .drawLine() object
 var obj = {
   strokeStyle: "#000",
@@ -75,12 +85,14 @@ for (var p=0; p&lt;pts.length; p+=1) {
 // Draw the line
 $("canvas").drawLine(obj);
 </pre>
+</div>
 
 <h3>Draggable joints</h3>
 
 <p>Using <a href='/projects/jcanvas/docs/layers/'>jCanvas layers</a> and <a href='/projects/jcanvas/docs/events/'>events</a>, you can create a line segment which you can manipulate by dragging its joints. See the example below:</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Cache the canvas element for efficiency
 var $canvas = $("canvas");
 
@@ -129,6 +141,7 @@ for (var i = 1; i <= n; i += 1) {
   
 }
 </pre>
+</div>
 
 <h3>Vectors</h3>
 

@@ -6,7 +6,8 @@
 
 <p>The <code>x</code> and <code>y</code> properties define the center of rotation.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").rotateCanvas({
   rotate: 45,
   x: 100, y: 100
@@ -18,12 +19,14 @@ $("canvas").rotateCanvas({
 })
 .restoreCanvas();
 </pre>
+</div>
 
 <h3>Rotating an individual shape</h3>
 
 <p>Rather than rotating the entire canvas, you can rotate an individual shape using the <code>rotate</code> properties.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Rotate this rectangle by 30 degrees
 $("canvas").drawRect({
   fillStyle: "#c33",
@@ -32,6 +35,7 @@ $("canvas").drawRect({
   rotate: 30
 });
 </pre>
+</div>
 
 <h3>Notes</h3>
 

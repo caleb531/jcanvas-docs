@@ -47,7 +47,7 @@ $props = array(
 "compositing"=> array(
 	"description"=> "How shapes are drawn on top of one another. For examples of the possible values, visit <a href=\"https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html\" target=\"_blank\">Mozilla's examples page</a>",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"source-over\"</code>, \"source-in\", \"source-out\", \"source-atop\", <code>\"lighter\"</code>, \"destination-over\", \"destination-in\", \"destination-out\", \"destination-atop\", <code>\"copy\"</code>, <code>\"xor\"</code>",
+	"values"=> "<code>\"source-over\"</code>, <code>\"source-in\"</code>, <code>\"source-out\"</code>, <code>\"source-atop\"</code>, <code>\"lighter\"</code>, <code>\"destination-over\"</code>, <code>\"destination-in\"</code>, <code>\"destination-out\",</code> <code>\"destination-atop\"</code>, <code>\"copy\"</code>, <code>\"xor\"</code>",
 ),
 "cornerRadius"=> array(
 	"description"=> "The radius of a rectangle's corners",
@@ -368,6 +368,11 @@ $props = array(
 	"description"=> "Determines if a layer's area intersects with the current mouse/touch coordinates. Note that the layer must have at least one event for this property to work.",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>true</code>, <code>false</code>",
+),
+"spread"=> array(
+	"description"=> "The distance a slice is from its defined (x, y) coordinates. This distance is a multiple of the slice's radius, with a value ranging from 0 to 1.",
+	"methods"=> "drawSlice()",
+	"values"=> "<code>0</code>, any number between 0 and 1",
 ),
 "type"=> array(
 	"description"=> "The type of a layer",

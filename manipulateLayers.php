@@ -9,23 +9,29 @@
 	<li>The object of properties to set.</li>
 </ol>
 
-<pre class="prettyprint lang-js">
+<p>Note that this method does not automatically redraw the canvas.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").setLayer("myBox", {
   fillStyle: "#36b",
   rotate: 30
 })
 .drawLayers();
 </pre>
+</div>
 
 <p>You can also set properties on <em>all</em> layers using the <code>setLayers()</code> method.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").setLayers({
   fillStyle: "#36b",
   rotate: 30
 })
 .drawLayers();
 </pre>
+</div>
 
 <h3>Setting layer group properties</h3>
 
@@ -33,13 +39,15 @@ $("canvas").setLayers({
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").setLayerGroup("myBoxes", {
   fillStyle: "#36b",
   rotate: 30
 })
 .drawLayers();
 </pre>
+</div>
 
 <h3>Moving layers</h3>
 
@@ -49,9 +57,11 @@ $("canvas").setLayerGroup("myBoxes", {
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").moveLayer("box", 1);
 </pre>
+</div>
 
 <h3>Removing layers</h3>
 
@@ -59,27 +69,35 @@ $("canvas").moveLayer("box", 1);
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").removeLayer(0);
 </pre>
+</div>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").removeLayer("myBox");
 </pre>
+</div>
 
 <p>Furthermore, you can remove all layers using the <code>removeLayers()</code> method.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").removeLayers();
 </pre>
+</div>
 
 <h3>Removing layer groups</h3>
 
 <p>Using the <code>removeLayerGroup()</code> method, You can remove any layers from the layers array which are in the same layer group.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").removeLayerGroup("myBoxes");
 </pre>
+</div>
 
 <h3>Notes</h3>
 

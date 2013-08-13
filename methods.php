@@ -58,6 +58,13 @@
 			),
 			"returns"=> "jQuery",
 		),
+		"drawSlice" => array(
+			"url"=> "slices",
+			"defs"=> array(
+				"( [ properties ] )"
+			),
+			"returns"=> "jQuery",
+		),
 		"drawBezier" => array(
 			"url"=> "curves#bezier-curves",
 			"defs"=> array(

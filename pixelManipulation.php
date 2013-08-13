@@ -8,7 +8,8 @@
 
 <h3>Basic usage</h3>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 function invert() {
   $(this).setPixels({
     x: 150, y: 100,
@@ -29,12 +30,14 @@ $("canvas").drawImage({
   load: invert
 });
 </pre>
+</div>
 
 <h3>Pixels and Events</h3>
 
 <p>In this example, hovering over the image will manipulate the pixels closest to the part you hovered over.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 function invert(params) {
   $(this).setPixels({
     x: params.eventX, y: params.eventY,
@@ -55,6 +58,7 @@ $("canvas").drawImage({
   mousemove: invert
 });
 </pre>
+</div>
 
 <h3>Notes</h3>
 

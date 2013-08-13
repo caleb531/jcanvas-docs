@@ -23,7 +23,8 @@
 	</li>
 </ol>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create and draw a rectangle layer
 $("canvas").drawRect({
   layer: true,
@@ -47,17 +48,20 @@ $("canvas")
   }, "slow", "swing");
 });
 </pre>
+</div>
 
 <p>jCanvas can animate numeric values, as well as colors (hex, RGB, or color names). jCanvas also enables jQuery to utilize this color animation for HTML elements.</p>
 
 <p>Additionally, you may use the string <code>"+="</code> or <code>"-="</code> to animate a property from the current value.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").animateLayer(0, {
   rotate: "+=360",
   x: "-=50"
 });
 </pre>
+</div>
 
 <h3>Functions as Property Values</h3>
 
@@ -65,13 +69,15 @@ $("canvas").animateLayer(0, {
 
 <p>As always, the value of <code>this</code> in your callback function is the canvas DOM element.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").animateLayer("myLayer", {
   x: function(layer) {
     return Math.pow(params.x, 2);
   }
 });
 </pre>
+</div>
 
 <p>This capability is especially useful when using the below <code>animateLayerGroup()</code> method, in which you may not have direct access to each layer in the group. Now, such direct access to these layers is possible.</p>
 
@@ -81,7 +87,8 @@ $("canvas").animateLayer("myLayer", {
 
 <p>The method accepts the same basic arguments as the <code>animateLayer()</code> method, </p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas")
 // Draw a circle
 .drawArc({
@@ -104,30 +111,39 @@ $("canvas")
   y: 200
 }, 500);
 </pre>
+</div>
 
 <h3>Stopping animation</h3>
 
 <p>Similar to jQuery's <code>stop()</code> method, you can stop any layer animation in progress by calling the <code>stopLayer()</code> method.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").stopLayer(0);
 </pre>
+</div>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").stopLayer("myBox");
 </pre>
+</div>
 
 <p>Additionally, you may (optionally) pass in <code>true</code> as a second argument, which will also remove any queued animations.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").stopLayer("myBox", true);
 </pre>
+</div>
 
 <p>You can also stop animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").stopLayerGroup("myGroup");
 </pre>
+</div>
 
 <h3>Delaying animation</h3>
 
@@ -135,15 +151,19 @@ $("canvas").stopLayerGroup("myGroup");
 
 <p>The method accepts two arguments: the layer name/index, and the number of milliseconds to delay animation.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").delayLayer("myBox", 500);
 </pre>
+</div>
 
 <p>You can also delay animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $("canvas").delayLayerGroup("myGroup", 500);
 </pre>
+</div>
 
 <h3>Notes</h3>
 

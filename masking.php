@@ -4,7 +4,8 @@
 
 <p>To create a shape that masks other shapes, set the <code>mask</code> property to <code>true</code>.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // This shape is a mask
 $("canvas").drawArc({
   fillStyle: "#36b",
@@ -21,6 +22,7 @@ $("canvas").drawArc({
 // Restore mask
 .restoreCanvas();
 </pre>
+</div>
 
 <p>To restore the mask and prevent masking of future shapes, call the <code>restoreCanvas()</code> method.</p>
 
@@ -28,7 +30,8 @@ $("canvas").drawArc({
 
 <p>You can also create layers that mask other layers by using the <code>mask</code> property. A layer that is a mask is generally referred to as a "layer mask".</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // This layer is a mask
 $("canvas").drawArc({
   layer: true,
@@ -49,6 +52,7 @@ $("canvas").drawArc({
   layer: true
 });
 </pre>
+</div>
 
 <p>However, when creating layer masks, the <code>restoreCanvas()</code> method must be made into a layer using the <code>layer</code> property, as demonstrated above. For more information, see the <a href='/projects/jcanvas/docs/restoreCanvas/'>Restore Canvas</a> section.</p>
 
@@ -56,7 +60,8 @@ $("canvas").drawArc({
 
 <p>In this example, move the shapes to see how layer masks affects the draggability of other shapes.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw blue square
 $("canvas").drawRect({
   layer: true,
@@ -104,3 +109,4 @@ $("canvas").drawRect({
   layer: true
 })
 </pre>
+</div>

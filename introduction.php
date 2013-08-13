@@ -6,9 +6,11 @@
 
 <p>Before you can draw on the canvas, you need to create one.</p>
 
-<pre class="prettyprint lang-html">
-&lt;canvas width="500" height="250"&gt;&lt;/canvas&gt;
+<div class='code'>
+<pre class='prettyprint lang-html'>
+&lt;canvas width="300" height="150"&gt;&lt;/canvas&gt;
 </pre>
+</div>
 
 <p>Of course, the canvas can be any width/height you want. You may also wish to give the canvas an ID (for future reference).</p>
 
@@ -16,11 +18,13 @@
 
 <h3>Importing jCanvas</h3>
 
-<p>You also need to add jCanvas to your page somehow (usually a <code>&lt;script&gt;</code> will do).</p>
+<p>You also need to add jCanvas to your page somehow (usually a <code>&lt;script&gt;</code> element will do).</p>
 
-<pre class="prettyprint lang-html">
+<div class='code'>
+<pre class='prettyprint lang-html'>
 &lt;script src="jcanvas.min.js"&gt;&lt;/script&gt;
 </pre>
+</div>
 
 <h3>Drawing</h3>
 

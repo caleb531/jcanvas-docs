@@ -2,7 +2,8 @@
 
 <p>The <code>drawPolygon()</code> method creates a regular (equal-angled) polygon.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw a triangle
 $("canvas").drawPolygon({
   strokeStyle: "black",
@@ -12,8 +13,10 @@ $("canvas").drawPolygon({
   sides: 3
 })
 </pre>
+</div>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw a polygon
 $("canvas").drawPolygon({
   fillStyle: "#589",
@@ -24,6 +27,7 @@ $("canvas").drawPolygon({
   rotate: 25
 });
 </pre>
+</div>
 
 <h3>Concave Polygons</h3>
 
@@ -35,7 +39,8 @@ $("canvas").drawPolygon({
 	<li>A value of <code>1</code> will render the polygon invisible, because the sides will point in completely.</li>
 </ul>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw a star
 $("canvas").drawPolygon({
   fillStyle: "#36c",
@@ -45,8 +50,10 @@ $("canvas").drawPolygon({
   concavity: 0.5
 });
 </pre>
+</div>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw a badge-like shape
 $("canvas").drawPolygon({
   fillStyle: "#3c6",
@@ -57,8 +64,10 @@ $("canvas").drawPolygon({
   concavity: 0.1
 });
 </pre>
+</div>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw a shield-like shape
 $("canvas").drawPolygon({
   fillStyle: "#36c",
@@ -71,3 +80,4 @@ $("canvas").drawPolygon({
   rotate: 180
 });
 </pre>
+</div>

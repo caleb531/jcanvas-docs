@@ -2,9 +2,11 @@
 
 <p>jCanvas includes a <code>jCanvas</code> object as part of the <code>jQuery</code> object.</p>
 
-<pre class="prettyprint lang-js">
+<div class='code'>
+<pre class='prettyprint lang-js'>
 $.jCanvas
 </pre>
+</div>
 
 <p>The <code>jCanvas</code> object contains the following properties/methods:</p>
 

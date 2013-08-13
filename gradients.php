@@ -6,7 +6,8 @@
 
 <h3>Linear</h3>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 var linear = $("canvas").createGradient({
   x1: 0, y1: 20,
   x2: 0, y2: 80,
@@ -20,8 +21,10 @@ $("canvas").drawArc({
   radius: 30
 });
 </pre>
+</div>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 var linear = $("canvas").createGradient({
   x1: 0, y1: 20,
   x2: 0, y2: 80,
@@ -35,12 +38,14 @@ $("canvas").drawArc({
   radius: 30
 });
 </pre>
+</div>
 
 <h3>Radial</h3>
 
 <p>Radial gradients are created when the <code>r1</code> or <code>r2</code> properties are defined.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 var radial = $("canvas").createGradient({
   x1: 50, y1: 50,
   x2: 50, y2: 50,
@@ -54,6 +59,7 @@ $("canvas").drawArc({
   radius: 30
 });
 </pre>
+</div>
 
 <h3>Animating Layers with Gradients</h3>
 
@@ -61,7 +67,8 @@ $("canvas").drawArc({
 
 <p>To demonstrate this behavior, consider the following example:</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create and store a linear gradient
 var gradient = $("canvas").createGradient({
   // Gradient is drawn relative to layer position
@@ -82,11 +89,13 @@ $("canvas").animateLayer("box", {
   x: 220, y: 150
 }, 1000);
 </pre>
+</div>
 
 
 <p>To solve this problem, by using a function as the layer's fill/stroke style, you can achieve a gradient which moves with its layer. Note that the below example assumes that the gradient's coordinates are relative to the layer's size and position.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create layer with gradient fill
 $("canvas").drawRect({
   layer: true,
@@ -108,6 +117,7 @@ $("canvas").animateLayer("box", {
   x: 220, y: 150
 }, 1000);
 </pre>
+</div>
 
 <h3>Notes</h3>
 

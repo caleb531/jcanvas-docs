@@ -14,7 +14,8 @@
 
 <p>When you click the star in the demo below, it will spin.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Click the star to make it spin
 $("canvas").drawPolygon({
   layer: true,
@@ -31,6 +32,7 @@ $("canvas").drawPolygon({
   }
 });
 </pre>
+</div>
 
 <h3>Multiple layers with events</h3>
 
@@ -38,7 +40,8 @@ $("canvas").drawPolygon({
 
 <p>When calling the <code>animateLayer()</code> method, you should pass it the layer object to animate that particular layer. Failing to do so will animate the first layer by default.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create five cascading stars
 for (var i=0; i&lt;5; i+=1) {
 
@@ -59,12 +62,14 @@ for (var i=0; i&lt;5; i+=1) {
 
 }
 </pre>
+</div>
 
 <h3>The <code>mouseover</code> and <code>mouseout</code> events</h3>
 
 <p>The <code>mouseover</code> and <code>mouseout</code> can be used separately, or together.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Hover over the triangle to rotate it
 $("canvas").drawPolygon({
   layer: true,
@@ -86,6 +91,7 @@ $("canvas").drawPolygon({
   },
 });
 </pre>
+</div>
 
 <h3>The <code>eventX</code> and <code>eventY</code> properties</h3>
 
@@ -93,7 +99,8 @@ $("canvas").drawPolygon({
 
 <p>In this example, the closer you hover to the circle's center, the more transparent it will become.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawArc({
   layer: true,
   fillStyle: "#c33",
@@ -108,12 +115,14 @@ $("canvas").drawArc({
   }
 });
 </pre>
+</div>
 
 <h3>The <code>cursor</code> property</h3>
 
 <p>In this example, the <code>cursor</code> property is used to display a pointer cursor when hovering over the layer.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Create a clickable link
 $("canvas").drawText({
   layer: true,
@@ -132,6 +141,7 @@ $("canvas").drawText({
   }
 });
 </pre>
+</div>
 
 <h3>Drag-and-drop</h3>
 
@@ -139,7 +149,8 @@ $("canvas").drawText({
 
 <p>Please note that only layers can be made draggable (that is, the <code>layer</code> property should be set to <code>true</code>).</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas")
 .drawArc({
   layer: true,
@@ -156,10 +167,12 @@ $("canvas")
   width: 100, height: 100
 });
 </pre>
+</div>
 
 <p>By default, draggable shapes will <em>not</em> move to the front when dragged. To change this behavior, set the <code>bringToFront</code> property to <code>true</code>.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas")
 .drawArc({
   layer: true,
@@ -178,6 +191,7 @@ $("canvas")
   width: 100, height: 100
 });
 </pre>
+</div>
 
 <h4>Drag Events</h4>
 
@@ -234,7 +248,8 @@ $("canvas")
 
 <p>This draggable grouping is achieved when you add the <code>dragGroupWithLayer</code> property to any (typically all) layers in the same ayer group.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Both layers will be dragged together
 $("canvas")
 .drawArc({
@@ -256,12 +271,14 @@ $("canvas")
   width: 100, height: 100
 });
 </pre>
+</div>
 
 <h3>Touch Events</h3>
 
 <p>jCanvas also supports native touch events on iOS and Android using the <code>touchstart</code>, <code>touchend</code>, and <code>touchmove</code> events.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // This demo will only work on iOS and Android
 $("canvas").drawRect({
   layer: true,
@@ -284,10 +301,12 @@ $("canvas").drawRect({
   }
 });
 </pre>
+</div>
 
 <p>As a bonus, jCanvas will also convert existing <code>mousedown</code>, <code>mouseup</code>, and <code>mousemove</code> callbacks to their respective touch events on iOS and Android. In other words, jCanvas code that you've written for desktop browsers will be automatically optimized for mobile browsers on iOS and Android.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // This demo will work on iOS, Android, and desktop browsers
 $("canvas").drawRect({
   layer: true,
@@ -310,6 +329,7 @@ $("canvas").drawRect({
   }
 });
 </pre>
+</div>
 
 <p>At this time, jCanvas does not support multi-touch.</p>
 

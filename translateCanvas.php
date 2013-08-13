@@ -2,7 +2,8 @@
 
 <p>The <code>translateCanvas()</code> method translates the canvas from the included point.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").translateCanvas({
   translateX: 200, translateY: 100
 })
@@ -13,12 +14,14 @@ $("canvas").translateCanvas({
 })
 .restoreCanvas();
 </pre>
+</div>
 
 <h3>The <code>translate</code> property</h3>
 
 <p>You can also set both the <code>translateX</code> and <code>translateY</code> properties using the <code>translate</code> property.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").translateCanvas({
   translate: 100
 })
@@ -29,6 +32,7 @@ $("canvas").translateCanvas({
 })
 .restoreCanvas();
 </pre>
+</div>
 
 <h3>Translating an individual shape</h3>
 
@@ -43,6 +47,7 @@ $("canvas")
   translateX: 200, translateY: 100
 });
 </pre>
+</div>
 
 <p>Please note that translating a shape does not change its center of rotation.</p>
 

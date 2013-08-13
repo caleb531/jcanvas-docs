@@ -10,23 +10,32 @@
 	<li><code>fontFamily</code></li>
 </ul>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#9cf",
   strokeStyle: "#25a",
   strokeWidth: 2,
   x: 150, y: 100,
-  fontSize: "36pt",
+  fontSize: 48,
   fontFamily: "Verdana, sans-serif",
   text: "Hello"
 });
 </pre>
+</div>
+
+<h3>Font Sizes</h3>
+
+<p>The value for the <code>fontSize</code> property accepts two different types of values. If you specify the value as a plain number (<em>e.g.</em> <code>48</code>), the font size is interpreted in pixels.
+
+However, you can also specify the number as a string with additional units attached (<em>e.g.</em> <code>"36pt"</code>). Examples of both use cases can be found throughout this section.</p>
 
 <h3>Transforming text</h3>
 
 <p>Just like other shapes, the <code>drawText()</code> method respects the value of the <code>fromCenter</code> and transformation properties such as <code>rotate</code>.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#cfc",
   strokeStyle: "#000",
@@ -41,12 +50,14 @@ $("canvas").drawText({
   rotate: 30
 });
 </pre>
+</div>
 
 <h3>Scaling text</h3>
 
 <p>You can animate the font size of text using the <code>scale</code>, <code>scaleX</code>, or <code>scaleY</code> properties.</p>
 
-<pre class='prettyprint lang-js demo'>
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   layer: true,
   fillStyle: "#9cf",
@@ -65,6 +76,7 @@ $("canvas").drawText({
   }
 });
 </pre>
+</div>
 
 <h3>Measuring text</h3>
 
@@ -74,7 +86,8 @@ $("canvas").drawText({
 
 <p>In the example below, the circle is only as wide as the text inside of it.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 // Draw text
 $('canvas').drawText({
   layer: true,
@@ -95,6 +108,7 @@ $('canvas').drawText({
   radius: $('canvas').measureText('myText').width / 2
 });
 </pre>
+</div>
 
 <h3 class='beta'>Wrapping text</h3>
 
@@ -102,7 +116,8 @@ $('canvas').drawText({
 
 <p>Manually adding a line break can be done so by adding the standard newline character in your string (<code>\n</code>).</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#36c",
   fontStyle: "bold",
@@ -113,12 +128,14 @@ $("canvas").drawText({
   maxWidth: 300
 });
 </pre>
+</div>
 
 <h3>Aligning text</h3>
 
 <p>If you wish to align your text to the <code>left</code> or <code>right</code> (rather than the <code>center</code> by default), use the <code>align</code> property.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#36c",
   fontStyle: "bold",
@@ -130,6 +147,7 @@ $("canvas").drawText({
   maxWidth: 300
 });
 </pre>
+</div>
 
 <h3>Aligning text to a margin</h3>
 
@@ -137,7 +155,8 @@ $("canvas").drawText({
 
 <p>The <code>respectAlign</code> property will ensure that the text's (x, y) coordinates are in line with either the left or right margin (depending of the value of the <code>align</code> property). Therefore, enabling this property will require you to adjust your <code>x</code> position accordingly.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#36c",
   fontStyle: "bold",
@@ -150,6 +169,7 @@ $("canvas").drawText({
   maxWidth: 300
 });
 </pre>
+</div>
 
 <h3>Changing line height</h3>
 
@@ -157,10 +177,13 @@ $("canvas").drawText({
 
 <p>For example, the demo below will double the line height of the text it draws.</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#36c",
-  font: "bold 20pt Trebuchet MS, sans-serif",
+  fontStyle: "bold",
+  fontSize: "20pt",
+  fontFamily: "Trebuchet MS, sans-serif",
   text: "The quick brown fox jumps over the lazy dog.",
   x: 180, y: 100,
   align: "left",
@@ -168,13 +191,17 @@ $("canvas").drawText({
   lineHeight: 2
 });
 </pre>
+</div>
 
 <p>A line height with a negative value will swap any lines of text (<em>e.g.</em> the top line becomes the bottom line).</p>
 
-<pre class="prettyprint lang-js demo">
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
 $("canvas").drawText({
   fillStyle: "#36c",
-  font: "bold 20pt Trebuchet MS, sans-serif",
+  fontStyle: "bold",
+  fontSize: "20pt",
+  fontFamily: "Trebuchet MS, sans-serif",
   text: "The quick brown fox jumps over the lazy dog.",
   x: 180, y: 100,
   align: "left",
@@ -182,5 +209,6 @@ $("canvas").drawText({
   lineHeight: -2
 });
 </pre>
+</div>
 
 <p>Note that a negative line height will also produce a negative text height when retrieving the width/height of text (using the <code>measureText()</code> method).</p>
