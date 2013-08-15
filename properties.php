@@ -289,10 +289,10 @@ $props = array(
 	"methods"=> "All drawing methods",
 	"values"=> "<code>\"\"</code>, any string",
 ),
-"group"=> array(
-	"description"=> "The group name associated with a layer",
+"groups"=> array(
+	"description"=> "An array of group names associated with a layer",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"\"</code>, any string",
+	"values"=> "<code>null</code>, any array of strings",
 ),
 "bringToFront"=> array(
 	"description"=> "If a draggable layer will come to the front (above all other layers) when dragged",
@@ -355,9 +355,9 @@ $props = array(
 	"values"=> "<code>true</code>, <code>false</code>",
 ),
 "dragGroupWithLayer"=> array(
-	"description"=> "Determines if a layer's <code>group</code> will drag with that layer",
+	"description"=> "Determines if the given layer group will drag with that layer",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>true</code>, <code>false</code>",
+	"values"=> "<code>null</code>, the name of any group as a string",
 ),
 "respectAlign"=> array(
 	"description"=> "Ensures that the text's (x, y) coordinates are in line with either the left or right margin (depending of the value of the <code>align</code> property)</p>",

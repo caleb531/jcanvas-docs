@@ -208,7 +208,7 @@
 		"setLayer" => array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
-				"( layerId,  [ properties ] )"
+				"( layerId, properties )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -222,7 +222,7 @@
 		"setLayerGroup" => array(
 			"url"=> "manipulateLayers#setting-layer-group-properties",
 			"defs"=> array(
-				"(  groupId, [ properties ] )"
+				"( groupId, properties )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -292,7 +292,7 @@
 		"delayLayerGroup" => array(
 			"url"=> "animatingLayers#delaying-animation",
 			"defs"=> array(
-				"( groupId [, clearQueue ] )"
+				"( groupId [, duration ] )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -325,6 +325,20 @@
 			),
 			"returns"=> "jQuery",
 		),
+		"addLayerToGroup" => array(
+			"url"=> "addLayers",
+			"defs"=> array(
+				"( layerId, groupName )"
+			),
+			"returns"=> "jQuery",
+		),
+		"removeLayerFromGroup" => array(
+			"url"=> "addLayers",
+			"defs"=> array(
+				"( layerId, groupName )"
+			),
+			"returns"=> "jQuery",
+		)
 	);
 	ksort($methods);
 		

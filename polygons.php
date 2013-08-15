@@ -11,7 +11,7 @@ $("canvas").drawPolygon({
   x: 200, y: 100,
   radius: 50,
   sides: 3
-})
+});
 </pre>
 </div>
 

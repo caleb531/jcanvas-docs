@@ -56,17 +56,34 @@ $("canvas").drawRect({
 
 <h3>Grouping layers</h3>
 
-<p>To assign the layer a group, use the <code>group</code> property. Doing so will not change the order in which the layer will be drawn. The property is merely for categorization purposes.</p>
+<p>To assign one or more groups to a layer, use the <code>groups</code> property. Doing so will not change the order in which the layer is drawn. The property is merely for categorization purposes.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $("canvas").drawRect({
   layer: true,
-  group: "myBoxes",
+  groups: ["myBoxes"],
+  name: "box",
   fillStyle: "#585",
   x: 100, y: 100,
   width: 100, height: 50
 });
+</pre>
+</div>
+
+<p>To dynamically add an existing layer to a group, use the <code>addLayerToGroup()</code> method.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").addLayerToGroup("box", "myBoxes");
+</pre>
+</div>
+
+<p>To dynamically remove an existing layer from a group, use the <code>removeLayerFromGroup()</code> method. Note that this does not remove the layer from jCanvas.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").removeLayerFromGroup("box", "myBoxes");
 </pre>
 </div>
 
@@ -135,7 +152,7 @@ $("canvas").draw({
 $("canvas")
 // Define properties for all rectangles
 .jCanvas({
-  type: 'rectangle',
+  type: "rectangle",
   width: 100, height: 100
 })
 .addLayer({

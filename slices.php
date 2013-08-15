@@ -27,10 +27,11 @@ $("canvas").drawSlice({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-// Apply properties to the following drawings
-$("canvas").jCanvas({
+$("canvas")
+// Set jCanvas preferences
+.jCanvas({
   layer: true,
-  group: "chart",
+  groups: ["chart", "slices"],
   x: 180, y: 110,
   radius: 100,
   spread: 1 / 40
@@ -62,10 +63,11 @@ $("canvas").jCanvas({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
+$("canvas")
 // Set jCanvas preferences
-$("canvas").jCanvas({
+.jCanvas({
   layer: true,
-  group: "chart",
+  groups: ["chart", "slices"],
   x: 180, y: 110,
   radius: 100,
   spread: 1 / 40
@@ -90,6 +92,7 @@ $("canvas").jCanvas({
 })
 // Set jCanvas preferences for labels
 .jCanvas({
+  groups: ["chart", "labels"],
   fillStyle: "#fff",
   fontSize: 20,
   fontFamily: "Ubuntu, sans-serif"

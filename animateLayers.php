@@ -93,7 +93,7 @@ $("canvas")
 // Draw a circle
 .drawArc({
   layer: true,
-  group: "circles",
+  groups: ["circles"],
   fillStyle: "#c33",
   x: 100, y: 100,
   radius: 50
@@ -101,13 +101,13 @@ $("canvas")
 // Draw another circle
 .drawArc({
   layer: true,
-  group: "circles",
+  groups: ["circles"],
   fillStyle: "#36c",
   x: 250, y: 100,
   radius: 50
 })
 // Animate all layers in the group "circles"
-.animateLayerGroup('circles', {
+.animateLayerGroup("circles", {
   y: 200
 }, 500);
 </pre>

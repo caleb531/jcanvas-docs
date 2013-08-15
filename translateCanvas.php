@@ -38,7 +38,8 @@ $("canvas").translateCanvas({
 
 <p>Rather than translating the entire canvas, you can translate an individual shape using any of these three properties.</p>
 
-<pre class="prettyprint lang-js lang-js demo">
+<div class='code demo'>
+<pre class="prettyprint lang-js demo">
 $("canvas")
 .drawRect({
   fillStyle: "#474",
