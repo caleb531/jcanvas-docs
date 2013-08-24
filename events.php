@@ -48,7 +48,7 @@ for (var i=0; i&lt;5; i+=1) {
   $("canvas").drawPolygon({
     layer: true,
     fillStyle: "#c33",
-    x: 50+(i*60), y: 50+(i*60),
+    x: 50+(i*60), y: 50,
     radius: 30,
     sides: 5,
     projection: -0.5,
@@ -117,9 +117,9 @@ $("canvas").drawArc({
 </pre>
 </div>
 
-<h3>The <code>cursor</code> property</h3>
+<h3>The <code>cursors</code> property</h3>
 
-<p>In this example, the <code>cursor</code> property is used to display a pointer cursor when hovering over the layer.</p>
+<p>The <code>cursors</code> property is used to display a specific cursor when a particular layer event fires. For instance, a draggable</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
@@ -134,7 +134,9 @@ $("canvas").drawText({
   fontFamily: "Trebuchet MS",
   fontSize: 64,
   // Show pointer cursor on hover
-  cursor: "pointer",
+  cursors: {
+  	mouseover: "pointer"
+  },
   // Click link to open it
   click: function(layer) {
     window.open("http://www.google.com/");
@@ -142,6 +144,8 @@ $("canvas").drawText({
 });
 </pre>
 </div>
+
+<p>Please note that the cursor always reverts to the canvas's defined CSS cursor <em>when</em> the cursor is not within any layers.</p>
 
 <h3>Drag-and-drop</h3>
 

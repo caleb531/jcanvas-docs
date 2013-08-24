@@ -6,12 +6,14 @@
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
+// Get the first layer
 $("canvas").getLayer(0);
 </pre>
 </div>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
+// Get the layer whose name is "myBox"
 $("canvas").getLayer("myBox");
 </pre>
 </div>
@@ -20,15 +22,16 @@ $("canvas").getLayer("myBox");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
+// Get first layer whose name contains "box"
 $("canvas").getLayer(/box/gi);
 </pre>
 </div>
 
-<p>Finally, a negative index are also acceptable, with <code>-1</code> being the index of the last (topmost) layer.</p>
+<p>Finally, a negative index is also acceptable, with <code>-1</code> being the index of the last (topmost) layer.</p>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-// Get last layer
+// Get the last layer
 $("canvas").getLayer(-1);
 </pre>
 </div>

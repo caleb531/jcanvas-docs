@@ -1,5 +1,7 @@
 <h2>Preferences</h2>
 
+<h3>Basic Usage</h3>
+
 <p>The <code>jCanvas()</code> method sets properties of the jCanvas <code>prefs</code> object, so jCanvas methods called in the future can use those properties as defaults.</p>
 
 <div class='code demo'>

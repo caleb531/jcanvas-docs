@@ -6,6 +6,8 @@
 
 <p>You can draw a slice using the <code>drawSlice()</code> method. The size of a slice is determined by its <code>start</code>, <code>end</code>, and <code>radius</code> properties.</p>
 
+<p>The position of a slice is determined by its <code>x</code> and <code>y</code> properties. These coordinates lie at the tip of the slice.</p>
+
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a 60&deg; slice

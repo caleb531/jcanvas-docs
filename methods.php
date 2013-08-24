@@ -201,7 +201,7 @@
 		"getLayers" => array(
 			"url"=> "retrieveLayers#retrieving-all-layers",
 			"defs"=> array(
-				"( )"
+				"( [ callback ] )"
 			),
 			"returns"=> "jQuery",			
 		),

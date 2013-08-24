@@ -304,44 +304,24 @@ $props = array(
 	"methods"=> "All drawing methods",
 	"values"=> "<code>false</code>, <code>true</code>",
 ),
-"disableDrag"=> array(
-	"description"=> "Temporarily disables a layer's ability to be dragged",
-	"methods"=> "All drawing methods",
-	"values"=> "<code>false</code>, <code>true</code>",
-),
 "disableEvents"=> array(
 	"description"=> "Temporarily disables a layer's events from firing",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>false</code>, <code>true</code>",
 ),
 "maxWidth"=> array(
-	"description"=> "The maximum width for any line of text in a text object",
+	"description"=> "The maximum width for any line of text in a text drawing",
 	"methods"=> "<code>drawText()</code>",
 	"values"=> "<code>null</code>, any number",
 ),
 "lineHeight"=> array(
-	"description"=> "The line height of a piece of text, the value of which is a multiple of the default line height",
+	"description"=> "The line height of a text drawing, the value of which is a multiple of the default line height",
 	"methods"=> "<code>drawText()</code>",
 	"values"=> "<code>1</code>, any number",
 ),
-"graph"=> array(
-	"description"=> "A string indicating the type of graph. See the <a href='/projects/jcanvas/docs/graphs/'>Graphs</a> section for details about the possible values",
-	"methods"=> "<code>drawGraph()</code>",
-	"values"=> "<code>\"y\"</code>, \"x\", \"r\"",
-),
-"domain"=> array(
-	"description"=> "A two-value array representing the domain of a function",
-	"methods"=> "<code>drawGraph()</code>",
-	"values"=> "<code>null</code>, any array",
-),
-"range"=> array(
-	"description"=> "A two-value array representing the range of a function",
-	"methods"=> "<code>drawGraph()</code>",
-	"values"=> "<code>null</code>, any array",
-),
 "fn"=> array(
-	"description"=> "A callback function required by some jCanvas methods",
-	"methods"=> "<code>draw()</code>, <code>drawGraph()</code>",
+	"description"=> "A callback function",
+	"methods"=> "<code>draw()</code>",
 	"values"=> "<code>null</code>, any function",
 ),
 "data"=> array(
@@ -354,10 +334,10 @@ $props = array(
 	"methods"=> "<code>drawImage()</code>, <code>drawPattern()</code>",
 	"values"=> "<code>true</code>, <code>false</code>",
 ),
-"dragGroupWithLayer"=> array(
-	"description"=> "Determines if the given layer group will drag with that layer",
+"dragGroups"=> array(
+	"description"=> "The names of any groups that will be dragged when the target layer is dragged",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>null</code>, the name of any group as a string",
+	"values"=> "<code>null</code>, an array of one or more group names"
 ),
 "respectAlign"=> array(
 	"description"=> "Ensures that the text's (x, y) coordinates are in line with either the left or right margin (depending of the value of the <code>align</code> property)</p>",
@@ -378,7 +358,7 @@ $props = array(
 	"description"=> "The type of a layer",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>null</code>, <code>\"rectangle\"</code>, <code>\"arc\"</code>, <code>\"circle\"</code>, <code>\"ellipse\"</code>, <code>\"polygon\"</code>, <code>\"line\"</code>, <code>\"vector\"</code>, <code>\"quadratic\"</code>, <code>\"bezier\"</code>, <code>\"image\"</code>, <code>\"text\"</code>, <code>\"function\"</code>",
-),
+)
 
 );
 
