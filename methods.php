@@ -129,7 +129,7 @@
 			"returns"=> "jQuery",
 		),
 		"delayLayer" => array(
-			"url"=> "animatingLayers",
+			"url"=> "animateLayers",
 			"defs"=> array(
 				"( layerId [, duration ] )"
 			),
@@ -276,21 +276,21 @@
 			"returns"=> "String",			
 		),
 		"stopLayer" => array(
-			"url"=> "animatingLayers#stopping-animation",
+			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( layerId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"stopLayerGroup" => array(
-			"url"=> "animatingLayers#stopping-animation",
+			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( groupId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"delayLayerGroup" => array(
-			"url"=> "animatingLayers#delaying-animation",
+			"url"=> "animateLayers#delaying-animation",
 			"defs"=> array(
 				"( groupId [, duration ] )"
 			),

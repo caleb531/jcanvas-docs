@@ -123,9 +123,9 @@ $("canvas").drawArc({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-// Create a clickable link
 $("canvas").drawText({
   layer: true,
+  draggable: true,
   fillStyle: "#9cf",
   strokeStyle: "#000",
   strokeWidth: 2,
@@ -135,11 +135,12 @@ $("canvas").drawText({
   fontSize: 64,
   // Show pointer cursor on hover
   cursors: {
-  	mouseover: "pointer"
-  },
-  // Click link to open it
-  click: function(layer) {
-    window.open("http://www.google.com/");
+    // Show pointer on hover
+  	mouseover: "pointer",
+  	// Show 'move' cursor on mousedown
+  	mousedown: "move",
+  	// Revert cursor on mouseup
+  	mouseup: "pointer"
   }
 });
 </pre>

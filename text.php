@@ -70,7 +70,7 @@ $("canvas").drawText({
   scale: 2,
   click: function() {
     // Click the text to make it grow
-    $(this).animateLayer({
+    $(this).animateLayer(0, {
       scale: "+=0.25",
     }, 250);
   }
@@ -211,4 +211,4 @@ $("canvas").drawText({
 </pre>
 </div>
 
-<p>Note that a negative line height will also produce a negative text height when retrieving the width/height of text (using the <code>measureText()</code> method).</p>
+<p>Note that a negative line height will produce a negative number when retrieving the height of the text (using the <code>measureText()</code> method).</p>
