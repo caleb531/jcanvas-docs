@@ -358,6 +358,11 @@ $props = array(
 	"description"=> "The type of a layer",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>null</code>, <code>\"rectangle\"</code>, <code>\"arc\"</code>, <code>\"circle\"</code>, <code>\"ellipse\"</code>, <code>\"polygon\"</code>, <code>\"line\"</code>, <code>\"vector\"</code>, <code>\"quadratic\"</code>, <code>\"bezier\"</code>, <code>\"image\"</code>, <code>\"text\"</code>, <code>\"function\"</code>",
+),
+"fireDragGroupEvents"=> array(
+	"description"=> "When a layer is dragged, determines if the drag events fire for the layers in its associated drag group",
+	"methods"=> "All drawing methods",
+	"values"=> "<code>true</code>, <code>false</code>",
 )
 
 );

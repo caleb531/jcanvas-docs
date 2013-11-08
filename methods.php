@@ -215,7 +215,7 @@
 		"setLayers" => array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
-				"( properties )"
+				"( properties [, callback ] )"
 			),
 			"returns"=> "jQuery",			
 		),
@@ -326,14 +326,21 @@
 			"returns"=> "jQuery",
 		),
 		"addLayerToGroup" => array(
-			"url"=> "addLayers",
+			"url"=> "manipulateLayers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
 			"returns"=> "jQuery",
 		),
 		"removeLayerFromGroup" => array(
-			"url"=> "addLayers",
+			"url"=> "manipulateLayers#removing-layers",
+			"defs"=> array(
+				"( layerId, groupName )"
+			),
+			"returns"=> "jQuery",
+		),
+		"moveLayer" => array(
+			"url"=> "manipulateLayers#moving-layers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
