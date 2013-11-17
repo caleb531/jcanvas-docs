@@ -363,6 +363,26 @@ $props = array(
 	"description"=> "When a layer is dragged, determines if the drag events fire for the layers in its associated drag group",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>true</code>, <code>false</code>",
+),
+"startArrow"=> array(
+	"description"=> "Determines if the given path drawing will have an arrow placed at its start point",
+	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
+	"values"=> "<code>false</code>, <code>true</code>",
+),
+"endArrow"=> array(
+	"description"=> "Determines if the given path drawing will have an arrow placed at its end point",
+	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
+	"values"=> "<code>false</code>, <code>true</code>",
+),
+"arrowRadius"=> array(
+	"description"=> "The length of each tip of an arrow",
+	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
+	"values"=> "<code>0</code>, any number",
+),
+"arrowAngle"=> array(
+	"description"=> "The measure of the angle formed from the left tip of the arrow to the right tip",
+	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
+	"values"=> "<code>90</code>, any number",
 )
 
 );

@@ -8,7 +8,7 @@
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").clearCanvas()</pre>
+$("canvas").clearCanvas();</pre>
 </div>
 
 <h3>Clear a Section</h3>
