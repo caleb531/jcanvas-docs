@@ -23,7 +23,7 @@ $("canvas").drawPolygon({
   x: 100, y: 100,
   radius: 50,
   sides: 5,
-  projection: -0.5,
+  concavity: 0.5,
   click: function(layer) {
     // Spin star
     $(this).animateLayer(layer, {
@@ -51,7 +51,7 @@ for (var i=0; i&lt;5; i+=1) {
     x: 50+(i*60), y: 50,
     radius: 30,
     sides: 5,
-    projection: -0.5,
+    concavity: 0.5,
     click: function(layer) {
       // Click a star to spin it
       $(this).animateLayer(layer, {

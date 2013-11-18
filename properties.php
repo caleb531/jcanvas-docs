@@ -124,7 +124,7 @@ $props = array(
 	"methods"=> "All drawing methods",
 	"values"=> "<code>1</code>, any number from 0 to 1",
 ),
-"projection"=> array(
+"concavity"=> array(
 	"description"=> "How much a polygon's sides project in or out (the default is 0, so nothing projects)",
 	"methods"=> "<code>drawPolygon()</code>",
 	"values"=> "<code>0</code>, any integer",
