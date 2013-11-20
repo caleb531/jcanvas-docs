@@ -26,7 +26,7 @@ $("canvas").scaleCanvas({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $("canvas").scaleCanvas({
-  scale: 100
+  scale: 2
 })
 .drawRect({
   fillStyle: "#000",
