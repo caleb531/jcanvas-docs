@@ -9,7 +9,7 @@ $("canvas").drawImage({
 </pre>
 </div>
 
-<h3>Custom Width/Height</h3>
+<h3>Custom width/height</h3>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
@@ -35,9 +35,9 @@ $("canvas").drawImage({
 </pre>
 </div>
 
-<h3>Referencing an Image Element</h3>
+<h3>Using an image element</h3>
 
-<p>You can also use an image DOM element as a value for the <code>source</code> property.</p>
+<p>You can also use an image DOM element as the value for the <code>source</code> property.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
@@ -50,25 +50,27 @@ $("canvas").drawImage({
 </pre>
 </div>
 
-<h3>On Image Load</h3>
+<h3>The <code>load()</code> callback</h3>
 
-<p>A callback function may also be run when the image loads using the <code>load</code> callback property</p>
+<p>In jCanvas, images are drawn asynchronously because they must load before they can be drawn. In some cases, this isn't an issue because the image loads fast enough, however this isn't always the case.</p>
+
+<p>To address this, jCanvas allows you to run a callback function once the image has loaded, using the <code>load</code> property.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Function for drawing an arc
 function arc() {
   $("canvas").drawArc({
-    strokeStyle: "#fff",
+    strokeStyle: "#6f9",
     strokeWidth: 4,
-    x: 150, y: 150,
+    x: 155, y: 155,
     radius: 40
   });
 }
 
 // Run the arc() function after the image has loaded
 $("canvas").drawImage({
-  source: "images/fish.jpg",
+  source: "images/ladybug.jpg",
   x: 150, y: 150,
   load: arc
 });
@@ -89,11 +91,11 @@ $("canvas").drawImage({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $("canvas").drawImage({
-  source: "images/fish.jpg",
+  source: "images/ladybug.jpg",
   x: 150, y: 150,
-  sWidth: 100,
+  sWidth: 50,
   sHeight: 50,
-  sx: 100, sy: 70
+  sx: 116, sy: 75
 });
 </pre>
 </div>
@@ -139,4 +141,4 @@ $("canvas").drawImage({
 
 <h3>Notes</h3>
 
-<p>Internet Explorer 9 has a bug which prevents images from drawing on the canvas if they have not loaded. To fix this, use an existing <code>&lt;img&gt;</code> element as the value for the <code>source</code> property.</p>
+<p>Internet Explorer 9 has a bug which prevents images from drawing on the canvas if they have not loaded. To fix this, use an existing <code>&lt;img&gt;</code> DOM element as the value for the <code>source</code> property.</p>

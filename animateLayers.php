@@ -43,7 +43,7 @@ $("canvas")
   // Callback function
   $(this).animateLayer(layer, {
     fillStyle: "rgb(204, 51, 51)",
-    x: 280, y: 100,
+    x: 250, y: 100,
     rotate: 360
   }, "slow", "swing");
 });
@@ -103,7 +103,7 @@ $("canvas")
   layer: true,
   groups: ["circles"],
   fillStyle: "#36c",
-  x: 250, y: 100,
+  x: 220, y: 100,
   radius: 50
 })
 // Animate all layers in the group "circles"

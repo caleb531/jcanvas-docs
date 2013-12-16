@@ -54,6 +54,31 @@ $("canvas").drawRect({
 </pre>
 </div>
 
+<h3>Layers</h3>
+
+<p>Although it may seem slightly counterintuitive, the <code>scaleCanvas()</code> method can actually be drawn as a layer. This allows for applying canvas transformations when drawing layers.</p>
+
+<p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").scaleCanvas({
+  layer: true,
+  name: "scale1"
+});
+</pre>
+</div>
+
+<p>However, whenever you're done scaling the canvas, you must restore the transformation using the <code>restoreCanvas()</code> method.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").restoreCanvas({
+  layer: true
+});
+</pre>
+</div>
+
 <h3>Notes</h3>
 
 <p>The <code>scaleX</code> and <code>scaleY</code> values are multiples of the canvas's current width/height (i.e. <code>1</code> is the baseline).</p>

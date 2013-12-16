@@ -33,6 +33,24 @@ $("canvas").drawLine({
 </pre>
 </div>
 
+<h3>Vectors</h3>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$("canvas").drawVector({
+  strokeStyle: "#000",
+  strokeWidth: 4,
+  rounded: true,
+  endArrow: true,
+  arrowRadius: 15,
+  arrowAngle: 90,
+  x: 50, y: 50,
+  a1: 180, l1: 100,
+  a2: 90, l2: 100
+});
+</pre>
+</div>
+
 <h3>Quadratic Curves</h3>
 
 <div class='code demo'>

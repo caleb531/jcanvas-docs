@@ -26,7 +26,7 @@ $("canvas").saveCanvas({
 
 <h3>Layers</h3>
 
-<p>Although it may seem slightly counterintuitive, the <code>saveCanvas()</code> method can actually be drawn as a layer. This allows for restoring masks or transformations in the midst of redrawing layers.</p>
+<p>Although it may seem slightly counterintuitive, the <code>saveCanvas()</code> method can actually be drawn as a layer. This allows for restoring masks or transformations when drawing layers.</p>
 
 <p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
 

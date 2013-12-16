@@ -50,7 +50,33 @@ $("canvas")
 </pre>
 </div>
 
-<p>Please note that translating a shape does not change its center of rotation.</p>
+<p>Please note that translating a shape changes its center of transformation (which will affect how the layer is rotated).</p>
+
+<h3>Layers</h3>
+
+<p>Although it may seem slightly counterintuitive, the <code>translateCanvas()</code> method can actually be drawn as a layer. This allows for applying canvas transformations when drawing layers.</p>
+
+<p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").translateCanvas({
+  layer: true,
+  name: "translate1"
+});
+</pre>
+</div>
+
+<p>However, whenever you're done translating the canvas, you must restore the transformation using the <code>restoreCanvas()</code> method.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+$("canvas").restoreCanvas({
+  layer: true
+});
+</pre>
+</div>
+
 
 <h3>Notes</h3>
 
