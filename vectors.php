@@ -1,4 +1,4 @@
-<h2>Vectors</h2>
+<h2 class='menu'>Vectors</h2>
 
 <p>Besides using the <code>drawLine()</code> method for drawing line segments on the canvas, you can also use the <code>drawVector()</code> method, which works differently, but produces the same result (contiguous lines).</p>
 
@@ -7,8 +7,8 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a line that is 100px long at 45deg from the north
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   a1: 135, l1: 100
 });
@@ -21,8 +21,8 @@ $("canvas").drawVector({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   x: 50, y: 50,
   a1: 120, l1: 100
@@ -37,8 +37,8 @@ $("canvas").drawVector({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a straight line that is 200px long
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   x: 50, y: 50,
   a1: 135, l1: 100,
@@ -50,8 +50,8 @@ $("canvas").drawVector({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a bent path
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   x: 50, y: 150,
   a1: 45, l1: 100,
@@ -67,8 +67,8 @@ $("canvas").drawVector({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a closed path (making a triangle)
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   closed: true,

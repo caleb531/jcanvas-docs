@@ -1,4 +1,4 @@
-<h2>Rotating the canvas</h2>
+<h2 class='menu'>Rotating the canvas</h2>
 
 <h3>Rotating the canvas context</h3>
 
@@ -8,12 +8,12 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").rotateCanvas({
+$('canvas').rotateCanvas({
   rotate: 45,
   x: 100, y: 100
 })
 .drawRect({
-  fillStyle: "#000",
+  fillStyle: '#000',
   x: 100, y: 100,
   width: 100, height: 50
 })
@@ -28,8 +28,8 @@ $("canvas").rotateCanvas({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Rotate this rectangle by 30 degrees
-$("canvas").drawRect({
-  fillStyle: "#c33",
+$('canvas').drawRect({
+  fillStyle: '#c33',
   x: 200, y: 100,
   width: 150, height: 80,
   rotate: 30
@@ -47,9 +47,9 @@ $("canvas").drawRect({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").rotateCanvas({
+$('canvas').rotateCanvas({
   layer: true,
-  name: "rotate1"
+  name: 'rotate1'
 });
 </pre>
 </div>
@@ -58,7 +58,7 @@ $("canvas").rotateCanvas({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas({
+$('canvas').restoreCanvas({
   layer: true
 });
 </pre>

@@ -203,7 +203,7 @@
 			"defs"=> array(
 				"( [ callback ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "Array",			
 		),
 		"setLayer" => array(
 			"url"=> "manipulateLayers#setting-layer-properties",
@@ -326,7 +326,7 @@
 			"returns"=> "jQuery",
 		),
 		"addLayerToGroup" => array(
-			"url"=> "manipulateLayers",
+			"url"=> "addLayers#grouping-layers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
@@ -345,23 +345,38 @@
 				"( layerId, groupName )"
 			),
 			"returns"=> "jQuery",
+		),
+		"setEventHooks" => array(
+			"url"=> "eventHooks",
+			"defs"=> array(
+				"( properties )"
+			),
+			"returns"=> "jQuery",
+		),
+		"getEventHooks" => array(
+			"url"=> "eventHooks",
+			"defs"=> array(
+				"( )"
+			),
+			"returns"=> "Object",
 		)
 	);
 	ksort($methods);
 		
 	foreach ($methods as $name => $info) {
 		echo "
-	<li id='$name'><h3><a href='#" . str_replace('.', '_', $name) . "' class='subsection'>$name( )</a></h3>
+	<li id='$name'><h3><a href='#" . str_replace(".", "_", $name) . "' class='subsection'>$name( )</a></h3>
 		<ul class='box'>
 			<li><dfn><a href='/projects/jcanvas/docs/$info[url]'>Method Usage</a></dfn></li>
-			<li><dfn>Syntax</dfn>\n\t\t\t\t\t<ul class='syntax'>";
+			<li><dfn>Syntax</dfn>
+			<ul class='syntax'>";
 			// Add syntax definitions
-			foreach ($info['defs'] as $def) {
-				$def = preg_replace('/\] \[/', '] [', $def);
-				$def = preg_replace('/\] (\w+) \[/', '] \1 [', $def);
-				echo "\n\t\t\t\t\t\t<li><code>$name$def</code></li>";
+			foreach ($info["defs"] as $def) {
+				$def = preg_replace("/\] \[/", "] [", $def);
+				$def = preg_replace("/\] (\w+) \[/", "] \1 [", $def);
+				echo "<li><code>$name$def</code></li>";
 			}
-			echo "\n\t\t\t\t\t</ul>\n\t\t\t\t</li>
+			echo "</ul></li>
 			<li><dfn>Returns:</dfn> <code>$info[returns]</code></li>
 		</ul>
 	</li>";

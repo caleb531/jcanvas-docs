@@ -1,4 +1,4 @@
-<h2>Gradients</h2>
+<h2 class='menu'>Gradients</h2>
 
 <p>The <code>createGradient()</code> method returns a canvas gradient object, which is used as a fill or stroke style.</p>
 
@@ -8,14 +8,14 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-var linear = $("canvas").createGradient({
+var linear = $('canvas').createGradient({
   x1: 0, y1: 20,
   x2: 0, y2: 80,
-  c1: "rgb(0, 0, 0)",
-  c2: "#0f0",
-  c3: "blue"
+  c1: 'rgb(0, 0, 0)',
+  c2: '#0f0',
+  c3: 'blue'
 });
-$("canvas").drawArc({
+$('canvas').drawArc({
   fillStyle: linear,
   x: 50, y: 50,
   radius: 30
@@ -25,14 +25,14 @@ $("canvas").drawArc({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-var linear = $("canvas").createGradient({
+var linear = $('canvas').createGradient({
   x1: 0, y1: 20,
   x2: 0, y2: 80,
-  c1: "rgb(0, 0, 0)",
-  c2: "#0f0", s2: 0.2,
-  c3: "blue", s3: 0.5
+  c1: 'rgb(0, 0, 0)',
+  c2: '#0f0', s2: 0.2,
+  c3: 'blue', s3: 0.5
 });
-$("canvas").drawArc({
+$('canvas').drawArc({
   fillStyle: linear,
   x: 50, y: 50,
   radius: 30
@@ -46,14 +46,14 @@ $("canvas").drawArc({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-var radial = $("canvas").createGradient({
+var radial = $('canvas').createGradient({
   x1: 50, y1: 50,
   x2: 50, y2: 50,
   r1: 10, r2: 30,
-  c1: "rgba(255, 0, 0, 0.75)",
-  c2: "#000"
+  c1: 'rgba(255, 0, 0, 0.75)',
+  c2: '#000'
 });
-$("canvas").drawArc({
+$('canvas').drawArc({
   fillStyle: radial,
   x: 50, y: 50,
   radius: 30
@@ -70,22 +70,22 @@ $("canvas").drawArc({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create and store a linear gradient
-var gradient = $("canvas").createGradient({
+var gradient = $('canvas').createGradient({
   // Gradient is drawn relative to layer position
   x1: 0, y1: 20,
   x1: 0, y2: 140,
   c1: '#36c', c2: '#c33'
 });
 // Create layer with gradient fill
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
-  name: "box",
+  name: 'box',
   fillStyle: gradient,
   x: 100, y: 80,
   width: 100, height: 60
 });
 // Animate layer
-$("canvas").animateLayer("box", {
+$('canvas').animateLayer('box', {
   x: 220, y: 150
 }, 1000);
 </pre>
@@ -97,9 +97,9 @@ $("canvas").animateLayer("box", {
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create layer with gradient fill
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
-  name: "box",
+  name: 'box',
   // Define fill as a function
   fillStyle: function(layer) {
     return $(this).createGradient({
@@ -113,7 +113,7 @@ $("canvas").drawRect({
   width: 100, height: 60
 });
 // Animate layer
-$("canvas").animateLayer("box", {
+$('canvas').animateLayer('box', {
   x: 220, y: 150
 }, 1000);
 </pre>

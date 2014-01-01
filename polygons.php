@@ -1,12 +1,12 @@
-<h2>Polygons</h2>
+<h2 class='menu'>Polygons</h2>
 
 <p>The <code>drawPolygon()</code> method creates a regular (equal-angled) polygon.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a triangle
-$("canvas").drawPolygon({
-  strokeStyle: "black",
+$('canvas').drawPolygon({
+  strokeStyle: 'black',
   strokeWidth: 4,
   x: 200, y: 100,
   radius: 50,
@@ -18,9 +18,9 @@ $("canvas").drawPolygon({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a polygon
-$("canvas").drawPolygon({
-  fillStyle: "#589",
-  strokeStyle: "#000",
+$('canvas').drawPolygon({
+  fillStyle: '#589',
+  strokeStyle: '#000',
   x: 100, y: 100,
   radius: 50,
   sides: 5,
@@ -42,8 +42,8 @@ $("canvas").drawPolygon({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a star
-$("canvas").drawPolygon({
-  fillStyle: "#36c",
+$('canvas').drawPolygon({
+  fillStyle: '#36c',
   x: 100, y: 100,
   radius: 50,
   sides: 5,
@@ -55,9 +55,9 @@ $("canvas").drawPolygon({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a badge-like shape
-$("canvas").drawPolygon({
-  fillStyle: "#3c6",
-  strokeStyle: "#083",
+$('canvas').drawPolygon({
+  fillStyle: '#3c6',
+  strokeStyle: '#083',
   x: 100, y: 100,
   radius: 50,
   sides: 50,
@@ -69,9 +69,9 @@ $("canvas").drawPolygon({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a shield-like shape
-$("canvas").drawPolygon({
-  fillStyle: "#36c",
-  strokeStyle: "#f60",
+$('canvas').drawPolygon({
+  fillStyle: '#36c',
+  strokeStyle: '#f60',
   strokeWidth: 5,
   x: 100, y: 100,
   radius: 50,

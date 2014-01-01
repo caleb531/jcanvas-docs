@@ -1,4 +1,4 @@
-<h2>Graphs</h2>
+<h2 class='menu'>Graphs</h2>
 
 <p>jCanvas also allows for flexible graphing of mathematical functions, using the <code>drawGraph()</code> method. The method accepts a few required arguments, and a number of optional arguments</p>
 
@@ -12,8 +12,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
-  strokeStyle: "#c33",
+$('canvas').drawGraph({
+  strokeStyle: '#c33',
   strokeWidth: 4,
   graph: 'y',
   // The vertex of this parabola is at this point
@@ -33,8 +33,8 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
-  strokeStyle: "#000",
+$('canvas').drawGraph({
+  strokeStyle: '#000',
   strokeWidth: 4,
   graph: 'x',
   x: 150, y: 100,
@@ -51,8 +51,8 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
-  strokeStyle: "#36c",
+$('canvas').drawGraph({
+  strokeStyle: '#36c',
   strokeWidth: 4,
   graph: 'r',
   x: 150, y: 100,
@@ -71,8 +71,8 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
-  strokeStyle: "#c33",
+$('canvas').drawGraph({
+  strokeStyle: '#c33',
   strokeWidth: 4,
   graph: 'y',
   x: 150, y: 20,
@@ -89,8 +89,8 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
-  strokeStyle: "#36c",
+$('canvas').drawGraph({
+  strokeStyle: '#36c',
   strokeWidth: 4,
   graph: 'r',
   x: 150, y: 100,
@@ -111,9 +111,9 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
+$('canvas').drawGraph({
   layer: true,
-  strokeStyle: "#36c",
+  strokeStyle: '#36c',
   strokeWidth: 4,
   graph: 'r',
   x: 150, y: 100,
@@ -138,12 +138,12 @@ $('canvas').animateLayer(0, {
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Try dragging this parabola
-$("canvas").drawGraph({
+$('canvas').drawGraph({
   layer: true,
   draggable: true,
   // Anywhere in the yellow area is draggable
-  fillStyle: "#ffc",
-  strokeStyle: "#c33",
+  fillStyle: '#ffc',
+  strokeStyle: '#c33',
   strokeWidth: 4,
   graph: 'y',
   x: 150, y: 20,
@@ -158,12 +158,12 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawGraph({
+$('canvas').drawGraph({
   layer: true,
   draggable: true,
   // Anywhere in the yellow area is draggable
-  fillStyle: "#ffc",
-  strokeStyle: "#36c",
+  fillStyle: '#ffc',
+  strokeStyle: '#36c',
   strokeWidth: 4,
   graph: 'r',
   x: 150, y: 100,
@@ -180,11 +180,11 @@ $("canvas").drawGraph({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").scaleCanvas({
+$('canvas').scaleCanvas({
   scaleY: -1
 });
-$("canvas").translateCanvas({
-  translateY: -$("canvas").height()
+$('canvas').translateCanvas({
+  translateY: -$('canvas').height()
 });
 </pre>
 </div>

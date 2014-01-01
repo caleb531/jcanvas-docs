@@ -1,12 +1,12 @@
-<h2>Saving the canvas</h2>
+<h2 class='menu'>Saving the canvas</h2>
 
 <h3>Saving the transformation state</h3>
 
-<p>The <code>saveCanvas()</code> method saves the current canvas transformation state. The method usually works in conjunction with the <code><a href="/projects/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method.</p>
+<p>The <code>saveCanvas()</code> method saves the current canvas transformation state. The method usually works in conjunction with the <code><a href='/projects/jcanvas/docs/restoreCanvas/'>restoreCanvas()</a></code> method.</p>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").saveCanvas();
+$('canvas').saveCanvas();
 </pre>
 </div>
 
@@ -18,7 +18,7 @@ $("canvas").saveCanvas();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").saveCanvas({
+$('canvas').saveCanvas({
   count: 3
 });
 </pre>
@@ -32,9 +32,9 @@ $("canvas").saveCanvas({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").saveCanvas({
+$('canvas').saveCanvas({
   layer: true,
-  name: "save1"
+  name: 'save1'
 });
 </pre>
 </div>

@@ -1,4 +1,4 @@
-<h2>Functions</h2>
+<h2 class='menu'>Functions</h2>
 
 <p>jCanvas allows you to use a user-defined function as the value for any fill or stroke style. The function accepts one argument: the parameters object passed into the method (or the layer object if the drawing is a layer).</p>
 
@@ -6,7 +6,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawArc({
+// Tshe circle changes color as you drag it
+$('canvas').drawArc({
   layer: true,
   draggable: true,
   x: 50, y: 50,
@@ -19,7 +20,6 @@ $("canvas").drawArc({
 });
 </pre>
 </div>
-
 
 <h3>Notes</h3>
 

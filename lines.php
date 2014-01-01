@@ -1,4 +1,4 @@
-<h2>Lines</h2>
+<h2 class='menu'>Lines</h2>
 
 <p>A line path in jCanvas is, essentially, one or more contiguous line segments.</p>
 
@@ -8,8 +8,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawLine({
-  strokeStyle: "#000",
+$('canvas').drawLine({
+  strokeStyle: '#000',
   strokeWidth: 10,
   x1: 100, y1: 50,
   x2: 100, y2: 150,
@@ -25,8 +25,8 @@ $("canvas").drawLine({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawLine({
-  strokeStyle: "#000",
+$('canvas').drawLine({
+  strokeStyle: '#000',
   strokeWidth: 10,
   x1: 100, y1: 50,
   x2: 100, y2: 150,
@@ -43,8 +43,8 @@ $("canvas").drawLine({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawLine({
-  strokeStyle: "#000",
+$('canvas').drawLine({
+  strokeStyle: '#000',
   strokeWidth: 10,
   rounded: true,
   x1: 80, y1: 50,
@@ -63,7 +63,7 @@ $("canvas").drawLine({
 <pre class='prettyprint lang-js'>
 // The .drawLine() object
 var obj = {
-  strokeStyle: "#000",
+  strokeStyle: '#000',
   strokeWidth: 6,
   rounded: true
 };
@@ -83,7 +83,7 @@ for (var p=0; p&lt;pts.length; p+=1) {
 }
 
 // Draw the line
-$("canvas").drawLine(obj);
+$('canvas').drawLine(obj);
 </pre>
 </div>
 
@@ -94,13 +94,13 @@ $("canvas").drawLine(obj);
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Cache the canvas element for efficiency
-var $canvas = $("canvas");
+var $canvas = $('canvas');
 
 // Draw a Line layer
 $canvas.drawLine({
   layer: true,
-  name: "myLine",
-  strokeStyle: "#000",
+  name: 'myLine',
+  strokeStyle: '#000',
   strokeWidth: 10,
   rounded: true,
   x1: 100, y1: 100,
@@ -108,24 +108,24 @@ $canvas.drawLine({
   x3: 200, y3: 150
 });
 // Retrieve the layer object
-var line = $canvas.getLayer("myLine");
+var line = $canvas.getLayer('myLine');
 
 // Create 3 joints (increase the value of n as necessary)
 var n = 3;
 for (var i = 1; i <= n; i += 1) {
   
-  // Use a circle as each "joint" of the line
+  // Use a circle as each 'joint' of the line
   $canvas.drawArc({
     layer: true,
     draggable: true,
     data: {
     	jointNumber: i
     },
-    fillStyle: "#c33",
-    strokeStyle: "#900",
+    fillStyle: '#c33',
+    strokeStyle: '#900',
     strokeWidth: 2,
-    x: line["x" + i],
-    y: line["y" + i],
+    x: line['x' + i],
+    y: line['y' + i],
     radius: line.strokeWidth,
     // Update line when a joint is dragged
     drag: function(joint) {
@@ -133,8 +133,8 @@ for (var i = 1; i <= n; i += 1) {
       var j = joint.data.jointNumber;
       
       // Update line coordinates based on joint's position
-      line["x" + j] = joint.x;
-      line["y" + j] = joint.y;
+      line['x' + j] = joint.x;
+      line['y' + j] = joint.y;
       
     }
   });

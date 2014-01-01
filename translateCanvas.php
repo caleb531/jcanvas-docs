@@ -1,14 +1,14 @@
-<h2>Translate Canvas</h2>
+<h2 class='menu'>Translate Canvas</h2>
 
 <p>The <code>translateCanvas()</code> method translates the canvas from the included point.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").translateCanvas({
+$('canvas').translateCanvas({
   translateX: 200, translateY: 100
 })
 .drawRect({
-  fillStyle: "#000",
+  fillStyle: '#000',
   x: 50, y: 50,
   width: 100, height: 50
 })
@@ -22,11 +22,11 @@ $("canvas").translateCanvas({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").translateCanvas({
+$('canvas').translateCanvas({
   translate: 100
 })
 .drawRect({
-  fillStyle: "#000",
+  fillStyle: '#000',
   x: 100, y: 100,
   width: 100, height: 50
 })
@@ -39,10 +39,10 @@ $("canvas").translateCanvas({
 <p>Rather than translating the entire canvas, you can translate an individual shape using any of these three properties.</p>
 
 <div class='code demo'>
-<pre class="prettyprint lang-js demo">
-$("canvas")
+<pre class='prettyprint lang-js demo'>
+$('canvas')
 .drawRect({
-  fillStyle: "#474",
+  fillStyle: '#474',
   x: 50, y: 50,
   width: 100, height: 50,
   translateX: 200, translateY: 100
@@ -60,9 +60,9 @@ $("canvas")
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").translateCanvas({
+$('canvas').translateCanvas({
   layer: true,
-  name: "translate1"
+  name: 'translate1'
 });
 </pre>
 </div>
@@ -71,7 +71,7 @@ $("canvas").translateCanvas({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas({
+$('canvas').restoreCanvas({
   layer: true
 });
 </pre>

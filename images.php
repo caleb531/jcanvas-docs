@@ -1,9 +1,9 @@
-<h2>Images</h2>
+<h2 class='menu'>Images</h2>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: "images/fish.jpg",
+$('canvas').drawImage({
+  source: 'images/fish.jpg',
   x: 150, y: 150
 });
 </pre>
@@ -13,8 +13,8 @@ $("canvas").drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: "images/fish.jpg",
+$('canvas').drawImage({
+  source: 'images/fish.jpg',
   x: 50, y: 50,
   width: 80,
   height: 100,
@@ -27,8 +27,8 @@ $("canvas").drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: "images/fish.jpg",
+$('canvas').drawImage({
+  source: 'images/fish.jpg',
   x: 150, y: 150,
   scale: 0.5
 });
@@ -41,8 +41,8 @@ $("canvas").drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: $("#fish")[0],
+$('canvas').drawImage({
+  source: $('#fish')[0],
   x: 50, y: 50,
   width: 100,
   fromCenter: false
@@ -60,8 +60,8 @@ $("canvas").drawImage({
 <pre class='prettyprint lang-js'>
 // Function for drawing an arc
 function arc() {
-  $("canvas").drawArc({
-    strokeStyle: "#6f9",
+  $('canvas').drawArc({
+    strokeStyle: '#6f9',
     strokeWidth: 4,
     x: 155, y: 155,
     radius: 40
@@ -69,13 +69,15 @@ function arc() {
 }
 
 // Run the arc() function after the image has loaded
-$("canvas").drawImage({
-  source: "images/ladybug.jpg",
+$('canvas').drawImage({
+  source: 'images/ladybug.jpg',
   x: 150, y: 150,
   load: arc
 });
 </pre>
 </div>
+
+<p>Note that the <code>load()</code> callback is also an event, which allows it to be used in conjunction with event hooks.</p>
 
 <h3>Cropping</h3>
 
@@ -90,8 +92,8 @@ $("canvas").drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: "images/ladybug.jpg",
+$('canvas').drawImage({
+  source: 'images/ladybug.jpg',
   x: 150, y: 150,
   sWidth: 50,
   sHeight: 50,
@@ -104,8 +106,8 @@ $("canvas").drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawImage({
-  source: "images/fish.jpg",
+$('canvas').drawImage({
+  source: 'images/fish.jpg',
   x: 150, y: 150,
   sWidth: 100,
   sHeight: 50,
@@ -124,14 +126,14 @@ $("canvas").drawImage({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // The image is always drawn before the circle
-$("canvas").drawImage({
-  source: "images/big-fish.jpg",
+$('canvas').drawImage({
+  source: 'images/big-fish.jpg',
   x: 150, y: 150,
   width: 200, height: 125
 })
 .drawArc({
-  fillStyle: "#69f",
-  strokeStyle: "#000",
+  fillStyle: '#69f',
+  strokeStyle: '#000',
   strokeWidth: 2,
   x: 250, y: 100,
   radius: 50

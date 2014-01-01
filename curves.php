@@ -1,4 +1,4 @@
-<h2>Curves</h2>
+<h2 class='menu'>Curves</h2>
 
 <h3>Quadratic Curves</h3>
 
@@ -14,8 +14,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawQuadratic({
-  strokeStyle: "#000",
+$('canvas').drawQuadratic({
+  strokeStyle: '#000',
   strokeWidth: 5,
   x1: 50, y1: 50, // Start point
   cx1: 200, cy1: 50, // Control point
@@ -39,8 +39,8 @@ $("canvas").drawQuadratic({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawBezier({
-  strokeStyle: "#000",
+$('canvas').drawBezier({
+  strokeStyle: '#000',
   strokeWidth: 5,
   x1: 25, y1: 50, // Start point
   cx1: 175, cy1: 50, // Control point

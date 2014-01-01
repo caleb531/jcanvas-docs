@@ -1,4 +1,4 @@
-<h2>Rectangles</h2>
+<h2 class='menu'>Rectangles</h2>
 
 <p>A rectangle in jCanvas is, essentially, a rectangle of any width or height.</p>
 
@@ -8,8 +8,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
-  fillStyle: "#000",
+$('canvas').drawRect({
+  fillStyle: '#000',
   x: 150, y: 100,
   width: 200,
   height: 100
@@ -25,14 +25,14 @@ $("canvas").drawRect({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
-  fillStyle: "#c33",
+$('canvas').drawRect({
+  fillStyle: '#c33',
   x: 100, y: 60,
   width: 100,
   height: 80
 });
-$("canvas").drawRect({
-  fillStyle: "#6a6",
+$('canvas').drawRect({
+  fillStyle: '#6a6',
   x: 100, y: 60,
   width: 100,
   height: 80,
@@ -47,8 +47,8 @@ $("canvas").drawRect({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
-  fillStyle: "#36c",
+$('canvas').drawRect({
+  fillStyle: '#36c',
   x: 150, y: 100,
   width: 200,
   height: 100,
@@ -59,8 +59,8 @@ $("canvas").drawRect({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
-  strokeStyle: "#c33",
+$('canvas').drawRect({
+  strokeStyle: '#c33',
   strokeWidth: 4,
   x: 150, y: 100,
   width: 200,

@@ -1,4 +1,4 @@
-<h2>Masking</h2>
+<h2 class='menu'>Masking</h2>
 
 <h3>Basic Masking</h3>
 
@@ -7,15 +7,15 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // This shape is a mask
-$("canvas").drawArc({
-  fillStyle: "#36b",
+$('canvas').drawArc({
+  fillStyle: '#36b',
   x: 150, y: 150,
   radius: 50,
   mask: true
 })
 // This shape is being masked
 .drawRect({
-  fillStyle: "#6c1",
+  fillStyle: '#6c1',
   x: 100, y: 120,
   width: 100, height: 100
 })
@@ -28,14 +28,14 @@ $("canvas").drawArc({
 
 <h3>Layer masks</h3>
 
-<p>You can also create layers that mask other layers by using the <code>mask</code> property. A layer that is a mask is generally referred to as a "layer mask".</p>
+<p>You can also create layers that mask other layers by using the <code>mask</code> property. A layer that is a mask is generally referred to as a 'layer mask'.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // This layer is a mask
-$("canvas").drawArc({
+$('canvas').drawArc({
   layer: true,
-  fillStyle: "#36b",
+  fillStyle: '#36b',
   x: 150, y: 150,
   radius: 50,
   mask: true
@@ -43,7 +43,7 @@ $("canvas").drawArc({
 // This layer is being masked
 .drawRect({
   layer: true,
-  fillStyle: "#6c1",
+  fillStyle: '#6c1',
   x: 100, y: 120,
   width: 100, height: 100
 })
@@ -63,7 +63,7 @@ $("canvas").drawArc({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw blue square
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
   draggable: true,
   mask: true,

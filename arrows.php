@@ -1,4 +1,4 @@
-<h2>Arrows</h2>
+<h2 class='menu'>Arrows</h2>
 
 <p>You can draw arrows in the same way you draw lines or curves, except that you must provide some arrow-specific properties.</p>
 
@@ -19,8 +19,8 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawLine({
-  strokeStyle: "#000",
+$('canvas').drawLine({
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   startArrow: true,
@@ -37,8 +37,8 @@ $("canvas").drawLine({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawVector({
-  strokeStyle: "#000",
+$('canvas').drawVector({
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   endArrow: true,
@@ -55,8 +55,8 @@ $("canvas").drawVector({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawQuadratic({
-  strokeStyle: "#396",
+$('canvas').drawQuadratic({
+  strokeStyle: '#396',
   strokeWidth: 4,
   rounded: true,
   endArrow: true,
@@ -73,8 +73,8 @@ $("canvas").drawQuadratic({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawBezier({
-  strokeStyle: "#c33",
+$('canvas').drawBezier({
+  strokeStyle: '#c33',
   strokeWidth: 4,
   rounded: true,
   startArrow: true,
@@ -96,8 +96,8 @@ $("canvas").drawBezier({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawArc({
-  strokeStyle: "#36c",
+$('canvas').drawArc({
+  strokeStyle: '#36c',
   strokeWidth: 4,
   rounded: true,
   endArrow: true,

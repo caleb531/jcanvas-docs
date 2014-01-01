@@ -1,4 +1,4 @@
-<h2>Scaling the canvas</h2>
+<h2 class='menu'>Scaling the canvas</h2>
 
 <h3>Scaling the canvas context</h3>
 
@@ -6,12 +6,12 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").scaleCanvas({
+$('canvas').scaleCanvas({
   x: 100, y: 100,
   scaleX: 1.5, scaleY: 3
 })
 .drawArc({
-  fillStyle: "#000",
+  fillStyle: '#000',
   x: 100, y: 100,
   radius: 20
 })
@@ -25,11 +25,11 @@ $("canvas").scaleCanvas({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").scaleCanvas({
+$('canvas').scaleCanvas({
   scale: 2
 })
 .drawRect({
-  fillStyle: "#000",
+  fillStyle: '#000',
   x: 100, y: 100,
   width: 100, height: 50
 })
@@ -45,8 +45,8 @@ $("canvas").scaleCanvas({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // This square is scaled to be a rectangle
-$("canvas").drawRect({
-  fillStyle: "#36c",
+$('canvas').drawRect({
+  fillStyle: '#36c',
   x: 200, y: 100,
   width: 100, height: 100,
   scaleX: 3
@@ -62,9 +62,9 @@ $("canvas").drawRect({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").scaleCanvas({
+$('canvas').scaleCanvas({
   layer: true,
-  name: "scale1"
+  name: 'scale1'
 });
 </pre>
 </div>
@@ -73,7 +73,7 @@ $("canvas").scaleCanvas({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas({
+$('canvas').restoreCanvas({
   layer: true
 });
 </pre>

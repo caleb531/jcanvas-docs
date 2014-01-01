@@ -1,4 +1,4 @@
-<h2>Text</h2>
+<h2 class='menu'>Text</h2>
 
 <p>To draw text on the canvas, use the <code>drawText()</code> method.</p>
 
@@ -12,14 +12,14 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#9cf",
-  strokeStyle: "#25a",
+$('canvas').drawText({
+  fillStyle: '#9cf',
+  strokeStyle: '#25a',
   strokeWidth: 2,
   x: 150, y: 100,
   fontSize: 48,
-  fontFamily: "Verdana, sans-serif",
-  text: "Hello"
+  fontFamily: 'Verdana, sans-serif',
+  text: 'Hello'
 });
 </pre>
 </div>
@@ -28,7 +28,7 @@ $("canvas").drawText({
 
 <p>The value for the <code>fontSize</code> property accepts two different types of values. If you specify the value as a plain number (<em>e.g.</em> <code>48</code>), the font size is interpreted in pixels.
 
-However, you can also specify the number as a string with additional units attached (<em>e.g.</em> <code>"36pt"</code>). Examples of both use cases can be found throughout this section.</p>
+However, you can also specify the number as a string with additional units attached (<em>e.g.</em> <code>'36pt'</code>). Examples of both use cases can be found throughout this section.</p>
 
 <h3>Transforming text</h3>
 
@@ -36,14 +36,14 @@ However, you can also specify the number as a string with additional units attac
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#cfc",
-  strokeStyle: "#000",
+$('canvas').drawText({
+  fillStyle: '#cfc',
+  strokeStyle: '#000',
   strokeWidth: 2,
   x: 150, y: 100,
-  fontSize: "50pt",
-  fontFamily: "Arial",
-  text: "Hello",
+  fontSize: '50pt',
+  fontFamily: 'Arial',
+  text: 'Hello',
   // Measure (x, y) from the text's top-left corner
   fromCenter: false,
   // Rotate the text by 30 degrees
@@ -58,20 +58,20 @@ $("canvas").drawText({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
+$('canvas').drawText({
   layer: true,
-  fillStyle: "#9cf",
-  strokeStyle: "#25a",
+  fillStyle: '#9cf',
+  strokeStyle: '#25a',
   strokeWidth: 2,
   x: 200, y: 100,
-  fontSize: "36pt",
-  fontFamily: "Verdana, sans-serif",
-  text: "Hello",
+  fontSize: '36pt',
+  fontFamily: 'Verdana, sans-serif',
+  text: 'Hello',
   scale: 2,
   click: function() {
     // Click the text to make it grow
     $(this).animateLayer(0, {
-      scale: "+=0.25",
+      scale: '+=0.25',
     }, 250);
   }
 });
@@ -92,12 +92,12 @@ $("canvas").drawText({
 $('canvas').drawText({
   layer: true,
   name: 'myText',
-  fillStyle: "#36c",
+  fillStyle: '#36c',
   strokeWidth: 2,
   x: 180, y: 150,
-  fontSize: "36pt",
-  fontFamily: "Verdana, sans-serif",
-  text: "Hello"
+  fontSize: '36pt',
+  fontFamily: 'Verdana, sans-serif',
+  text: 'Hello'
 })
 // Draw circle as wide as the text
 .drawArc({
@@ -112,18 +112,18 @@ $('canvas').drawText({
 
 <h3 class='beta'>Wrapping text</h3>
 
-<p>You can also define a maximum line width for the text using the <code>maxWidth</code> property. In doing so, each line of text will never be longer than the maximum width (this is known as text "wrapping").</p>
+<p>You can also define a maximum line width for the text using the <code>maxWidth</code> property. In doing so, each line of text will never be longer than the maximum width (this is known as text 'wrapping').</p>
 
 <p>Manually adding a line break can be done so by adding the standard newline character in your string (<code>\n</code>).</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#36c",
-  fontStyle: "bold",
-  fontSize: "20pt",
-  fontFamily: "Trebuchet MS, sans-serif",
-  text: "The quick brown fox jumps over the lazy dog.",
+$('canvas').drawText({
+  fillStyle: '#36c',
+  fontStyle: 'bold',
+  fontSize: '20pt',
+  fontFamily: 'Trebuchet MS, sans-serif',
+  text: 'The quick brown fox jumps over the lazy dog.',
   x: 180, y: 100,
   maxWidth: 300
 });
@@ -136,14 +136,14 @@ $("canvas").drawText({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#36c",
-  fontStyle: "bold",
-  fontSize: "20pt",
-  fontFamily: "Trebuchet MS, sans-serif",
-  text: "The quick brown fox jumps over the lazy dog.",
+$('canvas').drawText({
+  fillStyle: '#36c',
+  fontStyle: 'bold',
+  fontSize: '20pt',
+  fontFamily: 'Trebuchet MS, sans-serif',
+  text: 'The quick brown fox jumps over the lazy dog.',
   x: 180, y: 100,
-  align: "left",
+  align: 'left',
   maxWidth: 300
 });
 </pre>
@@ -157,14 +157,14 @@ $("canvas").drawText({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#36c",
-  fontStyle: "bold",
-  fontSize: "20pt",
-  fontFamily: "Trebuchet MS, sans-serif",
-  text: "The quick brown fox jumps over the lazy dog.",
+$('canvas').drawText({
+  fillStyle: '#36c',
+  fontStyle: 'bold',
+  fontSize: '20pt',
+  fontFamily: 'Trebuchet MS, sans-serif',
+  text: 'The quick brown fox jumps over the lazy dog.',
   x: 80, y: 100,
-  align: "left",
+  align: 'left',
   respectAlign: true,
   maxWidth: 300
 });
@@ -179,14 +179,14 @@ $("canvas").drawText({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#36c",
-  fontStyle: "bold",
-  fontSize: "20pt",
-  fontFamily: "Trebuchet MS, sans-serif",
-  text: "The quick brown fox jumps over the lazy dog.",
+$('canvas').drawText({
+  fillStyle: '#36c',
+  fontStyle: 'bold',
+  fontSize: '20pt',
+  fontFamily: 'Trebuchet MS, sans-serif',
+  text: 'The quick brown fox jumps over the lazy dog.',
   x: 180, y: 100,
-  align: "left",
+  align: 'left',
   maxWidth: 300,
   lineHeight: 2
 });
@@ -197,14 +197,14 @@ $("canvas").drawText({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawText({
-  fillStyle: "#36c",
-  fontStyle: "bold",
-  fontSize: "20pt",
-  fontFamily: "Trebuchet MS, sans-serif",
-  text: "The quick brown fox jumps over the lazy dog.",
+$('canvas').drawText({
+  fillStyle: '#36c',
+  fontStyle: 'bold',
+  fontSize: '20pt',
+  fontFamily: 'Trebuchet MS, sans-serif',
+  text: 'The quick brown fox jumps over the lazy dog.',
   x: 180, y: 100,
-  align: "left",
+  align: 'left',
   maxWidth: 300,
   lineHeight: -2
 });

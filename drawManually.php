@@ -1,12 +1,12 @@
-<h2>Draw Manually</h2>
+<h2 class='menu'>Draw Manually</h2>
 
 <p>With the <code>draw()</code> method, you can draw on the canvas using native canvas methods (or any method, for that matter). To do this, write your code inside a function </p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").draw({
+$('canvas').draw({
   fn: function(ctx) {
-    ctx.fillStyle = "#333";
+    ctx.fillStyle = '#333';
     ctx.fillRect(50, 50, 100, 100);
   }
 });
@@ -19,9 +19,9 @@ $("canvas").draw({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").draw({
-  type: "rectangle",
-  fillStyle: "#c33",
+$('canvas').draw({
+  type: 'rectangle',
+  fillStyle: '#c33',
   x: 100, y: 100,
   width: 100, height: 80
 });
@@ -32,8 +32,8 @@ $("canvas").draw({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
-  fillStyle: "#c33",
+$('canvas').drawRect({
+  fillStyle: '#c33',
   x: 100, y: 100,
   width: 100, height: 80
 });

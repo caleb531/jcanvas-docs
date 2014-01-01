@@ -1,4 +1,4 @@
-<h2>Extending jCanvas</h2>
+<h2 class='menu'>Extending jCanvas</h2>
 
 <p>jCanvas provides a plugin API so you can create methods which integrate with jCanvas. To do so, use the <code>jCanvas.extend()</code> method.</p>
 
@@ -6,6 +6,7 @@
 
 <ul>
 <li><dfn>name</dfn>: The name of the method you are creating</li>
+<li><dfn>type</dfn>: Optional; the type of drawing, which jCanvas will recognize as a valid value for the <code>type</code> property.</li>
 <li><dfn>props</dfn>: Optional; the custom properties your method uses (and their default values). These properties will be merged into the arguments object (mentioned below) for use in your method's code.</li>
 <li><dfn>fn</dfn>: The function providing the plugin's functionality. It accepts two arguments:
 	<ol>
@@ -18,7 +19,7 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $.jCanvas.extend({
-  name: "pluginName",
+  name: 'pluginName',
   props: {
     prop: true
   },
@@ -29,7 +30,7 @@ $.jCanvas.extend({
 </pre>
 </div>
 
-<h3>Example: drawHeart()</h3>
+<h3>Example: <code>drawHeart()</code></h3>
 
 <p>To demonstrate how this works, we'll be creating a method that draws a heart on the canvas.</p>
 
@@ -37,7 +38,8 @@ $.jCanvas.extend({
 <pre class='prettyprint lang-js'>
 // Create a drawHeart() method
 $.jCanvas.extend({
-  name: "drawHeart",
+  name: 'drawHeart',
+  type: 'heart',
   props: {},
   fn: function(ctx, params) {
     // Just to keep our lines short
@@ -70,10 +72,10 @@ $.jCanvas.extend({
 });
 
 // Use the drawHeart() method
-$("canvas").drawHeart({
+$('canvas').drawHeart({
   layer: true,
   draggable: true,
-  fillStyle: "#c33",
+  fillStyle: '#c33',
   radius: 50,
   x: 150, y: 130
 });
@@ -82,15 +84,13 @@ $("canvas").drawHeart({
 
 <h3>API Methods</h3>
 
-<p>The jCanvas object provides a few useful methods for integrating your methods with jCanvas.</p>
+<p>The jCanvas object (<code>$.jCanvas</code>) provides a few useful methods for integrating your methods with jCanvas. All of these methods accept the same three arguments: the canvas DOM element (<code>this</code>), the canvas context (<code>ctx</code>), and the parameters object (<code>params</code>).</p>
 
 <ul>
-	<li><dfn>detectEvents()</dfn>: This method enables and detects jCanvas events for your custom path. The method accepts three arguments: the canvas DOM element, the canvas context, and the parameters object.
-		<ul>
-			<li>This method should be called at the end of your path.</li>
-		</ul>
-	</li>
-	<li><dfn>closePath()</dfn>: This method closes the current path, and fills/strokes it if the respective properties have been set. This method accepts the same arguments as <code>detectEvents()</code>.</li>
+	<li><dfn>setGlobalProps()</dfn>: </li>
+	<li><dfn>transformShape()</dfn>: Enables shape transformation using the standard transformation properties (<code>rotate</code>, <code>scale</code>, <code>translate</code>).</li>
+	<li><dfn>detectEvents()</dfn>: Enables and detects jCanvas events for your custom path. The method accepts three arguments:  Note that this method should be called at the end of your path.</li>
+	<li><dfn>closePath()</dfn>: Closes the current path, and fills/strokes it if the respective properties have been set. The method also enables masking for the path through the use of the <code>mask</code> property.</li>
 </ul>
 
 <div class='code'>

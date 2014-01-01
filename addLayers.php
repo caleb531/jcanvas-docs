@@ -1,4 +1,4 @@
-<h2>Adding layers</h2>
+<h2 class='menu'>Adding layers</h2>
 
 <h3>Adding layers</h3>
 
@@ -9,9 +9,9 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create a rectangle layer
-$("canvas").addLayer({
-  type: "rectangle",
-  fillStyle: "#585",
+$('canvas').addLayer({
+  type: 'rectangle',
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 })
@@ -24,9 +24,9 @@ $("canvas").addLayer({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create and draw a rectangle layer
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
-  fillStyle: "#585",
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 });
@@ -42,10 +42,10 @@ $("canvas").drawRect({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create a named layer
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
-  name: "myBox",
-  fillStyle: "#585",
+  name: 'myBox',
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 });
@@ -60,11 +60,11 @@ $("canvas").drawRect({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
-  groups: ["myBoxes"],
-  name: "box",
-  fillStyle: "#585",
+  groups: ['myBoxes'],
+  name: 'box',
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 });
@@ -75,7 +75,7 @@ $("canvas").drawRect({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").addLayerToGroup("box", "myBoxes");
+$('canvas').addLayerToGroup('box', 'myBoxes');
 </pre>
 </div>
 
@@ -83,7 +83,7 @@ $("canvas").addLayerToGroup("box", "myBoxes");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").removeLayerFromGroup("box", "myBoxes");
+$('canvas').removeLayerFromGroup('box', 'myBoxes');
 </pre>
 </div>
 
@@ -96,10 +96,10 @@ $("canvas").removeLayerFromGroup("box", "myBoxes");
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // This layer should be invisible
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
   visible: false,
-  fillStyle: "#585",
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 });
@@ -115,11 +115,11 @@ $("canvas").drawRect({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create a named function layer
-$("canvas").addLayer({
-  type: "function",
-  name: "myBox",
+$('canvas').addLayer({
+  type: 'function',
+  name: 'myBox',
   fn: function(ctx) {
-    ctx.fillStyle = "#36c";
+    ctx.fillStyle = '#36c';
     ctx.fillRect(50, 50, 100, 50);
   }
 })
@@ -132,11 +132,11 @@ $("canvas").addLayer({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create and draw a named function layer
-$("canvas").draw({
+$('canvas').draw({
   layer: true,
-  name: "myBox",
+  name: 'myBox',
   fn: function(ctx) {
-    ctx.fillStyle = "#36c";
+    ctx.fillStyle = '#36c';
     ctx.fillRect(50, 50, 100, 50);
   }
 });
@@ -149,27 +149,27 @@ $("canvas").draw({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas")
+$('canvas')
 // Define properties for all rectangles
 .jCanvas({
-  type: "rectangle",
+  type: 'rectangle',
   width: 100, height: 100
 })
 .addLayer({
-  name: "redBox",
-  fillStyle: "#c33",
+  name: 'redBox',
+  fillStyle: '#c33',
   x: 180, y: 150,
 })
 .addLayer({
-  name: "greenBox",
-  fillStyle: "#585",
+  name: 'greenBox',
+  fillStyle: '#585',
   x: 150, y: 200,
 })
 // Normally on top, but moved to the bottom
 .addLayer({
-  name: "blueBox",
+  name: 'blueBox',
   index: 0,
-  fillStyle: "#36b",
+  fillStyle: '#36b',
   x: 230, y: 180,
 })
 .drawLayers();
@@ -185,12 +185,12 @@ $("canvas")
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Create and draw a rectangle layer
-$("canvas").drawRect({
+$('canvas').drawRect({
   layer: true,
   data: {
     something: true
   },
-  fillStyle: "#585",
+  fillStyle: '#585',
   x: 100, y: 100,
   width: 100, height: 50
 });

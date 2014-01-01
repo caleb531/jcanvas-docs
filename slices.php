@@ -1,4 +1,4 @@
-<h2>Slices</h2>
+<h2 class='menu'>Slices</h2>
 
 <p>A slice in jCanvas is, essentially, a slice of a circle (similar to a pizza slice).</p>
 
@@ -11,8 +11,8 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a 60&deg; slice
-$("canvas").drawSlice({
-  fillStyle: "#f63",
+$('canvas').drawSlice({
+  fillStyle: '#f63',
   x: 100, y: 100,
   radius: 150,
   // start and end angles in degrees
@@ -29,30 +29,30 @@ $("canvas").drawSlice({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas")
+$('canvas')
 // Set jCanvas preferences
 .jCanvas({
   layer: true,
-  groups: ["chart", "slices"],
+  groups: ['chart', 'slices'],
   x: 180, y: 110,
   radius: 100,
   spread: 1 / 40
 })
 .drawSlice({
-  name: "red-slice",
-  fillStyle: "#c33",
+  name: 'red-slice',
+  fillStyle: '#c33',
   start: -45,
   end: 15
 })
 .drawSlice({
-  name: "green-slice",
-  fillStyle: "#6c6",
+  name: 'green-slice',
+  fillStyle: '#6c6',
   start: -135,
   end: -45
 })
 .drawSlice({
-  name: "blue-slice",
-  fillStyle: "#36c",
+  name: 'blue-slice',
+  fillStyle: '#36c',
   start: 15,
   end: -135
 })
@@ -65,54 +65,54 @@ $("canvas")
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas")
+$('canvas')
 // Set jCanvas preferences
 .jCanvas({
   layer: true,
-  groups: ["chart", "slices"],
+  groups: ['chart', 'slices'],
   x: 180, y: 110,
   radius: 100,
   spread: 1 / 40
 })
 .drawSlice({
-  name: "red-slice",
-  fillStyle: "#c33",
+  name: 'red-slice',
+  fillStyle: '#c33',
   start: -45,
   end: 15
 })
 .drawSlice({
-  name: "green-slice",
-  fillStyle: "#6c6",
+  name: 'green-slice',
+  fillStyle: '#6c6',
   start: -135,
   end: -45
 })
 .drawSlice({
-  name: "blue-slice",
-  fillStyle: "#36c",
+  name: 'blue-slice',
+  fillStyle: '#36c',
   start: 15,
   end: -135
 })
 // Set jCanvas preferences for labels
 .jCanvas({
-  groups: ["chart", "labels"],
-  fillStyle: "#fff",
+  groups: ['chart', 'labels'],
+  fillStyle: '#fff',
   fontSize: 20,
-  fontFamily: "Ubuntu, sans-serif"
+  fontFamily: 'Ubuntu, sans-serif'
 })
 .drawText({
-  name: "red-label",
+  name: 'red-label',
   x: 160, y: 50,
-  text: "17%",
+  text: '17%',
 })
 .drawText({
-  name: "green-label",
+  name: 'green-label',
   x: 120, y: 115,
-  text: "25%",
+  text: '25%',
 })
 .drawText({
-  name: "blue-label",
+  name: 'blue-label',
   x: 220, y: 150,
-  text: "58%",
+  text: '58%',
 })
 // Reset jCanvas preferences
 .jCanvas()

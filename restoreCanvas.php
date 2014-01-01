@@ -1,12 +1,12 @@
-<h2>Restore the canvas</h2>
+<h2 class='menu'>Restore the canvas</h2>
 
 <h3>Restoring the transformation state</h3>
 
-<p>The <code>restoreCanvas()</code> method restores the last saved transformation state of the canvas. The method usually works in conjunction with the <code><a href="/projects/jcanvas/docs/saveCanvas/">saveCanvas()</a></code> method.</p>
+<p>The <code>restoreCanvas()</code> method restores the last saved transformation state of the canvas. The method usually works in conjunction with the <code><a href='/projects/jcanvas/docs/saveCanvas/'>saveCanvas()</a></code> method.</p>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas();
+$('canvas').restoreCanvas();
 </pre>
 </div>
 
@@ -18,7 +18,7 @@ $("canvas").restoreCanvas();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas({
+$('canvas').restoreCanvas({
   count: 3
 });
 </pre>
@@ -32,9 +32,9 @@ $("canvas").restoreCanvas({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").restoreCanvas({
+$('canvas').restoreCanvas({
   layer: true,
-  name: "restore1"
+  name: 'restore1'
 });
 </pre>
 </div>

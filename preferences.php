@@ -1,4 +1,4 @@
-<h2>Preferences</h2>
+<h2 class='menu'>Preferences</h2>
 
 <h3>Basic Usage</h3>
 
@@ -7,23 +7,23 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $.jCanvas({
-  fillStyle: "green",
+  fillStyle: 'green',
   x: 80, y: 80,
   radius: 40
 });
-$("canvas").drawArc();
+$('canvas').drawArc();
 </pre>
 </div>
 
-<h3>"Chainable" jCanvas() method</h3>
+<h3>'Chainable' jCanvas() method</h3>
 
-<p>You can also "chain" the <code>jCanvas()</code> method as you would any other jQuery method (for convenience).</p>
+<p>You can also 'chain' the <code>jCanvas()</code> method as you would any other jQuery method (for convenience).</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas")
+$('canvas')
 .jCanvas({
-  fillStyle: "green",
+  fillStyle: 'green',
   x: 80, y: 80,
   radius: 40
 })
@@ -43,7 +43,7 @@ $.jCanvas();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").jCanvas();
+$('canvas').jCanvas();
 </pre>
 </div>
 

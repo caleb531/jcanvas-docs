@@ -1,4 +1,4 @@
-<h2>Detect Pixel Ratio</h2>
+<h2 class='menu'>Detect Pixel Ratio</h2>
 
 <p>jCanvas offers a <code>detectPixelRatio()</code> method for detecting high-resolution displays (including devices with retina displays).</p>
 
@@ -8,7 +8,7 @@
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas").detectPixelRatio(function(ratio) {
+$('canvas').detectPixelRatio(function(ratio) {
   // Run some code depending on the device pixel ratio
 });
 </pre>

@@ -1,4 +1,4 @@
-<h2>Pixel Manipulation</h2>
+<h2 class='menu'>Pixel Manipulation</h2>
 
 <p>The <code>setPixels()</code> method allows for modification of a specific section of pixels from the canvas.</p>
 
@@ -23,8 +23,8 @@ function invert() {
   });
 }
 
-$("canvas").drawImage({
-  source: "images/fish.jpg",
+$('canvas').drawImage({
+  source: 'images/fish.jpg',
   x: 150, y: 100,
   // Invert image color when image loads
   load: invert
@@ -51,9 +51,9 @@ function invert(params) {
   });
 }
 
-$("canvas").drawImage({
+$('canvas').drawImage({
   layer: true,
-  source: "images/fish.jpg",
+  source: 'images/fish.jpg',
   x: 150, y: 100,
   mousemove: invert
 });

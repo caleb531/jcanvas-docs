@@ -1,4 +1,4 @@
-<h2>Arcs</h2>
+<h2 class='menu'>Arcs</h2>
 
 <p>An arc in jCanvas is, essentially, part of the rim of a circle (similar to the smile on a smiley-face).</p>
 
@@ -9,8 +9,8 @@
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a 90&deg; arc
-$("canvas").drawArc({
-  strokeStyle: "#000",
+$('canvas').drawArc({
+  strokeStyle: '#000',
   strokeWidth: 5,
   x: 100, y: 100,
   radius: 50,
@@ -25,8 +25,8 @@ $("canvas").drawArc({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a full circle
-$("canvas").drawArc({
-  strokeStyle: "#000",
+$('canvas').drawArc({
+  strokeStyle: '#000',
   strokeWidth: 5,
   x: 100, y: 100,
   radius: 50
@@ -41,8 +41,8 @@ $("canvas").drawArc({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a black semicircle
-$("canvas").drawArc({
-  fillStyle: "black",
+$('canvas').drawArc({
+  fillStyle: 'black',
   x: 100, y: 100,
   radius: 50,
   start: 0, end: Math.PI,
@@ -59,8 +59,8 @@ $("canvas").drawArc({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a closed red arc
-$("canvas").drawArc({
-  strokeStyle: "#c33",
+$('canvas').drawArc({
+  strokeStyle: '#c33',
   strokeWidth: 5,
   x: 100, y: 100,
   radius: 50,

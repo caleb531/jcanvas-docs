@@ -1,4 +1,4 @@
-<h2>Manipulating Layers</h2>
+<h2 class='menu'>Manipulating Layers</h2>
 
 <h3>Setting layer properties</h3>
 
@@ -13,8 +13,8 @@
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").setLayer("myBox", {
-  fillStyle: "#36b",
+$('canvas').setLayer('myBox', {
+  fillStyle: '#36b',
   rotate: 30
 })
 .drawLayers();
@@ -25,9 +25,25 @@ $("canvas").setLayer("myBox", {
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").setLayers({
-  fillStyle: "#36b",
+// Set properties of all layers
+$('canvas').setLayers({
+  fillStyle: '#36b',
   rotate: 30
+})
+.drawLayers();
+</pre>
+</div>
+
+<p>Note that the <code>setLayers()</code> method also accepts a callback function as s second argument, which filters the layers.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+// Set properties of all draggable layers
+$('canvas').setLayers({
+  fillStyle: '#36b',
+  rotate: 30
+}, function(layer) {
+  return (layer.draggable === true);
 })
 .drawLayers();
 </pre>
@@ -41,8 +57,10 @@ $("canvas").setLayers({
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").setLayerGroup("myBoxes", {
-  fillStyle: "#36b",
+// Set properties for all layers
+// in the group 'myBoxes'
+$('canvas').setLayerGroup('myBoxes', {
+  fillStyle: '#36b',
   rotate: 30
 })
 .drawLayers();
@@ -59,7 +77,8 @@ $("canvas").setLayerGroup("myBoxes", {
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").moveLayer("box", 1);
+// Move the layer with the name 'box' to index 1
+$('canvas').moveLayer('box', 1);
 </pre>
 </div>
 
@@ -71,13 +90,15 @@ $("canvas").moveLayer("box", 1);
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").removeLayer(0);
+// Removes the layer at index 0
+$('canvas').removeLayer(0);
 </pre>
 </div>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").removeLayer("myBox");
+// Removes the layer with the name 'myBox'
+$('canvas').removeLayer('myBox');
 </pre>
 </div>
 
@@ -85,7 +106,19 @@ $("canvas").removeLayer("myBox");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").removeLayers();
+// Remove all layers
+$('canvas').removeLayers();
+</pre>
+</div>
+
+<p>As with the <code>getLayers()</code> and <code>setLayers()</code> methods, the <code>removeLayers()</code> method also accepts a callback function.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+// Remove all draggable layers
+$('canvas').removeLayers(function(layer) {
+  return (layer.draggable === true);
+});
 </pre>
 </div>
 
@@ -95,10 +128,21 @@ $("canvas").removeLayers();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").removeLayerGroup("myBoxes");
+// Remove all layers in the group 'myBoxes'
+$('canvas').removeLayerGroup('myBoxes');
+</pre>
+</div>
+
+<p>To dynamically remove an existing layer from a group, use the <code>removeLayerFromGroup()</code> method.</p>
+
+<div class='code'>
+<pre class='prettyprint lang-js'>
+// Remove the layer with the name 'box'
+// from the group 'myBoxes'
+$('canvas').removeLayerFromGroup('box', 'myBoxes');
 </pre>
 </div>
 
 <h3>Notes</h3>
 
-<p>None of the above methods redraw the canvas after being called. Therefore, you will need to redraw the canvas using the  <code>drawLayers()</code> method to see the change visually.</p>
+<p>None of the above methods redraw the canvas after being called. Therefore, you will need to redraw the canvas using the  <code>drawLayers()</code> method to see the changes visually.</p>

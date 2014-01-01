@@ -1,4 +1,4 @@
-<h2>Properties</h2>
+<h2 class='menu'>Properties</h2>
 
 <p>These are descriptions of every jCanvas property, their supported methods, and their possible values. Default property values are listed first.</p>
 
@@ -12,7 +12,7 @@ $props = array(
 "align"=> array(
 	"description"=> "The horizontal alignment of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"center\"</code>, <code>\"left\"</code>, <code>\"right\"</code>, <code>\"start\"</code>, <code>\"end\"</code>",
+	"values"=> "<code>'center'</code>, <code>'left'</code>, <code>'right'</code>, <code>'start'</code>, <code>'end'</code>",
 ),
 "rotate"=> array(
 	"description"=> "The angle at which a polygon is rotated",
@@ -27,7 +27,7 @@ $props = array(
 "baseline"=> array(
 	"description"=> "The vertical alignment of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"middle\"</code>, <code>\"top\"</code>, <code>\"hanging\"</code>, <code>\"alphabetic\"</code>, <code>\"ideographic\"</code>, <code>\"bottom\"</code>",
+	"values"=> "<code>'middle'</code>, <code>'top'</code>, <code>'hanging'</code>, <code>'alphabetic'</code>, <code>'ideographic'</code>, <code>'bottom'</code>",
 ),
 "cropFromCenter"=> array(
 	"description"=> "If the <code>sx</code> and <code>sy</code> properties (for an image's cropping region) lie at the center point of the region",
@@ -45,9 +45,9 @@ $props = array(
 	"values"=> "<code>false</code>, <code>false</code>",
 ),
 "compositing"=> array(
-	"description"=> "How shapes are drawn on top of one another. For examples of the possible values, visit <a href=\"https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html\" target=\"_blank\">Mozilla's examples page</a>",
+	"description"=> "How shapes are drawn on top of one another. For examples of the possible values, visit <a href='https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html' target='_blank'>Mozilla's examples page</a>",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"source-over\"</code>, <code>\"source-in\"</code>, <code>\"source-out\"</code>, <code>\"source-atop\"</code>, <code>\"lighter\"</code>, <code>\"destination-over\"</code>, <code>\"destination-in\"</code>, <code>\"destination-out\",</code> <code>\"destination-atop\"</code>, <code>\"copy\"</code>, <code>\"xor\"</code>",
+	"values"=> "<code>'source-over'</code>, <code>'source-in'</code>, <code>'source-out'</code>, <code>'source-atop'</code>, <code>'lighter'</code>, <code>'destination-over'</code>, <code>'destination-in'</code>, <code>'destination-out',</code> <code>'destination-atop'</code>, <code>'copy'</code>, <code>'xor'</code>",
 ),
 "cornerRadius"=> array(
 	"description"=> "The radius of a rectangle's corners",
@@ -62,27 +62,27 @@ $props = array(
 "fillStyle"=> array(
 	"description"=> "The fill color of a shape or path",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"transparent\"</code>, any valid color string",
+	"values"=> "<code>'transparent'</code>, any valid color string",
 ),
 "font"=> array(
 	"description"=> "The font of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"12pt sans-serif\"</code>, any valid font string",
+	"values"=> "<code>'12pt sans-serif'</code>, any valid font string",
 ),
 "fontStyle"=> array(
 	"description"=> "The font style of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"normal\"</code>, \"bold\", \"italic\", \"bold italic\"",
+	"values"=> "<code>'normal'</code>, 'bold', 'italic', 'bold italic'",
 ),
 "fontSize"=> array(
 	"description"=> "The font size of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"12pt\"</code>, any number (or a string of a number with units)",
+	"values"=> "<code>'12pt'</code>, any number (or a string of a number with units)",
 ),
 "fontFamily"=> array(
 	"description"=> "The font family of the text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"sans-serif\"</code>, any valid font family string",
+	"values"=> "<code>'sans-serif'</code>, any valid font family string",
 ),
 "fromCenter"=> array(
 	"description"=> "If the <code>x</code> and <code>y</code> properties lie at the center of a shape (rather than the top-left corner)",
@@ -115,7 +115,7 @@ $props = array(
 	"values"=> "<code>false</code>, <code>false</code>",
 ),
 "miterLimit"=> array(
-	"description"=> "The distance between the inner and outer corner of two lines. For an example, see <a href=\"https://developer.mozilla.org/samples/canvas-tutorial/4_8_canvas_miterlimit.html\" target=\"_blank\">Mozilla's demo page</a>",
+	"description"=> "The distance between the inner and outer corner of two lines. For an example, see <a href='https://developer.mozilla.org/samples/canvas-tutorial/4_8_canvas_miterlimit.html' target='_blank'>Mozilla's demo page</a>",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>10</code>, any number",
 ),
@@ -147,7 +147,7 @@ $props = array(
 "repeat"=> array(
 	"description"=> "How a pattern is repeated",
 	"methods"=> "<code>pattern()</code>",
-	"values"=> "<code>\"repeat\"</code>, \"repeat-x\", \"repeat-y\", \"no-repeat\"",
+	"values"=> "<code>'repeat'</code>, 'repeat-x', 'repeat-y', 'no-repeat'",
 ),
 "rounded"=> array(
 	"description"=> "If the corners of a path is rounded",
@@ -177,7 +177,7 @@ $props = array(
 "shadowColor"=> array(
 	"description"=> "The color of a shadow",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"transparent\"</code>, any valid color string",
+	"values"=> "<code>'transparent'</code>, any valid color string",
 ),
 "shadowX"=> array(
 	"description"=> "The x-offset of a shadow",
@@ -202,7 +202,7 @@ $props = array(
 "source"=> array(
 	"description"=> "The source of the image to be drawn",
 	"methods"=> "<code>drawImage()</code>, <code>pattern()</code>",
-	"values"=> "<code>\"\"</code>, any string, image DOM element, or canvas DOM element",
+	"values"=> "<code>''</code>, any string, image DOM element, or canvas DOM element",
 ),
 "sHeight"=> array(
 	"description"=> "The height of an image's crop region",
@@ -217,17 +217,17 @@ $props = array(
 "strokeCap"=> array(
 	"description"=> "The type of cap for any stroke",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"butt\"</code>, <code>\"square\"</code>, <code>\"round\"</code>",
+	"values"=> "<code>'butt'</code>, <code>'square'</code>, <code>'round'</code>",
 ),
 "strokeJoin"=> array(
 	"description"=> "The type of cap between connected strokes",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"miter\"</code>, <code>\"bevel\"</code>, <code>\"round\"</code>",
+	"values"=> "<code>'miter'</code>, <code>'bevel'</code>, <code>'round'</code>",
 ),
 "strokeStyle"=> array(
 	"description"=> "The stroke color of a shape or path",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"transparent\"</code>, any valid color string",
+	"values"=> "<code>'transparent'</code>, any valid color string",
 ),
 "strokeWidth"=> array(
 	"description"=> "The stroke width of a shape or path",
@@ -252,7 +252,7 @@ $props = array(
 "text"=> array(
 	"description"=> "The text to be drawn",
 	"methods"=> "<code>drawText()</code>",
-	"values"=> "<code>\"\"</code>, any string",
+	"values"=> "<code>''</code>, any string",
 ),
 "translateX"=> array(
 	"description"=> "The number of pixels by which a shape or canvas is translated on the x-axis",
@@ -287,7 +287,7 @@ $props = array(
 "name"=> array(
 	"description"=> "The name associated with a layer",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>\"\"</code>, any string",
+	"values"=> "<code>''</code>, any string",
 ),
 "groups"=> array(
 	"description"=> "An array of group names associated with a layer",
@@ -357,12 +357,7 @@ $props = array(
 "type"=> array(
 	"description"=> "The type of a layer",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>null</code>, <code>\"rectangle\"</code>, <code>\"arc\"</code>, <code>\"circle\"</code>, <code>\"ellipse\"</code>, <code>\"polygon\"</code>, <code>\"line\"</code>, <code>\"vector\"</code>, <code>\"quadratic\"</code>, <code>\"bezier\"</code>, <code>\"image\"</code>, <code>\"text\"</code>, <code>\"function\"</code>",
-),
-"fireDragGroupEvents"=> array(
-	"description"=> "When a layer is dragged, determines if the drag events fire for the layers in its associated drag group",
-	"methods"=> "All drawing methods",
-	"values"=> "<code>true</code>, <code>false</code>",
+	"values"=> "<code>null</code>, <code>'rectangle'</code>, <code>'arc'</code>, <code>'circle'</code>, <code>'ellipse'</code>, <code>'polygon'</code>, <code>'line'</code>, <code>'vector'</code>, <code>'quadratic'</code>, <code>'bezier'</code>, <code>'image'</code>, <code>'text'</code>, <code>'function'</code>",
 ),
 "startArrow"=> array(
 	"description"=> "Determines if the given path drawing will have an arrow placed at its start point",

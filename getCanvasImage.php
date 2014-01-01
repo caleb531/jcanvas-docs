@@ -1,10 +1,10 @@
-<h2>Get Canvas Image</h2>
+<h2 class='menu'>Get Canvas Image</h2>
 
 <p>The <code>getCanvasImage()</code> method retrieves the canvas's image data as a string. The string is a base64-encoded image URL, which can be used as a valid image URL for any purpose.</p>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getCanvasImage();
+$('canvas').getCanvasImage();
 </pre>
 </div>
 
@@ -12,8 +12,8 @@ $("canvas").getCanvasImage();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getCanvasImage("png");
-$("canvas").getCanvasImage("jpeg");
+$('canvas').getCanvasImage('png');
+$('canvas').getCanvasImage('jpeg');
 </pre>
 </div>
 
@@ -23,7 +23,7 @@ $("canvas").getCanvasImage("jpeg");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getCanvasImage("jpeg", 0.5);
+$('canvas').getCanvasImage('jpeg', 0.5);
 </pre>
 </div>
 

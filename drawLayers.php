@@ -1,4 +1,4 @@
-<h2>Drawing layers</h2>
+<h2 class='menu'>Drawing layers</h2>
 
 <p>The <code>drawLayers()</code> method clears the canvas, and draws the canvas's layers.</p>
 

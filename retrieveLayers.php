@@ -1,4 +1,4 @@
-<h2>Retrieving layers</h2>
+<h2 class='menu'>Retrieving layers</h2>
 
 <h3>Retrieving a single layer</h3>
 
@@ -7,14 +7,14 @@
 <div class='code'>
 <pre class='prettyprint lang-js'>
 // Get the first layer
-$("canvas").getLayer(0);
+$('canvas').getLayer(0);
 </pre>
 </div>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-// Get the layer whose name is "myBox"
-$("canvas").getLayer("myBox");
+// Get the layer whose name is 'myBox'
+$('canvas').getLayer('myBox');
 </pre>
 </div>
 
@@ -22,8 +22,8 @@ $("canvas").getLayer("myBox");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-// Get first layer whose name contains "box"
-$("canvas").getLayer(/box/gi);
+// Get first layer whose name contains 'box'
+$('canvas').getLayer(/box/gi);
 </pre>
 </div>
 
@@ -32,7 +32,7 @@ $("canvas").getLayer(/box/gi);
 <div class='code'>
 <pre class='prettyprint lang-js'>
 // Get the last layer
-$("canvas").getLayer(-1);
+$('canvas').getLayer(-1);
 </pre>
 </div>
 
@@ -44,13 +44,13 @@ $("canvas").getLayer(-1);
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getLayers();
+$('canvas').getLayers();
 </pre>
 </div>
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-var layers = $("canvas").getLayers();
+var layers = $('canvas').getLayers();
 // Reverse layer order
 layers.reverse();
 </pre>
@@ -60,14 +60,14 @@ layers.reverse();
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getLayers(function(layer) {
+// Returns an array containing all draggable layers
+$('canvas').getLayers(function(layer) {
 	return (layer.draggable === true);
 });
-// Returns an array containing only draggable layers
 </pre>
 </div>
 
-<p>The <code>getLayers()</code> method always returns an array.</p>
+<p>Note that the <code>getLayers()</code> method always returns an array, even for non-canvases.</p>
 
 <h3>Retrieving layer groups</h3>
 
@@ -75,7 +75,7 @@ $("canvas").getLayers(function(layer) {
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getLayerGroup("myBoxes");
+$('canvas').getLayerGroup('myBoxes');
 </pre>
 </div>
 
@@ -83,7 +83,7 @@ $("canvas").getLayerGroup("myBoxes");
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getLayerGroup(/box/gi);
+$('canvas').getLayerGroup(/box/gi);
 </pre>
 </div>
 
@@ -93,6 +93,6 @@ $("canvas").getLayerGroup(/box/gi);
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").getLayerIndex("box");
+$('canvas').getLayerIndex('box');
 </pre>
 </div>

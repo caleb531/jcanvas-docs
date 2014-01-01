@@ -1,4 +1,4 @@
-<h2>Clear Canvas</h2>
+<h2 class='menu'>Clear Canvas</h2>
 
 <h3>Basic Usage</h3>
 
@@ -8,18 +8,18 @@
 
 <div class='code'>
 <pre class='prettyprint lang-js'>
-$("canvas").clearCanvas();</pre>
+$('canvas').clearCanvas();</pre>
 </div>
 
 <h3>Clear a Section</h3>
 
-<p>Clearing a section works in the same way as <a href="/projects/jcanvas/docs/rectangles/">drawing a rectangle</a>, with the rectangle being drawn from its center (by default).</p>
+<p>Clearing a section works in the same way as <a href='/projects/jcanvas/docs/rectangles/'>drawing a rectangle</a>, with the rectangle being drawn from its center (by default).</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-$("canvas")
+$('canvas')
 .drawEllipse({
-    fillStyle: "#000",
+    fillStyle: '#000',
     x: 200, y: 100,
     width: 200, height: 100,
 })
