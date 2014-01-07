@@ -7,7 +7,7 @@
 <ul id='properties' class='accordion'>
 <?php
 // List of properties and their attributes
-$props = array(
+$names = array(
 
 "align"=> array(
 	"description"=> "The horizontal alignment of the text to be drawn",
@@ -383,19 +383,19 @@ $props = array(
 );
 
 // Sort all properties alphabetically
-ksort($props);
+ksort($names);
 
 // Dynamically create HTML from property list
-foreach ($props as $prop => $attrs) {
+foreach ($names as $name => $info) {
 
 	// Add property name
-	echo "<li><h3><a href='#$prop' class='subsection'>$prop</a></h3>
+	echo "<li><h3 id='$name'>$name</h3>
 	<ul class='box'>";
 	
 	// Add info for each property
-	foreach ($attrs as $attr => $info) {
+	foreach ($info as $attr => $value) {
 		$attr = ucwords($attr);
-		echo "\n\t\t<li><dfn>$attr:</dfn> $info</li>";
+		echo "\n\t\t<li><dfn>$attr:</dfn> $value</li>";
 	}
 	echo "</ul></li>";
 	

@@ -87,62 +87,6 @@ $('canvas').drawLine(obj);
 </pre>
 </div>
 
-<h3>Draggable joints</h3>
-
-<p>Using <a href='/projects/jcanvas/docs/layers/'>jCanvas layers</a> and <a href='/projects/jcanvas/docs/events/'>events</a>, you can create a line segment which you can manipulate by dragging its joints. See the example below:</p>
-
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
-// Cache the canvas element for efficiency
-var $canvas = $('canvas');
-
-// Draw a Line layer
-$canvas.drawLine({
-  layer: true,
-  name: 'myLine',
-  strokeStyle: '#000',
-  strokeWidth: 10,
-  rounded: true,
-  x1: 100, y1: 100,
-  x2: 150, y2: 200,
-  x3: 200, y3: 150
-});
-// Retrieve the layer object
-var line = $canvas.getLayer('myLine');
-
-// Create 3 joints (increase the value of n as necessary)
-var n = 3;
-for (var i = 1; i <= n; i += 1) {
-  
-  // Use a circle as each 'joint' of the line
-  $canvas.drawArc({
-    layer: true,
-    draggable: true,
-    data: {
-    	jointNumber: i
-    },
-    fillStyle: '#c33',
-    strokeStyle: '#900',
-    strokeWidth: 2,
-    x: line['x' + i],
-    y: line['y' + i],
-    radius: line.strokeWidth,
-    // Update line when a joint is dragged
-    drag: function(joint) {
-      // Retrieve joint number from its name
-      var j = joint.data.jointNumber;
-      
-      // Update line coordinates based on joint's position
-      line['x' + j] = joint.x;
-      line['y' + j] = joint.y;
-      
-    }
-  });
-  
-}
-</pre>
-</div>
-
 <h3>Vectors</h3>
 
 <p>Instead of the <code>drawLine()</code> method, you can also plot line segments using the <code><a href='/projects/jcanvas/docs/vectors/'>drawVector()</a></code> method (which draws lines using vectors rather than (x, y) coordinates).</p>

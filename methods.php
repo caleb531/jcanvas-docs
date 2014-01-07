@@ -365,13 +365,13 @@
 		
 	foreach ($methods as $name => $info) {
 		echo "
-	<li id='$name'><h3><a href='#" . str_replace(".", "_", $name) . "' class='subsection'>$name( )</a></h3>
+	<li><h3 id='$name'>$name( )</h3>
 		<ul class='box'>
 			<li><dfn><a href='/projects/jcanvas/docs/$info[url]'>Method Usage</a></dfn></li>
 			<li><dfn>Syntax</dfn>
 			<ul class='syntax'>";
 			// Add syntax definitions
-			foreach ($info["defs"] as $def) {
+			foreach ($info['defs'] as $def) {
 				$def = preg_replace("/\] \[/", "] [", $def);
 				$def = preg_replace("/\] (\w+) \[/", "] \1 [", $def);
 				echo "<li><code>$name$def</code></li>";

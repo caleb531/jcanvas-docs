@@ -36,19 +36,6 @@ $('canvas').drawVector({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-// Draw a straight line that is 200px long
-$('canvas').drawVector({
-  strokeStyle: '#000',
-  strokeWidth: 4,
-  x: 50, y: 50,
-  a1: 135, l1: 100,
-  a2: 135, l1: 100
-});
-</pre>
-</div>
-
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
 // Draw a bent path
 $('canvas').drawVector({
   strokeStyle: '#000',
