@@ -93,7 +93,7 @@ $('canvas').drawRect({
   animate: function(layer, fx) {
     // code to run on each frame of the animation
     // fx contains animation-related properties
-  }
+  },
   animateend: function(layer) {
     // code to run when animation ends
   }

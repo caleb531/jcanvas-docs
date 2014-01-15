@@ -32,4 +32,4 @@
 
 <p>Using jCanvas requires basic knowledge of <a href='http://docs.jquery.com/Tutorials:How_jQuery_Works' target='_blank'>using jQuery</a>.</p>
 
-<h2 class='menu'><a href='/projects/jcanvas/docs/syntax/'>Learn the jCanvas syntax</a></h2>
+<h2><a href='/projects/jcanvas/docs/syntax/'>Learn the jCanvas syntax</a></h2>

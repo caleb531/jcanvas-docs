@@ -56,7 +56,7 @@ $('canvas').drawVector({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $('canvas').drawQuadratic({
-  strokeStyle: '#396',
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   endArrow: true,
@@ -74,7 +74,7 @@ $('canvas').drawQuadratic({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $('canvas').drawBezier({
-  strokeStyle: '#c33',
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   startArrow: true,
@@ -97,7 +97,7 @@ $('canvas').drawBezier({
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 $('canvas').drawArc({
-  strokeStyle: '#36c',
+  strokeStyle: '#000',
   strokeWidth: 4,
   rounded: true,
   endArrow: true,
@@ -108,5 +108,30 @@ $('canvas').drawArc({
   end: 360,
   radius: 50
 });
+</pre>
+</div>
+
+<h3>Paths</h3>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$('canvas').drawPath({
+  strokeStyle: '#000',
+  strokeWidth: 5,
+  p1: {
+    type: 'line',
+    x1: 160, y1: 200,
+    x2: 160, y2: 50,
+    endArrow: true,
+    arrowRadius: 30,
+    arrowAngle: 90
+  },
+  p2: {
+    type: 'quadratic',
+    x1: 160, y1: 50,
+    cx1: 160, cy1: 150,
+    x2: 100, y2: 200  
+  }
+});	
 </pre>
 </div>

@@ -65,4 +65,5 @@ $.jCanvas();
 <p>In doing so, the default value for the <code>newDefault</code> property will always be <code>true</code>, even when resetting the preferences (via the <code>jCanvas()</code> method).</p>
 
 <h3>Notes</h3>
+
 <p>Any properties included when calling a jCanvas method will always override respective properties from the jCanvas preferences object.</p>

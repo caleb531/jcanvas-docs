@@ -15,14 +15,14 @@ $('canvas').drawRect({
     $(this).animateLayer(0, {
       fillStyle: '#c33',
       scale: 1.5
-    });
+    }, 250);
   },
   touchend: function(layer) {
     // Revert layer when touch ends
     $(this).animateLayer(0, {
       fillStyle: '#36c',
       scale: 1
-    });
+    }, 250);
   }
 });
 </pre>
@@ -43,14 +43,14 @@ $('canvas').drawRect({
     $(this).animateLayer(0, {
       fillStyle: '#c33',
       scale: 1.5
-    });
+    }, 250);
   },
   mouseup: function(layer) {
     // Animate layer when moused off or touch ends
     $(this).animateLayer(0, {
       fillStyle: '#36c',
       scale: 1
-    });
+    }, 250);
   }
 });
 </pre>

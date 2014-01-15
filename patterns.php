@@ -7,7 +7,7 @@
 function draw(patt) {
   $('canvas').drawEllipse({
     fillStyle: patt,
-    x: 200, y: 100,
+    x: 160, y: 100,
     width: 250, height: 100
   });
 }

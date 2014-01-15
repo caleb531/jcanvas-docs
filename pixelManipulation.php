@@ -4,7 +4,12 @@
 
 <p>To modify the pixels, you can loop through each pixel using the <code>each</code> callback method.</p>
 
-<p>The <code>each</code> callback function accepts one parameter: an object containing the properties for red, green, blue, and alpha color values (<code>r</code>, <code>g</code>, <code>b</code>, <code>a</code>).</p>
+<p>The <code>each</code> callback function accepts two parameters:</p>
+
+<ol>
+	<li>An object containing the properties for red, green, blue, and alpha color values (<code>r</code>, <code>g</code>, <code>b</code>, <code>a</code>)</li>
+	<li>The parameters passed to the <code>setPixels()</code> method</li>
+</ol>
 
 <h3>Basic usage</h3>
 

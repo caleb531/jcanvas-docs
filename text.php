@@ -2,7 +2,7 @@
 
 <p>To draw text on the canvas, use the <code>drawText()</code> method.</p>
 
-<p>The resulting text on the canvas is determined by the value of the <code>text</code> and any of the following font properties:</p>
+<p>The resulting text on the canvas is determined by the value of the <code>text</code> property, as well as any of the following font properties:</p>
 
 <ul>
 	<li><code>fontStyle</code></li>

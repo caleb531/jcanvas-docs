@@ -6,6 +6,8 @@
 
 <p>You can draw an arc using the <code>drawArc()</code> method. The size of an arc is determined by its <code>start</code>, <code>end</code>, and <code>radius</code> properties.</p>
 
+<p>jCanvas considers zero degrees to lie due north of the arc (like the 12 on an analog clock).</p>
+
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
 // Draw a 90&deg; arc
@@ -15,7 +17,7 @@ $('canvas').drawArc({
   x: 100, y: 100,
   radius: 50,
   // start and end angles in degrees
-  start: 90, end: 180
+  start: 0, end: 90
 });
 </pre>
 </div>
@@ -64,12 +66,8 @@ $('canvas').drawArc({
   strokeWidth: 5,
   x: 100, y: 100,
   radius: 50,
-  start: 30, end: 165,
+  start: 45, end: 225,
   closed: true
 });
 </pre>
 </div>
-
-<h3>Notes</h3>
-
-<p>Zero degrees is measured from the top of the arc</p>

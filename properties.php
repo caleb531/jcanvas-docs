@@ -327,7 +327,7 @@ $names = array(
 "data"=> array(
 	"description"=> "An object that can store any user-defined data for a jCanvas layer",
 	"methods"=> "All drawing methods",
-	"values"=> "<code>{}</code>, any object",
+	"values"=> "<code>null</code>, any object",
 ),
 "imageSmoothing"=> array(
 	"description"=> "If the browser automatically smooths rendered canvas images",
@@ -344,11 +344,6 @@ $names = array(
 	"methods"=> "<code>drawText()</code>",
 	"values"=> "<code>true</code>, <code>false</code>",
 ),
-"intersects"=> array(
-	"description"=> "Determines if a layer's area intersects with the current mouse/touch coordinates. Note that the layer must have at least one event for this property to work.",
-	"methods"=> "All drawing methods",
-	"values"=> "<code>true</code>, <code>false</code>",
-),
 "spread"=> array(
 	"description"=> "The distance a slice is from its defined (x, y) coordinates. This distance is a multiple of the slice's radius, with a value ranging from 0 to 1.",
 	"methods"=> "drawSlice()",
@@ -360,12 +355,12 @@ $names = array(
 	"values"=> "<code>null</code>, <code>'rectangle'</code>, <code>'arc'</code>, <code>'circle'</code>, <code>'ellipse'</code>, <code>'polygon'</code>, <code>'line'</code>, <code>'vector'</code>, <code>'quadratic'</code>, <code>'bezier'</code>, <code>'image'</code>, <code>'text'</code>, <code>'function'</code>",
 ),
 "startArrow"=> array(
-	"description"=> "Determines if the given path drawing will have an arrow placed at its start point",
+	"description"=> "Indicates if the given path drawing will have an arrow placed at its start point",
 	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
 	"values"=> "<code>false</code>, <code>true</code>",
 ),
 "endArrow"=> array(
-	"description"=> "Determines if the given path drawing will have an arrow placed at its end point",
+	"description"=> "Indicates if the given path drawing will have an arrow placed at its end point",
 	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
 	"values"=> "<code>false</code>, <code>true</code>",
 ),
@@ -378,7 +373,7 @@ $names = array(
 	"description"=> "The measure of the angle formed from the left tip of the arrow to the right tip",
 	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
 	"values"=> "<code>90</code>, any number",
-)
+),
 
 );
 

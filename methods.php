@@ -7,17 +7,10 @@
 <ul id='methods' class='accordion'><?php
 	
 	$methods = array(
-		"jCanvas" => array(
-			"url"=> "preferences",
-			"defs"=> array(
-				"( [ properties ] )",
-			),
-			"returns"=> "jQuery"
-		),
 		"addLayer" => array(
 			"url"=> "addLayers#adding-layers",
 			"defs"=> array(
-				"( [ properties ] )",
+				"( properties )",
 			),
 			"returns"=> "jQuery"
 		),
@@ -40,49 +33,49 @@
 		"clearCanvas" => array(
 			"url"=> "clearCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"draw" => array(
 			"url"=> "drawManually",
 			"defs"=> array(
-				"( [ properties ] )",
+				"( properties )",
 			),
 			"returns"=> "jQuery",			
 		),
 		"drawArc" => array(
 			"url"=> "arcs",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawSlice" => array(
 			"url"=> "slices",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawBezier" => array(
 			"url"=> "curves#bezier-curves",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawEllipse" => array(
 			"url"=> "ellipses",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawImage" => array(
 			"url"=> "images",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
@@ -96,35 +89,35 @@
 		"drawLine" => array(
 			"url"=> "lines",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawPolygon" => array(
 			"url"=> "polygons",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawQuadratic" => array(
 			"url"=> "curves#quadratic-curves",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawRect" => array(
 			"url"=> "rectangles",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"drawText" => array(
 			"url"=> "text",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
@@ -138,63 +131,63 @@
 		"createGradient" => array(
 			"url"=> "gradients",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "CanvasGradient",
 		),
 		"createPattern" => array(
 			"url"=> "patterns",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "CanvasPattern",
 		),
 		"restoreCanvas" => array(
 			"url"=> "restoreCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"restoreCanvasOnRedraw" => array(
 			"url"=> "masking#masking-draggable-shapes",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"rotateCanvas" => array(
 			"url"=> "rotateCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"saveCanvas" => array(
 			"url"=> "saveCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
 		"scaleCanvas" => array(
 			"url"=> "scaleCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"setPixels" => array(
 			"url"=> "setPixels",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
 		"translateCanvas" => array(
 			"url"=> "translateCanvas",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
@@ -299,7 +292,7 @@
 		"measureText" => array(
 			"url"=> "text#measuring-text",
 			"defs"=> array(
-				"( [ properties ] )",
+				"( properties )",
 				"( layerId )"
 			),
 			"returns"=> "Object",			
@@ -307,14 +300,14 @@
 		"jCanvas.extend" => array(
 			"url"=> "extending",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "Function",
 		),
 		"drawVector" => array(
 			"url"=> "vectors",
 			"defs"=> array(
-				"( [ properties ] )"
+				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),

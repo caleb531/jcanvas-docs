@@ -15,11 +15,15 @@
 <pre class='prettyprint lang-js'>
 $('canvas').setLayer('myBox', {
   fillStyle: '#36b',
-  rotate: 30
+  rotate: 30,
+  x: '+=100',
+  y: '-=100'
 })
 .drawLayers();
 </pre>
 </div>
+
+<p>Note that the you can use the <code>'+='</code> and <code>'-='</code> strings to increment and decrement numbers, respectively.</p>
 
 <p>You can also set properties on <em>all</em> layers using the <code>setLayers()</code> method.</p>
 
