@@ -167,6 +167,6 @@ $('canvas').delayLayerGroup('myGroup', 500);
 
 <h3>Notes</h3>
 
-<p>The syntax for the <code>animateLayer()</code> method is almost identical to jQuery's <code>animate()</code> method. Therefore, callback functions such as <a href='http://api.jquery.com/animate/#step' target='_blank'><code>step</code></a> are still available for use.</p>
+<p>The syntax for the <code>animateLayer()</code> method is almost identical to jQuery's <code>animate()</code> method. Therefore, callback functions such as <a href='http://api.jquery.com/animate/#step'><code>step</code></a> are still available for use.</p>
 <p>Multiple <code>animateLayer()</code> calls can be queued up rather than using multiple callback functions.</p>
 <p>The callback parameter for the <code>animateLayerGroup()</code> method will run when <em>each</em> layer in the group finishes animating.</p>

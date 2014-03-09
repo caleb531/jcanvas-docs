@@ -1,5 +1,9 @@
 <h2 class='menu'>Preferences</h2>
 
+<h3>Decrecation</h3>
+
+<p>This method has been deprecated as of jCanvas v14.01.12. Therefore, please transition your code away from using this method, as it will be removed in a future release.</p>
+
 <h3>Basic Usage</h3>
 
 <p>The <code>jCanvas()</code> method sets properties of the jCanvas <code>prefs</code> object, so jCanvas methods called in the future can use those properties as defaults.</p>

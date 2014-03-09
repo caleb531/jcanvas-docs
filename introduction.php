@@ -28,8 +28,8 @@
 
 <h3>Drawing</h3>
 
-<p>HTML5 provides <a href='https://developer.mozilla.org/en/Canvas_tutorial/Drawing_shapes' target='_blank'>a native JavaScript API</a> for drawing on the canvas. However, we will be using jCanvas instead.</p>
+<p>HTML5 provides <a href='https://developer.mozilla.org/en/Canvas_tutorial/Drawing_shapes'>a native JavaScript API</a> for drawing on the canvas. However, we will be using jCanvas instead.</p>
 
-<p>Using jCanvas requires basic knowledge of <a href='http://docs.jquery.com/Tutorials:How_jQuery_Works' target='_blank'>using jQuery</a>.</p>
+<p>Using jCanvas requires basic knowledge of <a href='http://docs.jquery.com/Tutorials:How_jQuery_Works'>using jQuery</a>.</p>
 
 <h2><a href='/projects/jcanvas/docs/syntax/'>Learn the jCanvas syntax</a></h2>

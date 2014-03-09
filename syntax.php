@@ -23,7 +23,7 @@ $('canvas').drawArc({
 
 <h3>Chaining</h3>
 
-<p>Most jCanvas methods support <a href='http://tobiasahlin.com/blog/quick-guide-chaining-in-jquery/' target='_blank'>chaining</a> for cleaner and faster code.</p>
+<p>Most jCanvas methods support <a href='http://tobiasahlin.com/blog/quick-guide-chaining-in-jquery/'>chaining</a> for cleaner and faster code.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>

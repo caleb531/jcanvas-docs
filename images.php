@@ -50,11 +50,11 @@ $('canvas').drawImage({
 </pre>
 </div>
 
-<h3>The <code>load()</code> callback</h3>
+<h3>The <code>load</code> event</h3>
 
 <p>In jCanvas, images are drawn asynchronously because they must load before they can be drawn. In some cases, this isn't an issue because the image loads fast enough, however this isn't always the case.</p>
 
-<p>To address this, jCanvas allows you to run a callback function once the image has loaded, using the <code>load</code> property.</p>
+<p>To address this, jCanvas allows you to run a callback function once the image has loaded, using the <code>load</code> event.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
@@ -77,7 +77,7 @@ $('canvas').drawImage({
 </pre>
 </div>
 
-<p>Note that the <code>load()</code> callback is also an event, which allows it to be used in conjunction with event hooks.</p>
+<p>Note that the <code>load</code> event fires when the image is initially drawn, but <em>also</em> when it is redrawn. Therefore, dragging the image (for example) will cause the <code>load</code> event to fire continuously (as you are dragging).</p>
 
 <h3>Cropping</h3>
 

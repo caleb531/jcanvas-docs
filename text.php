@@ -212,3 +212,38 @@ $('canvas').drawText({
 </div>
 
 <p>Note that a negative line height will produce a negative number when retrieving the height of the text (using the <code>measureText()</code> method).</p>
+
+<h3>Text along an arc</h3>
+
+<p>jCanvas can also draw arc text (that is, text along an arc). Doing so only requires specifying one extra property: the <code>radius</code> property.</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$('canvas').drawText({
+  fillStyle: '#c33',
+  fontFamily: 'Ubuntu, sans-serif',
+  fontSize: 18,
+  text: 'THIS IS THE FIRST LINE\nTHIS IS THE SECOND LINE\nTHIS IS THE THIRD LINE',
+  x: 160, y: 200,
+  radius: 150
+});
+</pre>
+</div>
+
+<p>For arc text only, there exists an optional <code>letterSpacing</code> which controls the spacing between characters along the arc.</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$('canvas').drawText({
+  fillStyle: '#c33',
+  fontFamily: 'Ubuntu, sans-serif',
+  fontSize: 18,
+  text: 'THIS IS THE FIRST LINE\nTHIS IS THE SECOND LINE\nTHIS IS THE THIRD LINE',
+  x: 160, y: 200,
+  radius: 150,
+  letterSpacing: 0.02
+});
+</pre>
+</div>
+
+<p>Technically speaking, the value of the <code>letterSpacing</code> property represents a multiple of <var>pi</var>, which in turn represents the angular distance between each letter. For example, a value of <code>0.05</code> implies that each character is 9 degrees apart (0.05&pi; is equivalent to 9&deg;)</p>

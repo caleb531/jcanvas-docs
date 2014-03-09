@@ -7,14 +7,14 @@
 <ul id='methods' class='accordion'><?php
 	
 	$methods = array(
-		"addLayer" => array(
+		"addLayer"=> array(
 			"url"=> "addLayers#adding-layers",
 			"defs"=> array(
 				"( properties )",
 			),
 			"returns"=> "jQuery"
 		),
-		"animateLayer" => array(
+		"animateLayer"=> array(
 			"url"=> "animateLayers#animating-layers",
 			"defs"=> array(
 				"( layerId, properties [, duration ] [, easing ] [, callback ] )",
@@ -22,7 +22,7 @@
 			),
 			"returns"=> "jQuery"
 		),
-		"animateLayerGroup" => array(
+		"animateLayerGroup"=> array(
 			"url"=> "animateLayers#animating-layer-groups",
 			"defs"=> array(
 				"( groupId, properties [, duration ] [, easing ] [, callback ] )",
@@ -30,266 +30,266 @@
 			),
 			"returns"=> "jQuery"
 		),
-		"clearCanvas" => array(
+		"clearCanvas"=> array(
 			"url"=> "clearCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"draw" => array(
+		"draw"=> array(
 			"url"=> "drawManually",
 			"defs"=> array(
 				"( properties )",
 			),
 			"returns"=> "jQuery",			
 		),
-		"drawArc" => array(
+		"drawArc"=> array(
 			"url"=> "arcs",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawSlice" => array(
+		"drawSlice"=> array(
 			"url"=> "slices",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawBezier" => array(
+		"drawBezier"=> array(
 			"url"=> "curves#bezier-curves",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawEllipse" => array(
+		"drawEllipse"=> array(
 			"url"=> "ellipses",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawImage" => array(
+		"drawImage"=> array(
 			"url"=> "images",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawLayers" => array(
+		"drawLayers"=> array(
 			"url"=> "layers#drawing-layers",
 			"defs"=> array(
 				"( )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"drawLine" => array(
+		"drawLine"=> array(
 			"url"=> "lines",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawPolygon" => array(
+		"drawPolygon"=> array(
 			"url"=> "polygons",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawQuadratic" => array(
+		"drawQuadratic"=> array(
 			"url"=> "curves#quadratic-curves",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawRect" => array(
+		"drawRect"=> array(
 			"url"=> "rectangles",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"drawText" => array(
+		"drawText"=> array(
 			"url"=> "text",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"delayLayer" => array(
+		"delayLayer"=> array(
 			"url"=> "animateLayers",
 			"defs"=> array(
 				"( layerId [, duration ] )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"createGradient" => array(
+		"createGradient"=> array(
 			"url"=> "gradients",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "CanvasGradient",
 		),
-		"createPattern" => array(
+		"createPattern"=> array(
 			"url"=> "patterns",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "CanvasPattern",
 		),
-		"restoreCanvas" => array(
+		"restoreCanvas"=> array(
 			"url"=> "restoreCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"restoreCanvasOnRedraw" => array(
+		"restoreCanvasOnRedraw"=> array(
 			"url"=> "masking#masking-draggable-shapes",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"rotateCanvas" => array(
+		"rotateCanvas"=> array(
 			"url"=> "rotateCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"saveCanvas" => array(
+		"saveCanvas"=> array(
 			"url"=> "saveCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"scaleCanvas" => array(
+		"scaleCanvas"=> array(
 			"url"=> "scaleCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"setPixels" => array(
+		"setPixels"=> array(
 			"url"=> "setPixels",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"translateCanvas" => array(
+		"translateCanvas"=> array(
 			"url"=> "translateCanvas",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"getLayers" => array(
+		"getLayers"=> array(
 			"url"=> "retrieveLayers#retrieving-all-layers",
 			"defs"=> array(
 				"( [ callback ] )"
 			),
 			"returns"=> "Array",			
 		),
-		"setLayer" => array(
+		"setLayer"=> array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
 				"( layerId, properties )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"setLayers" => array(
+		"setLayers"=> array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
 				"( properties [, callback ] )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"setLayerGroup" => array(
+		"setLayerGroup"=> array(
 			"url"=> "manipulateLayers#setting-layer-group-properties",
 			"defs"=> array(
 				"( groupId, properties )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"getLayer" => array(
+		"getLayer"=> array(
 			"url"=> "retrieveLayers#retrieving-a-single-layer",
 			"defs"=> array(
 				"( layerId )"
 			),
 			"returns"=> "Layer",			
 		),
-		"getLayerIndex" => array(
+		"getLayerIndex"=> array(
 			"url"=> "retrieveLayers#retrieving-layer-indices",
 			"defs"=> array(
 				"( layerId )"
 			),
 			"returns"=> "Number",			
 		),
-		"getLayerGroup" => array(
+		"getLayerGroup"=> array(
 			"url"=> "retrieveLayers#retrieving-layer-groups",
 			"defs"=> array(
 				"( groupId )"
 			),
 			"returns"=> "Layer",
 		),
-		"removeLayers" => array(
+		"removeLayers"=> array(
 			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"removeLayer" => array(
+		"removeLayer"=> array(
 			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( layerId )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"removeLayerGroup" => array(
+		"removeLayerGroup"=> array(
 			"url"=> "manipulateLayers#removing-layer-groups",
 			"defs"=> array(
 				"( groupId )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"getCanvasImage" => array(
+		"getCanvasImage"=> array(
 			"url"=> "getCanvasImage",
 			"defs"=> array(
 				"( [ imageType ] )"
 			),
 			"returns"=> "String",			
 		),
-		"stopLayer" => array(
+		"stopLayer"=> array(
 			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( layerId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"stopLayerGroup" => array(
+		"stopLayerGroup"=> array(
 			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( groupId [, clearQueue ] )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"delayLayerGroup" => array(
+		"delayLayerGroup"=> array(
 			"url"=> "animateLayers#delaying-animation",
 			"defs"=> array(
 				"( groupId [, duration ] )"
 			),
 			"returns"=> "jQuery",			
 		),
-		"measureText" => array(
+		"measureText"=> array(
 			"url"=> "text#measuring-text",
 			"defs"=> array(
 				"( properties )",
@@ -297,56 +297,56 @@
 			),
 			"returns"=> "Object",			
 		),
-		"jCanvas.extend" => array(
+		"jCanvas.extend"=> array(
 			"url"=> "extending",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "Function",
 		),
-		"drawVector" => array(
+		"drawVector"=> array(
 			"url"=> "vectors",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"detectPixelRatio" => array(
+		"detectPixelRatio"=> array(
 			"url"=> "detectPixelRatio",
 			"defs"=> array(
 				"( [ callback ] )"
 			),
 			"returns"=> "jQuery",
 		),
-		"addLayerToGroup" => array(
+		"addLayerToGroup"=> array(
 			"url"=> "addLayers#grouping-layers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
 			"returns"=> "jQuery",
 		),
-		"removeLayerFromGroup" => array(
+		"removeLayerFromGroup"=> array(
 			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
 			"returns"=> "jQuery",
 		),
-		"moveLayer" => array(
+		"moveLayer"=> array(
 			"url"=> "manipulateLayers#moving-layers",
 			"defs"=> array(
 				"( layerId, groupName )"
 			),
 			"returns"=> "jQuery",
 		),
-		"setEventHooks" => array(
+		"setEventHooks"=> array(
 			"url"=> "eventHooks",
 			"defs"=> array(
 				"( properties )"
 			),
 			"returns"=> "jQuery",
 		),
-		"getEventHooks" => array(
+		"getEventHooks"=> array(
 			"url"=> "eventHooks",
 			"defs"=> array(
 				"( )"
@@ -356,7 +356,7 @@
 	);
 	ksort($methods);
 		
-	foreach ($methods as $name => $info) {
+	foreach ($methods as $name=> $info) {
 		echo "
 	<li><h3 id='$name'>$name( )</h3>
 		<ul class='box'>
