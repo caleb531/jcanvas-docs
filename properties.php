@@ -374,6 +374,11 @@ $names = array(
 	"methods"=> "<code>drawLine()</code>, <code>drawQuadratic()</code>, <code>drawBezier()</code>",
 	"values"=> "<code>90</code>, any number",
 ),
+"crossOrigin"=> array(
+	"description"=> "Corresponds to the crossOrigin property on images and patterns",
+	"methods"=> "<code>drawImage()</code>, <code>createPattern()</code>",
+	"values"=> "<code>''</code>, <code>'anonymous'</code>, <code>'use-credentials'</code>",
+),
 
 );
 
