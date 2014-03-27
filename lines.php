@@ -87,6 +87,27 @@ $('canvas').drawLine(obj);
 </pre>
 </div>
 
+<h3>Dashed lines</h3>
+
+<p>Browsers began recently adopting the ability to create dashed lines. To do so in jCanvas, specify the <code>strokeDash</code> and <code>strokeDashOffset</code> properties.</p>
+
+<p>The <code>strokeDash</code> property accepts an array of one or two numbers, and the <code>strokeDashOffset</code> property accepts a single number. See the <a href='/projects/jcanvas/docs/properties/'>Properties</a> page for specific usage details.</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$('canvas').drawLine({
+  strokeStyle: '#000',
+  strokeWidth: 3,
+  strokeDash: [5],
+  strokeDashOffset: 0,
+  x1: 100, y1: 50,
+  x2: 100, y2: 150,
+  x3: 200, y3: 100,
+  x4: 150, y4: 200
+});
+</pre>
+</div>
+
 <h3>Vectors</h3>
 
-<p>Instead of the <code>drawLine()</code> method, you can also plot line segments using the <code><a href='/projects/jcanvas/docs/vectors/'>drawVector()</a></code> method (which draws lines using vectors rather than (x, y) coordinates).</p>
+<p>Instead of the <code>drawLine()</code> method, you can also plot line segments using the <code><a href='/projects/jcanvas/docs/vectors/'>drawVector()</a></code> method (which draws lines using vectors rather than (<var>x</var>, <var>y</var>) coordinates).</p>

@@ -379,6 +379,16 @@ $names = array(
 	"methods"=> "<code>drawImage()</code>, <code>createPattern()</code>",
 	"values"=> "<code>''</code>, <code>'anonymous'</code>, <code>'use-credentials'</code>",
 ),
+"strokeDash"=> array(
+	"description"=> "An array consisting of one or two numbers. The first number represents the length of each dash. The second number represents the spacing between each dash. If only one number is given, the implied second number is equal to the first.",
+	"methods"=> "All drawing methods",
+	"values"=> "<code>null</code>, an array of one of two numbers",
+),
+"strokeDashOffset"=> array(
+	"description"=> "The offset of the dash-space alternation",
+	"methods"=> "All drawing methods",
+	"values"=> "0",
+),
 
 );
 
