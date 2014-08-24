@@ -65,20 +65,20 @@ for (var i=0; i&lt;5; i+=1) {
 // Hover over the triangle to rotate it
 $('canvas').drawPolygon({
   layer: true,
-  fillStyle: '#c33',
+  fillStyle: '#fff',
   strokeStyle: '#333',
   strokeWidth: 2,
-  x: 180, y: 150,
+  x: 160, y: 150,
   radius: 100,
   sides: 3,
   mouseover: function(layer) {
     $(this).animateLayer(layer, {
-      rotate: '+=60'
+      fillStyle: '#c33'
     }, 500);
   },
   mouseout: function(layer) {
     $(this).animateLayer(layer, {
-      rotate: '+=60'
+      fillStyle: '#fff'
     }, 500);
   },
 });

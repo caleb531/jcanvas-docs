@@ -85,3 +85,30 @@ $('canvas').drawText({
 <p>jCanvas also adds the correct vendor prefix to a select few CSS3 cursors that require a vendor prefix. These cursor values include <code>grab</code>, <code>grabbing</code>, <code>zoom-in</code>, and <code>zoom-out</code>.</p>
 
 <p>Please note that the cursor always reverts to its previous state when you mouse off the layer.</p>
+
+<h3>The <code>intangible</code> property</h3>
+
+<p>The <code>intangible</code> property essentially allows you to "click through" a layer as if it didn't exist.</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$('canvas')
+.drawArc({
+  layer: true,
+  draggable: true,
+  fillStyle: '#36c',
+  x: 150, y: 150,
+  radius: 50
+})
+.drawRect({
+  layer: true,
+  draggable: true,
+  // Slight transparency, just for fun
+  opacity: 0.5,
+  intangible: true,
+  fillStyle: '#6c1',
+  x: 100, y: 100,
+  width: 100, height: 100
+});
+</pre>
+</div>

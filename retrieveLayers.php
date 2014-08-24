@@ -62,7 +62,7 @@ layers.reverse();
 <pre class='prettyprint lang-js'>
 // Returns an array containing all draggable layers
 $('canvas').getLayers(function(layer) {
-	return (layer.draggable === true);
+  return (layer.draggable === true);
 });
 </pre>
 </div>

@@ -41,6 +41,21 @@ $('canvas').drawRect({
 </pre>
 </div>
 
+<p>If you want to make <code>fromCenter</code> <code>false</code> by default for all shapes, do so using the <code>$.jCanvas.defaults</code> object.</p>
+
+<div class='code demo'>
+<pre class='prettyprint lang-js'>
+$.jCanvas.defaults.fromCenter = false;
+$('canvas').drawRect({
+  fillStyle: '#6a6',
+  x: 100, y: 60,
+  width: 100,
+  height: 80,
+  fromCenter: false
+});
+</pre>
+</div>
+
 <h3>Rounded Corners</h3>
 
 <p>You may round the corners of a rectangle using the <code>cornerRadius</code> property.</p>
