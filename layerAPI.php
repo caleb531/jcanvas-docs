@@ -9,4 +9,4 @@
 <h2 class='menu'><a href='/projects/jcanvas/docs/drawLayers/'>Drawing Layers</a></h2>
 <h2 class='menu'><a href='/projects/jcanvas/docs/manipulateLayers/'>Manipulating Layers</a></h2>
 <h2 class='menu'><a href='/projects/jcanvas/docs/animateLayers/'>Animating Layers</a></h2>
-<h2 class='menu'><a href='/projects/jcanvas/docs/events/'>Layer Events</a></h2>
+<h2 class='menu'><a href='/projects/jcanvas/docs/eventAPI/'>Event API</a></h2>

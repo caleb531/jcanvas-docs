@@ -52,7 +52,7 @@ $('canvas').drawRect({
 </pre>
 </div>
 
-<p>Note that the layer <code>name</code> must be unique (that is, no two layers on the canvas can have the same name).</p>
+<p>Note that the layer <code>name</code> must be unique (that is, no two layers on the canvas can have the same name). The layer name can not be a number, either.</p>
 
 <h3>Grouping layers</h3>
 

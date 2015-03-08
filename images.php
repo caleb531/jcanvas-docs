@@ -117,7 +117,7 @@ $('canvas').drawImage({
 </pre>
 </div>
 
-<p>Now, the <code>sy</code> and <code>sy</code> properties define the top-left corner of the crop region, as you might expect.</p>
+<p>Now, the <code>sx</code> and <code>sy</code> properties define the top-left corner of the crop region, as you might expect.</p>
 
 <h3>Images and Layers</h3>
 
@@ -125,19 +125,22 @@ $('canvas').drawImage({
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
-// The image is always drawn before the circle
 $('canvas').drawImage({
+  layer: true,
   source: 'images/big-fish.jpg',
   x: 150, y: 150,
   width: 200, height: 125
 })
 .drawArc({
+  layer: true,
   fillStyle: '#69f',
   strokeStyle: '#000',
   strokeWidth: 2,
   x: 250, y: 100,
   radius: 50
-});
+})
+// Redraw layers to ensure correct ordering
+.drawLayers();
 </pre>
 </div>
 

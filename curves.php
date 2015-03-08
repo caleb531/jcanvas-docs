@@ -35,7 +35,7 @@ $('canvas').drawQuadratic({
 	<li>An end point which becomes the next start point (<var>x</var>, <var>y</var>)</li>
 </ul>
 
-<p>You can draw one or more contiguous Bézier curves using the <code>drawQuadratic()</code> method.</p>
+<p>You can draw one or more contiguous Bézier curves using the <code>drawBezier()</code> method.</p>
 
 <div class='code demo'>
 <pre class='prettyprint lang-js'>
