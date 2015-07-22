@@ -1,9 +1,9 @@
-<h2 class='menu'>Translate Canvas</h2>
+<h2 class="menu">Translate Canvas</h2>
 
 <p>The <code>translateCanvas()</code> method translates the canvas from the included point.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').translateCanvas({
   translateX: 200, translateY: 100
 })
@@ -20,8 +20,8 @@ $('canvas').translateCanvas({
 
 <p>You can also set both the <code>translateX</code> and <code>translateY</code> properties using the <code>translate</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').translateCanvas({
   translate: 100
 })
@@ -38,8 +38,8 @@ $('canvas').translateCanvas({
 
 <p>Rather than translating the entire canvas, you can translate an individual shape using any of these three properties.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js demo'>
+<div class="code demo">
+<pre class="prettyprint lang-js demo">
 $('canvas')
 .drawRect({
   fillStyle: '#474',
@@ -58,8 +58,8 @@ $('canvas')
 
 <p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').translateCanvas({
   layer: true,
   name: 'translate1'
@@ -69,8 +69,8 @@ $('canvas').translateCanvas({
 
 <p>However, whenever you're done translating the canvas, you must restore the transformation using the <code>restoreCanvas()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').restoreCanvas({
   layer: true
 });
@@ -80,4 +80,4 @@ $('canvas').restoreCanvas({
 
 <h3>Notes</h3>
 
-<p>To revert to the canvas's previous state, call the <code><a href='/projects/jcanvas/docs/restoreCanvas/'>restoreCanvas()</a></code> method. However, you do not need to call this method when translating an individual shape.</p>
+<p>To revert to the canvas's previous state, call the <code><a href="/projects/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method. However, you do not need to call this method when translating an individual shape.</p>

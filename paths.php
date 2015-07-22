@@ -1,6 +1,6 @@
-<h2 class='menu'>Paths</h2>
+<h2 class="menu">Paths</h2>
 
-<p>A path in jCanvas consists of one or more connected <a href='/projects/jcanvas/docs/lines/'>lines</a>, <a href='/projects/jcanvas/docs/arcs/'>arcs</a>, <a href='/projects/jcanvas/docs/curves/'>curves</a>, or <a href='/projects/jcanvas/docs/vectors/'>vectors</a>.</p>
+<p>A path in jCanvas consists of one or more connected <a href="/projects/jcanvas/docs/lines/">lines</a>, <a href="/projects/jcanvas/docs/arcs/">arcs</a>, <a href="/projects/jcanvas/docs/curves/">curves</a>, or <a href="/projects/jcanvas/docs/vectors/">vectors</a>.</p>
 
 <h3>Basic usage</h3>
 
@@ -8,8 +8,8 @@
 
 <p>Note that for each of these subpath arguments, you must specify the type of the subpath (for instance, <code>type: 'line'</code>).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw the outline of a cartoon face
 $('canvas').drawPath({
   strokeStyle: '#000',
@@ -34,8 +34,8 @@ $('canvas').drawPath({
 
 <p>If you <em>were</em> to include the <code>x1</code> and <code>y1</code> properties, the curve would no longer be connected to the previous subpath. Consider the following example.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a face with the jaw disconnected
 $('canvas').drawPath({
   strokeStyle: '#000',
@@ -63,8 +63,8 @@ $('canvas').drawPath({
 
 <p>The following example will create a flower shape using arcs.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawPath({
   strokeStyle: '#000',
@@ -109,12 +109,12 @@ $('canvas')
 
 <h3>Arrows</h3>
 
-<p>Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See <a href='/projects/jcanvas/docs/arrows/'>the section on arrows</a> for descriptions of the arrow properties.</p>
+<p>Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See <a href="/projects/jcanvas/docs/arrows/">the section on arrows</a> for descriptions of the arrow properties.</p>
 
 <p>For generic paths, arrow properties must be specified in a subpath object, not the entire path object.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw the outline of a cartoon face
 $('canvas').drawPath({
   strokeStyle: '#000',

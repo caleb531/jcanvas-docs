@@ -1,4 +1,4 @@
-<h2 class='menu'>Text</h2>
+<h2 class="menu">Text</h2>
 
 <p>To draw text on the canvas, use the <code>drawText()</code> method.</p>
 
@@ -10,8 +10,8 @@
 	<li><code>fontFamily</code></li>
 </ul>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#9cf',
   strokeStyle: '#25a',
@@ -34,8 +34,8 @@ However, you can also specify the number as a string with additional units attac
 
 <p>Just like other shapes, the <code>drawText()</code> method respects the value of the <code>fromCenter</code> and transformation properties such as <code>rotate</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#cfc',
   strokeStyle: '#000',
@@ -56,8 +56,8 @@ $('canvas').drawText({
 
 <p>You can animate the font size of text using the <code>scale</code>, <code>scaleX</code>, or <code>scaleY</code> properties.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   layer: true,
   fillStyle: '#9cf',
@@ -86,8 +86,8 @@ $('canvas').drawText({
 
 <p>In the example below, the circle is only as wide as the text inside of it.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw text
 $('canvas').drawText({
   layer: true,
@@ -110,14 +110,14 @@ $('canvas').drawText({
 </pre>
 </div>
 
-<h3 class='beta'>Wrapping text</h3>
+<h3 class="beta">Wrapping text</h3>
 
 <p>You can also define a maximum line width for the text using the <code>maxWidth</code> property. In doing so, each line of text will never be longer than the maximum width (this is known as text 'wrapping').</p>
 
 <p>Manually adding a line break can be done so by adding the standard newline character in your string (<code>\n</code>).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#36c',
   fontStyle: 'bold',
@@ -134,8 +134,8 @@ $('canvas').drawText({
 
 <p>If you wish to align your text to the <code>left</code> or <code>right</code> (rather than the <code>center</code> by default), use the <code>align</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#36c',
   fontStyle: 'bold',
@@ -155,8 +155,8 @@ $('canvas').drawText({
 
 <p>The <code>respectAlign</code> property will ensure that the text's (x, y) coordinates are in line with either the left or right margin (depending of the value of the <code>align</code> property). Therefore, enabling this property will require you to adjust your <code>x</code> position accordingly.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#36c',
   fontStyle: 'bold',
@@ -177,8 +177,8 @@ $('canvas').drawText({
 
 <p>For example, the demo below will double the line height of the text it draws.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#36c',
   fontStyle: 'bold',
@@ -195,8 +195,8 @@ $('canvas').drawText({
 
 <p>A line height with a negative value will swap any lines of text (<em>e.g.</em> the top line becomes the bottom line).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#36c',
   fontStyle: 'bold',
@@ -217,8 +217,8 @@ $('canvas').drawText({
 
 <p>jCanvas can also draw arc text (that is, text along an arc). Doing so only requires specifying one extra property: the <code>radius</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#c33',
   fontFamily: 'Ubuntu, sans-serif',
@@ -232,8 +232,8 @@ $('canvas').drawText({
 
 <p>For arc text only, there exists an optional <code>letterSpacing</code> which controls the spacing between characters along the arc.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   fillStyle: '#c33',
   fontFamily: 'Ubuntu, sans-serif',

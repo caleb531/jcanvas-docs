@@ -1,11 +1,11 @@
-<h2 class='menu'>Draggable Layers</h2>
+<h2 class="menu">Draggable Layers</h2>
 
 <h3>Basic Usage</h3>
 
 <p>Layers can be made draggable using the <code>draggable</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawArc({
   layer: true,
@@ -26,8 +26,8 @@ $('canvas')
 
 <p>By default, draggable shapes will <em>not</em> move to the front when dragged. To change this behavior, set the <code>bringToFront</code> property to <code>true</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawArc({
   layer: true,
@@ -59,8 +59,8 @@ $('canvas')
 	<li><dfn>dragcancel</dfn>: Triggers when you drag a layer off the edge of the canvas</li>
 </ul>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawArc({
   layer: true,
@@ -92,8 +92,8 @@ $('canvas')
 
 <p>This draggable grouping is achieved when you add the <code>dragGroups</code> property to any (typically all) layers in the same layer group.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Both layers will be dragged together
 $('canvas')
 .drawArc({
@@ -116,3 +116,31 @@ $('canvas')
 });
 </pre>
 </div>
+
+<h3>Restricting dragging to an axis</h3>
+
+<p>You can restrict the dragging of any layer to either the <var>x</var> or <var>y</var> axis using the <code>restrictDragToAxis</code> property.</p>
+
+<div class="code demo">
+<pre class="prettyprint lang-js">
+$('canvas')
+.drawArc({
+  layer: true,
+  draggable: true,
+  fillStyle: '#36c',
+  x: 150, y: 150,
+  radius: 50,
+  restrictDragToAxis: 'x'
+})
+.drawRect({
+  layer: true,
+  draggable: true,
+  fillStyle: '#6c1',
+  x: 100, y: 100,
+  width: 100, height: 100,
+  restrictDragToAxis: 'y'
+});
+</pre>
+</div>
+
+<p>Please note that if a layer in a drag group has restricted draggability, then all the draggability of all other layers in that drag group will also be restricted <em>only when the original layer is dragged</em>.</p>

@@ -1,4 +1,4 @@
-<h2 class='menu'>Rotating the canvas</h2>
+<h2 class="menu">Rotating the canvas</h2>
 
 <h3>Rotating the canvas context</h3>
 
@@ -6,8 +6,8 @@
 
 <p>The <code>x</code> and <code>y</code> properties define the center of rotation.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').rotateCanvas({
   rotate: 45,
   x: 100, y: 100
@@ -25,8 +25,8 @@ $('canvas').rotateCanvas({
 
 <p>Rather than rotating the entire canvas, you can rotate an individual shape using the <code>rotate</code> properties.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Rotate this rectangle by 30 degrees
 $('canvas').drawRect({
   fillStyle: '#c33',
@@ -45,8 +45,8 @@ $('canvas').drawRect({
 
 <p>To do this, set the <code>layer</code> property to <code>true</code>, just as you would to make any other shape a layer. In addition, just as you can with any other type of layer, you can give this layer a name using the <code>name</code> property.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').rotateCanvas({
   layer: true,
   name: 'rotate1'
@@ -56,8 +56,8 @@ $('canvas').rotateCanvas({
 
 <p>However, whenever you're done rotating the canvas, you must restore the transformation using the <code>restoreCanvas()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').restoreCanvas({
   layer: true
 });
@@ -66,4 +66,4 @@ $('canvas').restoreCanvas({
 
 <h3>Notes</h3>
 
-<p>To revert to the canvas's previous state, call the <code><a href='/projects/jcanvas/docs/restoreCanvas/'>restoreCanvas()</a></code> method. However, you do not need to call this method when rotating an individual shape.</p>
+<p>To revert to the canvas's previous state, call the <code><a href="/projects/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method. However, you do not need to call this method when rotating an individual shape.</p>

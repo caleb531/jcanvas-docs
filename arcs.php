@@ -1,4 +1,4 @@
-<h2 class='menu'>Arcs</h2>
+<h2 class="menu">Arcs</h2>
 
 <p>An arc in jCanvas is, essentially, part of the rim of a circle (similar to the smile on a smiley-face).</p>
 
@@ -8,8 +8,8 @@
 
 <p>jCanvas considers zero degrees to lie due north of the arc (like the 12 on an analog clock).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a 90&deg; arc
 $('canvas').drawArc({
   strokeStyle: '#000',
@@ -24,8 +24,8 @@ $('canvas').drawArc({
 
 <p>If you omit the <code>start</code> and <code>end</code> properties, the arc defaults to a full circle.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a full circle
 $('canvas').drawArc({
   strokeStyle: '#000',
@@ -40,8 +40,8 @@ $('canvas').drawArc({
 
 <p>The <code>start</code> and <code>end</code> values are measured in degrees by default. If you'd prefer to use radians, include the <code>inDegrees</code> property with a value of <code>false</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a black semicircle
 $('canvas').drawArc({
   fillStyle: 'black',
@@ -58,8 +58,8 @@ $('canvas').drawArc({
 
 <p>Using the <code>closed</code> property, you can also close an arc, which connects the start and end points.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a closed red arc
 $('canvas').drawArc({
   strokeStyle: '#c33',

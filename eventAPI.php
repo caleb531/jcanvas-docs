@@ -1,6 +1,6 @@
-<h2 class='menu'>Event API</h2>
+<h2 class="menu">Event API</h2>
 
-<p>jCanvas supports mouse and touch events for most drawings through the included Event API. Events are used in conjunction with the <a href='/projects/jcanvas/docs/layerAPI/'>Layer API</a>.</p>
+<p>jCanvas supports mouse and touch events for most drawings through the included Event API. Events are used in conjunction with the <a href="/projects/jcanvas/docs/layerAPI/">Layer API</a>.</p>
 
 <h3>Binding Events</h3>
 
@@ -10,8 +10,8 @@
 
 <p>The value of this event property must be a function. This callback function also accepts one argument, which is the layer's object of properties, as used below. Additionally, the <code>this</code> keyword refers to the canvas DOM element.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a green rectangle
 $('canvas').drawRect({
   layer: true,
@@ -29,21 +29,21 @@ $('canvas').drawRect({
 
 <p>You can also manually trigger an existing event or trigger a nonexisting event to create your own. To do so, use the <code>triggerLayerEvent()</code> method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').triggerLayerEvent('myLayer', 'click');
 </pre>
 </div>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').triggerLayerEvent('myLayer', 'resize');
 </pre>
 </div>
 
 <p>Note that the <code>triggerLayerEvent()</code> method will trigger all defined event callbacks and event hooks for the given event.</p>
 
-<div class='column'>
+<div class="column">
 <h3>Supported Methods</h3>
 <ul>
 	<li><code>drawRect()</code></li>
@@ -60,7 +60,7 @@ $('canvas').triggerLayerEvent('myLayer', 'resize');
 </ul>
 </div>
 
-<div class='column'>
+<div class="column">
 <h3>Supported Events</h3>
 <ul>
 	<li><code>click</code></li>
@@ -79,4 +79,4 @@ $('canvas').triggerLayerEvent('myLayer', 'resize');
 </ul>
 </div>
 
-<div class='clearfix'></div>
+<div class="clearfix"></div>

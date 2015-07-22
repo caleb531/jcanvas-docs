@@ -1,4 +1,4 @@
-<h2 class='menu'>Curves</h2>
+<h2 class="menu">Curves</h2>
 
 <h3>Quadratic Curves</h3>
 
@@ -12,8 +12,8 @@
 
 <p>You can draw one or more contiguous quadratic curves using the <code>drawQuadratic()</code> method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawQuadratic({
   strokeStyle: '#000',
   strokeWidth: 5,
@@ -37,8 +37,8 @@ $('canvas').drawQuadratic({
 
 <p>You can draw one or more contiguous Bézier curves using the <code>drawBezier()</code> method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawBezier({
   strokeStyle: '#000',
   strokeWidth: 5,

@@ -1,4 +1,4 @@
-<h2 class='menu'>Event Properties</h2>
+<h2 class="menu">Event Properties</h2>
 
 <p>jCanvas supports a number of event-related properties which make the Event API more powerful and flexible.</p>
 
@@ -8,8 +8,8 @@
 
 <p>In the following example, the closer you hover to the circle's center, the more transparent it will become.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   layer: true,
   fillStyle: '#c33',
@@ -35,8 +35,8 @@ $('canvas').drawArc({
 
 <p>In the following example, the opacity of the circle is determined by the speed at which you drag it; that is, the circle will become more faded the faster you drag it.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   layer: true,
   draggable: true,
@@ -57,8 +57,8 @@ $('canvas').drawArc({
 
 <p>The <code>cursors</code> property is used to display a specific cursor when a particular layer event fires. For instance, a draggable</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawText({
   layer: true,
   draggable: true,
@@ -90,8 +90,8 @@ $('canvas').drawText({
 
 <p>The <code>intangible</code> property essentially allows you to "click through" a layer as if it didn't exist.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawArc({
   layer: true,

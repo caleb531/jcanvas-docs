@@ -1,4 +1,4 @@
-<h2 class='menu'>Rectangles</h2>
+<h2 class="menu">Rectangles</h2>
 
 <p>A rectangle in jCanvas is, essentially, a rectangle of any width or height.</p>
 
@@ -6,8 +6,8 @@
 
 <p>You can draw a rectangle using the <code>drawRect()</code> method. The size of a rectangle is determined by its <code>width</code> and <code>height</code> properties.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawRect({
   fillStyle: '#000',
   x: 150, y: 100,
@@ -23,8 +23,8 @@ $('canvas').drawRect({
 
 <p>For example, consider the following rectangles. They both have the same <code>x</code> and <code>y</code> property values, but only one has its <code>fromCenter</code> property set to <code>false</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawRect({
   fillStyle: '#c33',
   x: 100, y: 60,
@@ -43,8 +43,8 @@ $('canvas').drawRect({
 
 <p>If you want to make <code>fromCenter</code> <code>false</code> by default for all shapes, do so using the <code>$.jCanvas.defaults</code> object.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $.jCanvas.defaults.fromCenter = false;
 $('canvas').drawRect({
   fillStyle: '#6a6',
@@ -60,8 +60,8 @@ $('canvas').drawRect({
 
 <p>You may round the corners of a rectangle using the <code>cornerRadius</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawRect({
   fillStyle: '#36c',
   x: 150, y: 100,
@@ -72,8 +72,8 @@ $('canvas').drawRect({
 </pre>
 </div>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawRect({
   strokeStyle: '#c33',
   strokeWidth: 4,

@@ -1,4 +1,4 @@
-<h2 class='menu'>Arrows</h2>
+<h2 class="menu">Arrows</h2>
 
 <p>You can draw arrows in the same way you draw lines or curves, except that you must provide some arrow-specific properties.</p>
 
@@ -17,8 +17,8 @@
 
 <h3>Lines</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawLine({
   strokeStyle: '#000',
   strokeWidth: 4,
@@ -35,8 +35,8 @@ $('canvas').drawLine({
 
 <h3>Vectors</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawVector({
   strokeStyle: '#000',
   strokeWidth: 4,
@@ -53,8 +53,8 @@ $('canvas').drawVector({
 
 <h3>Quadratic Curves</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawQuadratic({
   strokeStyle: '#000',
   strokeWidth: 4,
@@ -71,8 +71,8 @@ $('canvas').drawQuadratic({
 
 <h3>Bézier Curves</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawBezier({
   strokeStyle: '#000',
   strokeWidth: 4,
@@ -94,8 +94,8 @@ $('canvas').drawBezier({
 
 <h3>Arcs</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   strokeStyle: '#000',
   strokeWidth: 4,
@@ -113,8 +113,8 @@ $('canvas').drawArc({
 
 <h3>Paths</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawPath({
   strokeStyle: '#000',
   strokeWidth: 5,

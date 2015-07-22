@@ -1,4 +1,4 @@
-<h2 class='menu'>Event Hooks</h2>
+<h2 class="menu">Event Hooks</h2>
 
 <p>Event hooks are, essentially, event callbacks that apply to all jCanvas layers. They do not override any existing event callbacks, but rather, complement them.</p>
 
@@ -8,8 +8,8 @@
 
 <p>To define an event hook, call the <code>setEventHooks()</code> method with the event hooks you would like to set. If you wish to remove an existing event hook, simply set its value to <code>null</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').setEventHooks({
   add: function() {
     // code to run whenever a layer is added
@@ -20,8 +20,8 @@ $('canvas').setEventHooks({
 
 <p>Similarly, to retrieve the object containing all event hooks for a canvas, use the <code>getEventHooks()</code> method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').getEventHooks();
 </pre>
 </div>
@@ -30,8 +30,8 @@ $('canvas').getEventHooks();
 
 <p>jCanvas supports another type of event hook called a global event hook. Global event hooks apply to all layers on all canvases, and do not override canvas event hooks.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $.jCanvas.eventHooks.add = function() {
 	// code to run when any layer on any canvas is added
 };

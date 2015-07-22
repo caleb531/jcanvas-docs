@@ -1,4 +1,4 @@
-<h2 class='menu'>Syntax</h2>
+<h2 class="menu">Syntax</h2>
 
 <p>All jCanvas methods are regular jQuery methods, and are used in the same manner. Calling a jCanvas method will apply to all canvas elements in the jQuery collection.</p>
 
@@ -6,8 +6,8 @@
 
 <p>Most jCanvas methods accept a map of properties, which may be listed in any order.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a circle on the canvas
 $('canvas').drawArc({
   fillStyle: 'black',
@@ -23,10 +23,10 @@ $('canvas').drawArc({
 
 <h3>Chaining</h3>
 
-<p>Most jCanvas methods support <a href='http://tobiasahlin.com/blog/quick-guide-chaining-in-jquery/'>chaining</a> for cleaner and faster code.</p>
+<p>Most jCanvas methods support <a href="http://tobiasahlin.com/blog/quick-guide-chaining-in-jquery/">chaining</a> for cleaner and faster code.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   fillStyle: 'black',
   x: 100, y: 100,
@@ -44,8 +44,8 @@ $('canvas').drawArc({
 
 <p>As demonstrated in the examples above, jCanvas can draw the same drawing on multiple canvases.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Applies to all canvas elements
 $('canvas').drawArc({
   fillStyle: 'black',
@@ -55,8 +55,8 @@ $('canvas').drawArc({
 </pre>
 </div>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Applies to all canvas elements with a class of 'demo'
 $('canvas.demo').drawArc({
   fillStyle: 'black',

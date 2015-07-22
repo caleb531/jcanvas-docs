@@ -1,4 +1,4 @@
-<h2 class='menu'>Extending jCanvas</h2>
+<h2 class="menu">Extending jCanvas</h2>
 
 <p>jCanvas provides a plugin API so you can create methods which integrate with jCanvas. To do so, use the <code>jCanvas.extend()</code> method.</p>
 
@@ -16,8 +16,8 @@
 </li>
 </ul>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $.jCanvas.extend({
   name: 'pluginName',
   props: {
@@ -34,8 +34,8 @@ $.jCanvas.extend({
 
 <p>To demonstrate how this works, we'll be creating a method that draws a heart on the canvas.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create a drawHeart() method
 $.jCanvas.extend({
   name: 'drawHeart',
@@ -95,14 +95,14 @@ $('canvas').drawHeart({
 	<li><dfn>measureText()</dfn>: Augments the given parameter object with the calculated <code>width</code> and <code>height</code> of the text. Accepts an array of strings (representing lines of text) as a fourth argument.</li>
 </ul>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $.jCanvas.detectEvents(this, ctx, params);
 </pre>
 </div>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $.jCanvas.closePath(this, ctx, params);
 </pre>
 </div>

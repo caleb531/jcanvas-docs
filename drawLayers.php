@@ -1,9 +1,9 @@
-<h2 class='menu'>Drawing layers</h2>
+<h2 class="menu">Drawing layers</h2>
 
 <p>The <code>drawLayers()</code> method clears the canvas, and draws the canvas's layers.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').drawLayers();
 </pre>
 </div>
@@ -12,14 +12,14 @@ $('canvas').drawLayers();
 
 <p>However, if you need to draw only a single layer on the canvas (to acompany asynchronous code), then use the <code>drawLayer()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').drawLayer(0);
 </pre>
 </div>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').drawLayer('myBox');
 </pre>
 </div>

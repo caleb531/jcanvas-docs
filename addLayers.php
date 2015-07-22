@@ -1,4 +1,4 @@
-<h2 class='menu'>Adding layers</h2>
+<h2 class="menu">Adding layers</h2>
 
 <h3>Adding layers</h3>
 
@@ -6,8 +6,8 @@
 
 <p>If the input is an object, you must specify the <code>method</code> property (i.e. the name of the method associated with the properties you specify). </p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create a rectangle layer
 $('canvas').addLayer({
   type: 'rectangle',
@@ -21,8 +21,8 @@ $('canvas').addLayer({
 
 <p>You can also add a layer using the <code>layer</code> property with any method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create and draw a rectangle layer
 $('canvas').drawRect({
   layer: true,
@@ -39,8 +39,8 @@ $('canvas').drawRect({
 
 <p>To name a layer, use the <code>name</code> property. This name can be used later to retrieve, remove, or animate the layer. If the layer is a function, simply give the function a name when defining it (as shown above).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create a named layer
 $('canvas').drawRect({
   layer: true,
@@ -58,8 +58,8 @@ $('canvas').drawRect({
 
 <p>To assign one or more groups to a layer, use the <code>groups</code> property. Doing so will not change the order in which the layer is drawn. The property is merely for categorization purposes.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawRect({
   layer: true,
   groups: ['myBoxes'],
@@ -73,16 +73,16 @@ $('canvas').drawRect({
 
 <p>To dynamically add an existing layer to a group, use the <code>addLayerToGroup()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').addLayerToGroup('box', 'myBoxes');
 </pre>
 </div>
 
 <p>To dynamically remove an existing layer from a group, use the <code>removeLayerFromGroup()</code> method. Note that this does not remove the layer from jCanvas.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').removeLayerFromGroup('box', 'myBoxes');
 </pre>
 </div>
@@ -93,8 +93,8 @@ $('canvas').removeLayerFromGroup('box', 'myBoxes');
 
 <p>To show the layer again, set its <code>visible</code> property to <code>true</code>.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // This layer should be invisible
 $('canvas').drawRect({
   layer: true,
@@ -112,8 +112,8 @@ $('canvas').drawRect({
 
 <p>jCanvas refers to these types of layers as <dfn>function layers</dfn></p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create a named function layer
 $('canvas').addLayer({
   type: 'function',
@@ -129,8 +129,8 @@ $('canvas').addLayer({
 
 <p>This also works when using the <code>draw()</code> method and the <code>layer</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create and draw a named function layer
 $('canvas').draw({
   layer: true,
@@ -147,8 +147,8 @@ $('canvas').draw({
 
 <p>You can also set a layer's index (in the current layers array) using the <code>index</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .addLayer({
   type: 'rectangle',
@@ -183,8 +183,8 @@ $('canvas')
 
 <p>You can also store arbitrary data on any jCanvas layer using the <code>data</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create and draw a rectangle layer
 $('canvas').drawRect({
   layer: true,

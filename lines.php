@@ -1,4 +1,4 @@
-<h2 class='menu'>Lines</h2>
+<h2 class="menu">Lines</h2>
 
 <p>A line path in jCanvas is, essentially, one or more contiguous line segments.</p>
 
@@ -6,8 +6,8 @@
 
 <p>You can draw a line path using the <code>drawLine()</code> method. Coordinates are defined using <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code>, and so on (as many as necessary).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawLine({
   strokeStyle: '#000',
   strokeWidth: 10,
@@ -23,8 +23,8 @@ $('canvas').drawLine({
 
 <p>You can, optionally, close a line path, which will connect its start and end points with an extra line. To do so, use the <code>closed</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawLine({
   strokeStyle: '#000',
   strokeWidth: 10,
@@ -41,8 +41,8 @@ $('canvas').drawLine({
 
 <p>You can round the corners of a line path using the <code>rounded</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawLine({
   strokeStyle: '#000',
   strokeWidth: 10,
@@ -59,8 +59,8 @@ $('canvas').drawLine({
 
 <p>If you wish to utilize an array containing your points, you can easily construct the <code>drawLine()</code> object using a loop.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // The .drawLine() object
 var obj = {
   strokeStyle: '#000',
@@ -91,10 +91,10 @@ $('canvas').drawLine(obj);
 
 <p>Browsers began recently adopting the ability to create dashed lines. To do so in jCanvas, specify the <code>strokeDash</code> and <code>strokeDashOffset</code> properties.</p>
 
-<p>The <code>strokeDash</code> property accepts an array of one or two numbers, and the <code>strokeDashOffset</code> property accepts a single number. See the <a href='/projects/jcanvas/docs/properties/'>Properties</a> page for specific usage details.</p>
+<p>The <code>strokeDash</code> property accepts an array of one or two numbers, and the <code>strokeDashOffset</code> property accepts a single number. See the <a href="/projects/jcanvas/docs/properties/">Properties</a> page for specific usage details.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawLine({
   strokeStyle: '#000',
   strokeWidth: 3,
@@ -110,4 +110,4 @@ $('canvas').drawLine({
 
 <h3>Vectors</h3>
 
-<p>Instead of the <code>drawLine()</code> method, you can also plot line segments using the <code><a href='/projects/jcanvas/docs/vectors/'>drawVector()</a></code> method (which draws lines using vectors rather than (<var>x</var>, <var>y</var>) coordinates).</p>
+<p>Instead of the <code>drawLine()</code> method, you can also plot line segments using the <code><a href="/projects/jcanvas/docs/vectors/">drawVector()</a></code> method (which draws lines using vectors rather than (<var>x</var>, <var>y</var>) coordinates).</p>

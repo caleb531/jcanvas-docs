@@ -1,9 +1,9 @@
-<h2 class='menu'>Patterns</h2>
+<h2 class="menu">Patterns</h2>
 
 <p>The <code>createPattern()</code> method returns a canvas pattern object, which can be used as a fill or stroke style for any drawing.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 function draw(patt) {
   $('canvas').drawEllipse({
     fillStyle: patt,
@@ -25,8 +25,8 @@ var patt = $('canvas').createPattern({
 
 <p>You can also use an image DOM element as the value for the <code>source</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 function draw(patt) {
   $('canvas').drawEllipse({
     fillStyle: patt,
@@ -52,8 +52,8 @@ var patt = $('canvas').createPattern({
 
 <p>Finally, if you would rather use a existing canvas element, feel free to do so using the <code>source</code> property.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create pattern
 var patt = $('canvas').createPattern({
   // Define width/height of pattern (before repeating)

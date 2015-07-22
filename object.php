@@ -1,9 +1,9 @@
-<h2 class='menu'>jCanvas Object</h2>
+<h2 class="menu">jCanvas Object</h2>
 
 <p>jCanvas includes a <code>jCanvas</code> object as part of the <code>jQuery</code> object.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $.jCanvas
 </pre>
 </div>

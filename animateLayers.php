@@ -1,4 +1,4 @@
-<h2 class='menu'>Animating layers</h2>
+<h2 class="menu">Animating layers</h2>
 
 <h3>Animating layers</h3>
 
@@ -23,8 +23,8 @@
 	</li>
 </ol>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Create and draw a rectangle layer
 $('canvas').drawRect({
   layer: true,
@@ -52,10 +52,10 @@ $('canvas')
 
 <p>jCanvas can animate numeric values, as well as colors (hex, RGB, or color names). jCanvas also enables jQuery to utilize this color animation for HTML elements.</p>
 
-<p>Additionally, you may use the string <code>'+='</code> or <code>'-='</code> to animate a property from the current value.</p>
+<p>Additionally, you may use the string <code>'+="</code> or <code>"-="</code> to animate a property from the current value.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code'>
+<pre class="prettyprint lang-js">
 $('canvas').animateLayer(0, {
   rotate: '+=360',
   x: '-=50'
@@ -69,8 +69,8 @@ $('canvas').animateLayer(0, {
 
 <p>As always, the value of <code>this</code> in your callback function is the canvas DOM element.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').animateLayer('myLayer', {
   x: function(layer) {
     return Math.pow(params.x, 2);
@@ -87,8 +87,8 @@ $('canvas').animateLayer('myLayer', {
 
 <p>The method accepts the same basic arguments as the <code>animateLayer()</code> method, </p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 // Draw a circle
 .drawArc({
@@ -117,30 +117,30 @@ $('canvas')
 
 <p>Similar to jQuery's <code>stop()</code> method, you can stop any layer animation in progress by calling the <code>stopLayer()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').stopLayer(0);
 </pre>
 </div>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').stopLayer('myBox');
 </pre>
 </div>
 
 <p>Additionally, you may (optionally) pass in <code>true</code> as a second argument, which will also remove any queued animations.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').stopLayer('myBox', true);
 </pre>
 </div>
 
 <p>You can also stop animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').stopLayerGroup('myGroup');
 </pre>
 </div>
@@ -151,22 +151,22 @@ $('canvas').stopLayerGroup('myGroup');
 
 <p>The method accepts two arguments: the layer name/index, and the number of milliseconds to delay animation.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').delayLayer('myBox', 500);
 </pre>
 </div>
 
 <p>You can also delay animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').delayLayerGroup('myGroup', 500);
 </pre>
 </div>
 
 <h3>Notes</h3>
 
-<p>The syntax for the <code>animateLayer()</code> method is almost identical to jQuery's <code>animate()</code> method. Therefore, callback functions such as <a href='http://api.jquery.com/animate/#step'><code>step</code></a> are still available for use.</p>
+<p>The syntax for the <code>animateLayer()</code> method is almost identical to jQuery's <code>animate()</code> method. Therefore, callback functions such as <a href="http://api.jquery.com/animate/#step"><code>step</code></a> are still available for use.</p>
 <p>Multiple <code>animateLayer()</code> calls can be queued up rather than using multiple callback functions.</p>
 <p>The callback parameter for the <code>animateLayerGroup()</code> method will run when <em>each</em> layer in the group finishes animating.</p>

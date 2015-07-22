@@ -1,4 +1,4 @@
-<h2 class='menu'>Pixel Manipulation</h2>
+<h2 class="menu">Pixel Manipulation</h2>
 
 <p>The <code>setPixels()</code> method allows for modification of a specific section of pixels from the canvas.</p>
 
@@ -13,8 +13,8 @@
 
 <h3>Basic usage</h3>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 function invert() {
   $(this).setPixels({
     x: 150, y: 100,
@@ -41,8 +41,8 @@ $('canvas').drawImage({
 
 <p>In this example, hovering over the image will manipulate the pixels closest to the part you hovered over.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 function invert(params) {
   $(this).setPixels({
     x: params.eventX, y: params.eventY,

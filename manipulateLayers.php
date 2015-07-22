@@ -1,4 +1,4 @@
-<h2 class='menu'>Manipulating Layers</h2>
+<h2 class="menu">Manipulating Layers</h2>
 
 <h3>Setting layer properties</h3>
 
@@ -11,8 +11,8 @@
 
 <p>Note that this method does not automatically redraw the canvas.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 $('canvas').setLayer('myBox', {
   fillStyle: '#36b',
   rotate: 30,
@@ -23,12 +23,12 @@ $('canvas').setLayer('myBox', {
 </pre>
 </div>
 
-<p>Note that the you can use the <code>'+='</code> and <code>'-='</code> strings to increment and decrement numbers, respectively.</p>
+<p>Note that the you can use the <code>'+="</code> and <code>"-="</code> strings to increment and decrement numbers, respectively.</p>
 
 <p>You can also set properties on <em>all</em> layers using the <code>setLayers()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code'>
+<pre class="prettyprint lang-js">
 // Set properties of all layers
 $('canvas').setLayers({
   fillStyle: '#36b',
@@ -40,8 +40,8 @@ $('canvas').setLayers({
 
 <p>Note that the <code>setLayers()</code> method also accepts a callback function as s second argument, which filters the layers.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Set properties of all draggable layers
 $('canvas').setLayers({
   fillStyle: '#36b',
@@ -59,8 +59,8 @@ $('canvas').setLayers({
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Set properties for all layers
 // in the group 'myBoxes'
 $('canvas').setLayerGroup('myBoxes', {
@@ -79,8 +79,8 @@ $('canvas').setLayerGroup('myBoxes', {
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Move the layer with the name 'box' to index 1
 $('canvas').moveLayer('box', 1);
 </pre>
@@ -92,15 +92,15 @@ $('canvas').moveLayer('box', 1);
 
 <p>Also note that this method does not automatically redraw the canvas.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Removes the layer at index 0
 $('canvas').removeLayer(0);
 </pre>
 </div>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Removes the layer with the name 'myBox'
 $('canvas').removeLayer('myBox');
 </pre>
@@ -108,8 +108,8 @@ $('canvas').removeLayer('myBox');
 
 <p>Furthermore, you can remove all layers using the <code>removeLayers()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Remove all layers
 $('canvas').removeLayers();
 </pre>
@@ -117,8 +117,8 @@ $('canvas').removeLayers();
 
 <p>As with the <code>getLayers()</code> and <code>setLayers()</code> methods, the <code>removeLayers()</code> method also accepts a callback function.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Remove all draggable layers
 $('canvas').removeLayers(function(layer) {
   return (layer.draggable === true);
@@ -130,8 +130,8 @@ $('canvas').removeLayers(function(layer) {
 
 <p>Using the <code>removeLayerGroup()</code> method, You can remove any layers from the layers array which are in the same layer group.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Remove all layers in the group 'myBoxes'
 $('canvas').removeLayerGroup('myBoxes');
 </pre>
@@ -139,8 +139,8 @@ $('canvas').removeLayerGroup('myBoxes');
 
 <p>To dynamically remove an existing layer from a group, use the <code>removeLayerFromGroup()</code> method.</p>
 
-<div class='code'>
-<pre class='prettyprint lang-js'>
+<div class="code">
+<pre class="prettyprint lang-js">
 // Remove the layer with the name 'box'
 // from the group 'myBoxes'
 $('canvas').removeLayerFromGroup('box', 'myBoxes');

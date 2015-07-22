@@ -1,9 +1,9 @@
-<h2 class='menu'>Shadows</h2>
+<h2 class="menu">Shadows</h2>
 
 <p>To create a generic shadow, use the <code>shadowColor</code> and <code>shadowBlur</code> properties:</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   fillStyle: '#58d',
   shadowColor: '#000',
@@ -18,8 +18,8 @@ $('canvas').drawArc({
 
 <p>The shadow can be offset relative to itself using the <code>shadowX</code> and <code>shadowY</code> properties:</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas').drawArc({
   fillStyle: '#58d',
   strokeStyle: '#8e3',

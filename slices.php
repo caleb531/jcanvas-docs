@@ -1,4 +1,4 @@
-<h2 class='menu'>Slices</h2>
+<h2 class="menu">Slices</h2>
 
 <p>A slice in jCanvas is, essentially, a slice of a circle (similar to a pizza slice).</p>
 
@@ -8,8 +8,8 @@
 
 <p>The position of a slice is determined by its <code>x</code> and <code>y</code> properties. These coordinates lie at the tip of the slice.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 // Draw a 60&deg; slice
 $('canvas').drawSlice({
   fillStyle: '#f63',
@@ -27,8 +27,8 @@ $('canvas').drawSlice({
 
 <p>In the example below, the <code>spread</code> property determines the spacing between slices. The property's value is a multiple of the slice's radius (from 0 to 1).</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawSlice({
   layer: true,
@@ -65,8 +65,8 @@ $('canvas')
 
 <p>To add a text label to your pie chart, create a text layer using the <code>drawText()</code> method.</p>
 
-<div class='code demo'>
-<pre class='prettyprint lang-js'>
+<div class="code demo">
+<pre class="prettyprint lang-js">
 $('canvas')
 .drawSlice({
   layer: true,

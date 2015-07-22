@@ -4,8 +4,8 @@
 
 <p>Click a method name to see information about that method.</p>
 
-<ul id='methods' class='accordion'><?php
-	
+<ul id="methods" class="accordion"><?php
+
 	$methods = array(
 		"addLayer"=> array(
 			"url"=> "addLayers#adding-layers",
@@ -42,7 +42,7 @@
 			"defs"=> array(
 				"( properties )",
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"drawArc"=> array(
 			"url"=> "arcs",
@@ -80,11 +80,11 @@
 			"returns"=> "jQuery",
 		),
 		"drawLayers"=> array(
-			"url"=> "layers#drawing-layers",
+			"url"=> "drawLayers",
 			"defs"=> array(
 				"( )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"drawLine"=> array(
 			"url"=> "lines",
@@ -126,7 +126,7 @@
 			"defs"=> array(
 				"( layerId [, duration ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"createGradient"=> array(
 			"url"=> "gradients",
@@ -147,14 +147,7 @@
 			"defs"=> array(
 				"( properties )"
 			),
-			"returns"=> "jQuery",			
-		),
-		"restoreCanvasOnRedraw"=> array(
-			"url"=> "masking#masking-draggable-shapes",
-			"defs"=> array(
-				"( properties )"
-			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"rotateCanvas"=> array(
 			"url"=> "rotateCanvas",
@@ -168,7 +161,7 @@
 			"defs"=> array(
 				"( properties )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"scaleCanvas"=> array(
 			"url"=> "scaleCanvas",
@@ -178,7 +171,7 @@
 			"returns"=> "jQuery",
 		),
 		"setPixels"=> array(
-			"url"=> "setPixels",
+			"url"=> "pixelManipulation/",
 			"defs"=> array(
 				"( properties )"
 			),
@@ -196,42 +189,42 @@
 			"defs"=> array(
 				"( [ callback ] )"
 			),
-			"returns"=> "Array",			
+			"returns"=> "Array",
 		),
 		"setLayer"=> array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
 				"( layerId, properties )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"setLayers"=> array(
 			"url"=> "manipulateLayers#setting-layer-properties",
 			"defs"=> array(
 				"( properties [, callback ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"setLayerGroup"=> array(
 			"url"=> "manipulateLayers#setting-layer-group-properties",
 			"defs"=> array(
 				"( groupId, properties )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"getLayer"=> array(
 			"url"=> "retrieveLayers#retrieving-a-single-layer",
 			"defs"=> array(
 				"( layerId )"
 			),
-			"returns"=> "Layer",			
+			"returns"=> "Layer",
 		),
 		"getLayerIndex"=> array(
 			"url"=> "retrieveLayers#retrieving-layer-indices",
 			"defs"=> array(
 				"( layerId )"
 			),
-			"returns"=> "Number",			
+			"returns"=> "Number",
 		),
 		"getLayerGroup"=> array(
 			"url"=> "retrieveLayers#retrieving-layer-groups",
@@ -245,49 +238,49 @@
 			"defs"=> array(
 				"( )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"removeLayer"=> array(
 			"url"=> "manipulateLayers#removing-layers",
 			"defs"=> array(
 				"( layerId )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"removeLayerGroup"=> array(
 			"url"=> "manipulateLayers#removing-layer-groups",
 			"defs"=> array(
 				"( groupId )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"getCanvasImage"=> array(
 			"url"=> "getCanvasImage",
 			"defs"=> array(
 				"( [ imageType ] )"
 			),
-			"returns"=> "String",			
+			"returns"=> "String",
 		),
 		"stopLayer"=> array(
 			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( layerId [, clearQueue ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"stopLayerGroup"=> array(
 			"url"=> "animateLayers#stopping-animation",
 			"defs"=> array(
 				"( groupId [, clearQueue ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"delayLayerGroup"=> array(
 			"url"=> "animateLayers#delaying-animation",
 			"defs"=> array(
 				"( groupId [, duration ] )"
 			),
-			"returns"=> "jQuery",			
+			"returns"=> "jQuery",
 		),
 		"measureText"=> array(
 			"url"=> "text#measuring-text",
@@ -295,7 +288,7 @@
 				"( properties )",
 				"( layerId )"
 			),
-			"returns"=> "Object",			
+			"returns"=> "Object",
 		),
 		"jCanvas.extend"=> array(
 			"url"=> "extending",
@@ -355,7 +348,7 @@
 		)
 	);
 	ksort($methods);
-		
+
 	foreach ($methods as $name=> $info) {
 		echo "
 	<li><h3 id='$name'>$name( )</h3>

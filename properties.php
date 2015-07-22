@@ -1,10 +1,10 @@
-<h2 class='menu'>Properties</h2>
+<h2 class="menu">Properties</h2>
 
 <p>These are descriptions of every jCanvas property, their supported methods, and their possible values. Default property values are listed first.</p>
 
 <p>Click a property name to see information about that property.</p>
 
-<ul id='properties' class='accordion'>
+<ul id="properties" class="accordion">
 <?php
 // List of properties and their attributes
 $names = array(
@@ -45,7 +45,7 @@ $names = array(
 	"values"=> "<code>false</code>, <code>false</code>",
 ),
 "compositing"=> array(
-	"description"=> "How shapes are drawn on top of one another. For examples of the possible values, visit <a href='https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html'>Mozilla's examples page</a>",
+	"description"=> "How shapes are drawn on top of one another. For examples of the possible values, visit <a href="https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html">Mozilla's examples page</a>",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>'source-over'</code>, <code>'source-in'</code>, <code>'source-out'</code>, <code>'source-atop'</code>, <code>'lighter'</code>, <code>'destination-over'</code>, <code>'destination-in'</code>, <code>'destination-out',</code> <code>'destination-atop'</code>, <code>'copy'</code>, <code>'xor'</code>",
 ),
@@ -115,7 +115,7 @@ $names = array(
 	"values"=> "<code>false</code>, <code>false</code>",
 ),
 "miterLimit"=> array(
-	"description"=> "The distance between the inner and outer corner of two lines. For an example, see <a href='https://developer.mozilla.org/samples/canvas-tutorial/4_8_canvas_miterlimit.html'>Mozilla's demo page</a>",
+	"description"=> "The distance between the inner and outer corner of two lines. For an example, see <a href="https://developer.mozilla.org/samples/canvas-tutorial/4_8_canvas_miterlimit.html">Mozilla's demo page</a>",
 	"methods"=> "All drawing methods",
 	"values"=> "<code>10</code>, any number",
 ),
@@ -147,7 +147,12 @@ $names = array(
 "repeat"=> array(
 	"description"=> "How a pattern is repeated",
 	"methods"=> "<code>pattern()</code>",
-	"values"=> "<code>'repeat'</code>, 'repeat-x', 'repeat-y', 'no-repeat'",
+	"values"=> "<code>'repeat'</code>, <code>'repeat-x'</code>, <code>'repeat-y'</code>, <code>'no-repeat'</code>",
+),
+"restrictDragToAxis"=> array(
+	"description"=> "Restricts the dragging of a layer to the specified axis",
+	"methods"=> "<code>pattern()</code>",
+	"values"=> "<code>null</code>, <code>'x'</code>, <code>'y'</code>",
 ),
 "rounded"=> array(
 	"description"=> "If the corners of a path is rounded",
@@ -404,16 +409,16 @@ ksort($names);
 foreach ($names as $name => $info) {
 
 	// Add property name
-	echo "<li><h3 id='$name'>$name</h3>
-	<ul class='box'>";
-	
+	echo "<li><h3 id="$name">$name</h3>
+	<ul class="box">";
+
 	// Add info for each property
 	foreach ($info as $attr => $value) {
 		$attr = ucwords($attr);
 		echo "\n\t\t<li><dfn>$attr:</dfn> $value</li>";
 	}
 	echo "</ul></li>";
-	
+
 }
 ?>
 </ul>
