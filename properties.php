@@ -397,8 +397,8 @@ $names = array(
 "intangible"=> array(
 	"description"=> "Indicates if the user can \"click through\" the layer as if it didn't exist. Note that the layer will still respond to mechanical events, just not mouse events.",
 	"methods"=> "All drawing methods",
-	"values"=> "0",
-),
+	"values"=> "false",
+)
 
 );
 

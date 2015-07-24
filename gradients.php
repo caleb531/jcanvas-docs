@@ -73,7 +73,7 @@ $('canvas').drawArc({
 var gradient = $('canvas').createGradient({
   // Gradient is drawn relative to layer position
   x1: 0, y1: 20,
-  x1: 0, y2: 140,
+  x2: 0, y2: 140,
   c1: '#36c', c2: '#c33'
 });
 // Create layer with gradient fill
@@ -105,7 +105,7 @@ $('canvas').drawRect({
     return $(this).createGradient({
       // Gradient is drawn relative to layer position
       x1: 0, y1: layer.y - layer.height,
-      x1: 0, y2: layer.y + layer.height,
+      x2: 0, y2: layer.y + layer.height,
       c1: '#36c', c2: '#c33'
     });
   },

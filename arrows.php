@@ -9,7 +9,7 @@
 <ul>
 	<li><dfn>startArrow</dfn>: A boolean indicating if an arrow is drawn at the start point of the path</li>
 	<li><dfn>endArrow</dfn>: A boolean indicating if an arrow is drawn at the end point of the path</li>
-	<li><dfn>arrowAngle</dfn>: The angle between each tip of the angle and the path itself (optional; defaults to <code>45</code>)</li>
+	<li><dfn>arrowAngle</dfn>: The angle between the two tips of the angle (optional; defaults to <code>90</code>)</li>
 	<li><dfn>arrowRadius</dfn>: A number indicating the length of each tip of the arrow (required)</li>
 </ul>
 
@@ -130,8 +130,8 @@ $('canvas').drawPath({
     type: 'quadratic',
     x1: 160, y1: 50,
     cx1: 160, cy1: 150,
-    x2: 100, y2: 200  
+    x2: 100, y2: 200
   }
-});	
+});
 </pre>
 </div>

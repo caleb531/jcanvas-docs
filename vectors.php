@@ -49,7 +49,7 @@ $('canvas').drawVector({
 
 <h3>Using line properties</h3>
 
-<p>Because the <code>drawVector()</code> method creates line segments just like the <code>drawLine()</code> method, the <code>drawVector()</code> method  . These properties include (but are not limited to) <code>closed</code> and <code>rounded</code>.</p>
+<p>Because the <code>drawVector()</code> method creates line segments just like the <code>drawLine()</code> method, the <code>drawVector()</code> method  accepts many of the same properties as <code>drawLine()</code>. These properties include (but are not limited to) <code>closed</code> and <code>rounded</code>.</p>
 
 <div class="code demo">
 <pre class="prettyprint lang-js">

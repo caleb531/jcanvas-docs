@@ -76,7 +76,7 @@ $('canvas')
     // code to run as layer is being dragged
   },
   dragstop: function(layer) {
-   // code to run as layer is being dragged
+   // code to run when dragging stops
   }
 });
 </pre>

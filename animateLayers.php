@@ -54,7 +54,7 @@ $('canvas')
 
 <p>Additionally, you may use the string <code>'+="</code> or <code>"-="</code> to animate a property from the current value.</p>
 
-<div class="code'>
+<div class="code">
 <pre class="prettyprint lang-js">
 $('canvas').animateLayer(0, {
   rotate: '+=360',
@@ -137,7 +137,7 @@ $('canvas').stopLayer('myBox', true);
 </pre>
 </div>
 
-<p>You can also stop animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
+<p>You can also delay animation for all layers in a group using the <code>delayLayerGroup()</code> method</p>
 
 <div class="code">
 <pre class="prettyprint lang-js">
