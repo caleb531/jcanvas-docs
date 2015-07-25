@@ -37,7 +37,7 @@ $('canvas').drawRect({
 
 <h3>Naming layers</h3>
 
-<p>To name a layer, use the <code>name</code> property. This name can be used later to retrieve, remove, or animate the layer. If the layer is a function, simply give the function a name when defining it (as shown above).</p>
+<p>To name a layer, use the <code>name</code> property. This name can be used later to retrieve, remove, or animate the layer.</p>
 
 <div class="code demo">
 <pre class="prettyprint lang-js">

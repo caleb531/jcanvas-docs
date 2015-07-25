@@ -73,7 +73,7 @@ $('canvas').animateLayer(0, {
 <pre class="prettyprint lang-js">
 $('canvas').animateLayer('myLayer', {
   x: function(layer) {
-    return Math.pow(params.x, 2);
+    return Math.pow(layer.x, 2);
   }
 });
 </pre>

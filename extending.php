@@ -66,7 +66,7 @@ $.jCanvas.extend({
     $.jCanvas.detectEvents(this, ctx, p);
     // Call the closePath() functions to fill, stroke, and close the path
     // This function also enables masking support and events
-    // It accepts the same arguments as detectEvents()    
+    // It accepts the same arguments as detectEvents()
     $.jCanvas.closePath(this, ctx, p);
   }
 });
@@ -87,9 +87,9 @@ $('canvas').drawHeart({
 <p>The jCanvas object (<code>$.jCanvas</code>) provides a few useful methods for integrating your methods with jCanvas. All of these methods accept the same three arguments: the canvas DOM element (<code>this</code>), the canvas context (<code>ctx</code>), and the parameters object (<code>params</code>).</p>
 
 <ul>
-	<li><dfn>setGlobalProps()</dfn>: </li>
+	<li><dfn>setGlobalProps()</dfn>: sets global canvas properties like `fillStyle`, `shadowColor`, etc.</li>
 	<li><dfn>transformShape()</dfn>: Enables shape transformation using the standard transformation properties (<code>rotate</code>, <code>scale</code>, <code>translate</code>).</li>
-	<li><dfn>detectEvents()</dfn>: Enables and detects jCanvas events for your custom path. The method accepts three arguments:  Note that this method should be called at the end of your path.</li>
+	<li><dfn>detectEvents()</dfn>: Enables and detects jCanvas events for your custom path. Note that this method should be called at the end of your path.</li>
 	<li><dfn>closePath()</dfn>: Closes the current path, and fills/strokes it if the respective properties have been set. The method also enables masking for the path through the use of the <code>mask</code> property.</li>
 	<li><dfn>setCanvasFont()</dfn>: Sets the font of the canvas context based on the <code>fontStyle</code>, <code>fontSize</code>, and <code>fontFamily</code> properties.</li>
 	<li><dfn>measureText()</dfn>: Augments the given parameter object with the calculated <code>width</code> and <code>height</code> of the text. Accepts an array of strings (representing lines of text) as a fourth argument.</li>

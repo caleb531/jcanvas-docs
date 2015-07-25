@@ -11,7 +11,7 @@
 <div class="code demo">
 <pre class="prettyprint lang-js">
 $('canvas').setEventHooks({
-  add: function() {
+  add: function(layer) {
     // code to run whenever a layer is added
   }
 });
@@ -32,7 +32,7 @@ $('canvas').getEventHooks();
 
 <div class="code demo">
 <pre class="prettyprint lang-js">
-$.jCanvas.eventHooks.add = function() {
+$.jCanvas.eventHooks.add = function(layer) {
 	// code to run when any layer on any canvas is added
 };
 </pre>

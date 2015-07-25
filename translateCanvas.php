@@ -1,6 +1,6 @@
 <h2 class="menu">Translate Canvas</h2>
 
-<p>The <code>translateCanvas()</code> method translates the canvas from the included point.</p>
+<p>The <code>translateCanvas()</code> method translates the canvas by the given values.</p>
 
 <div class="code demo">
 <pre class="prettyprint lang-js">
