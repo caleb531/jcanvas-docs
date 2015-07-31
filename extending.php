@@ -44,6 +44,8 @@ $.jCanvas.extend({
   fn: function(ctx, params) {
     // Just to keep our lines short
     var p = params;
+    // Enable layer transformations like scale and rotate
+    $.jCanvas.transformShape(this, ctx, p);
     // Draw heart
     ctx.beginPath();
     ctx.moveTo(p.x, p.y + p.radius);
@@ -77,7 +79,8 @@ $('canvas').drawHeart({
   draggable: true,
   fillStyle: '#c33',
   radius: 50,
-  x: 150, y: 130
+  x: 150, y: 130,
+  rotate: 30
 });
 </pre>
 </div>
@@ -88,7 +91,7 @@ $('canvas').drawHeart({
 
 <ul>
 	<li><dfn>setGlobalProps()</dfn>: sets global canvas properties like `fillStyle`, `shadowColor`, etc.</li>
-	<li><dfn>transformShape()</dfn>: Enables shape transformation using the standard transformation properties (<code>rotate</code>, <code>scale</code>, <code>translate</code>).</li>
+	<li><dfn>transformShape()</dfn>: Enables shape transformation using the standard transformation properties (<code>rotate</code>, <code>scale</code>, <code>translate</code>). Note that the `closePath()` method must be called later on to restore the layer transformations.</li>
 	<li><dfn>detectEvents()</dfn>: Enables and detects jCanvas events for your custom path. Note that this method should be called at the end of your path.</li>
 	<li><dfn>closePath()</dfn>: Closes the current path, and fills/strokes it if the respective properties have been set. The method also enables masking for the path through the use of the <code>mask</code> property.</li>
 	<li><dfn>setCanvasFont()</dfn>: Sets the font of the canvas context based on the <code>fontStyle</code>, <code>fontSize</code>, and <code>fontFamily</code> properties.</li>
