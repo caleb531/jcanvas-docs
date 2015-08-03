@@ -353,7 +353,7 @@
 		echo "
 	<li><h3 id='$name'>$name( )</h3>
 		<ul class='box'>
-			<li><dfn><a href='/projects/jcanvas/docs/$info[url]'>Method Usage</a></dfn></li>
+			<li><dfn><a href='/jcanvas/docs/$info[url]'>Method Usage</a></dfn></li>
 			<li><dfn>Syntax</dfn>
 			<ul class='syntax'>";
 			// Add syntax definitions

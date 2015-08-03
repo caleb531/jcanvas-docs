@@ -1,4 +1,4 @@
-# [jCanvas Documentation](http://calebevans.me/projects/jcanvas/docs/)
+# [jCanvas Documentation](http://projects.calebevans.me/jcanvas/docs/)
 *Copyright 2013, Caleb Evans*  
 *Released under the MIT license*
 

@@ -1,6 +1,6 @@
 <h2 class="menu">Event API</h2>
 
-<p>jCanvas supports mouse and touch events for most drawings through the included Event API. Events are used in conjunction with the <a href="/projects/jcanvas/docs/layerAPI/">Layer API</a>.</p>
+<p>jCanvas supports mouse and touch events for most drawings through the included Event API. Events are used in conjunction with the <a href="/jcanvas/docs/layerAPI/">Layer API</a>.</p>
 
 <h3>Binding Events</h3>
 

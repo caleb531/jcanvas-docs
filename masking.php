@@ -54,7 +54,7 @@ $('canvas').drawArc({
 </pre>
 </div>
 
-<p>However, when creating layer masks, the <code>restoreCanvas()</code> method must be made into a layer using the <code>layer</code> property, as demonstrated above. For more information, see the <a href="/projects/jcanvas/docs/restoreCanvas/">Restore Canvas</a> section.</p>
+<p>However, when creating layer masks, the <code>restoreCanvas()</code> method must be made into a layer using the <code>layer</code> property, as demonstrated above. For more information, see the <a href="/jcanvas/docs/restoreCanvas/">Restore Canvas</a> section.</p>
 
 <h3>Masking draggable layers</h3>
 

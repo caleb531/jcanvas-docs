@@ -1,6 +1,6 @@
 <h2 class="menu">Paths</h2>
 
-<p>A path in jCanvas consists of one or more connected <a href="/projects/jcanvas/docs/lines/">lines</a>, <a href="/projects/jcanvas/docs/arcs/">arcs</a>, <a href="/projects/jcanvas/docs/curves/">curves</a>, or <a href="/projects/jcanvas/docs/vectors/">vectors</a>.</p>
+<p>A path in jCanvas consists of one or more connected <a href="/jcanvas/docs/lines/">lines</a>, <a href="/jcanvas/docs/arcs/">arcs</a>, <a href="/jcanvas/docs/curves/">curves</a>, or <a href="/jcanvas/docs/vectors/">vectors</a>.</p>
 
 <h3>Basic usage</h3>
 
@@ -109,7 +109,7 @@ $('canvas')
 
 <h3>Arrows</h3>
 
-<p>Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See <a href="/projects/jcanvas/docs/arrows/">the section on arrows</a> for descriptions of the arrow properties.</p>
+<p>Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See <a href="/jcanvas/docs/arrows/">the section on arrows</a> for descriptions of the arrow properties.</p>
 
 <p>For generic paths, arrow properties must be specified in a subpath object, not the entire path object.</p>
 

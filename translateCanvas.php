@@ -80,4 +80,4 @@ $('canvas').restoreCanvas({
 
 <h3>Notes</h3>
 
-<p>To revert to the canvas's previous state, call the <code><a href="/projects/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method. However, you do not need to call this method when translating an individual shape.</p>
+<p>To revert to the canvas's previous state, call the <code><a href="/jcanvas/docs/restoreCanvas/">restoreCanvas()</a></code> method. However, you do not need to call this method when translating an individual shape.</p>

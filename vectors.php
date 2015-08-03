@@ -66,7 +66,7 @@ $('canvas').drawVector({
 </pre>
 </div>
 
-<p>Details on the usage of these properties can be found in the <a href="/projects/jcanvas/docs/lines/">Lines</a> section.</p>
+<p>Details on the usage of these properties can be found in the <a href="/jcanvas/docs/lines/">Lines</a> section.</p>
 
 <h3>Notes</h3>
 
