@@ -1,13 +1,13 @@
 ## Introduction
 
-The `&lt;canvas&gt;` element is a new element apart of HTML5. It allows you to draw shapes, paths, images, and other drawings on a blank element called the canvas.
+The `<canvas>` element is a new element apart of HTML5. It allows you to draw shapes, paths, images, and other drawings on a blank element called the canvas.
 
 ### Creating a canvas
 
 Before you can draw on the canvas, you need to create one.
 
 ```html
-&lt;canvas width="300" height="150"&gt;&lt;/canvas&gt;
+<canvas width="300" height="150"></canvas>
 ```
 
 Of course, the canvas can be any width/height you want. You may also wish to give the canvas an ID (for future reference).
@@ -16,10 +16,10 @@ As a side note, you cannot accurately set a canvas's width and height via CSS; y
 
 ### Importing jCanvas
 
-You also need to add jCanvas to your page somehow (usually a `&lt;script&gt;` element will do).
+You also need to add jCanvas to your page somehow (usually a `<script>` element will do).
 
 ```html
-&lt;script src="jcanvas.min.js"&gt;&lt;/script&gt;
+<script src="jcanvas.min.js"></script>
 ```
 
 ### Drawing
