@@ -67,11 +67,11 @@ $('canvas').drawText({
   // Show pointer cursor on hover
   cursors: {
     // Show pointer on hover
-  	mouseover: 'pointer',
-  	// Show 'move' cursor on mousedown
-  	mousedown: 'move',
-  	// Revert cursor on mouseup
-  	mouseup: 'pointer'
+    mouseover: 'pointer',
+    // Show 'move' cursor on mousedown
+    mousedown: 'move',
+    // Revert cursor on mouseup
+    mouseup: 'pointer'
   }
 });
 ```

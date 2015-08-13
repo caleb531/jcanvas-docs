@@ -3,9 +3,9 @@
 ### Quadratic Curves
 
 A quadratic curve consists of three components:  
-	- A start point (*x*, *y*)
-	- A control point to make the curve (*cx*, *cy*)
-	- An end point which becomes the next start point (*x*, *y*)
+  - A start point (*x*, *y*)
+  - A control point to make the curve (*cx*, *cy*)
+  - An end point which becomes the next start point (*x*, *y*)
 
 You can draw one or more contiguous quadratic curves using the `drawQuadratic()` method.
 
@@ -22,10 +22,10 @@ $('canvas').drawQuadratic({
 ### Bézier Curves
 
 A Beziér curve consists of four components:  
-	- A start point (*x*, *y*)
-	- A first control point (*cx*, *cy*)
-	- A second control point (*cx*, *cy*)
-	- An end point which becomes the next start point (*x*, *y*)
+  - A start point (*x*, *y*)
+  - A first control point (*cx*, *cy*)
+  - A second control point (*cx*, *cy*)
+  - An end point which becomes the next start point (*x*, *y*)
 
 You can draw one or more contiguous Bézier curves using the `drawBezier()` method.
 

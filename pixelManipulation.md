@@ -6,8 +6,8 @@ To modify the pixels, you can loop through each pixel using the `each` callback 
 
 The `each` callback function accepts two parameters:
 
-	1. An object containing the properties for red, green, blue, and alpha color values (`r`, `g`, `b`, `a`)
-	2. The parameters passed to the `setPixels()` method
+  1. An object containing the properties for red, green, blue, and alpha color values (`r`, `g`, `b`, `a`)
+  2. The parameters passed to the `setPixels()` method
 
 ### Basic usage
 

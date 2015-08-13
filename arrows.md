@@ -5,10 +5,10 @@ You can draw arrows in the same way you draw lines or curves, except that you mu
 ### Basic Usage
 
 There are four basic properties which you can use to add an arrow to an existing path:  
-	- `startArrow`: A boolean indicating if an arrow is drawn at the start point of the path
-	- `endArrow`: A boolean indicating if an arrow is drawn at the end point of the path
-	- `arrowAngle`: The angle between the two tips of the angle (optional; defaults to `90`)
-	- `arrowRadius`: A number indicating the length of each tip of the arrow (required)
+  - `startArrow`: A boolean indicating if an arrow is drawn at the start point of the path
+  - `endArrow`: A boolean indicating if an arrow is drawn at the end point of the path
+  - `arrowAngle`: The angle between the two tips of the angle (optional; defaults to `90`)
+  - `arrowRadius`: A number indicating the length of each tip of the arrow (required)
 
 Note that you are not *required* to specify both the `startArrow` and `endArrow` properties. However, you *must* specify one or the other, and you *may* specify both.
 

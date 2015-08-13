@@ -67,7 +67,6 @@ $('canvas').restoreCanvas({
 });
 ```
 
-
 ### Notes
 
 To revert to the canvas's previous state, call the `[restoreCanvas()](/jcanvas/docs/restoreCanvas/)` method. However, you do not need to call this method when translating an individual shape.

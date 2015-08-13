@@ -39,30 +39,30 @@ Note that the `triggerLayerEvent()` method will trigger all defined event callba
 
 ### Supported Methods
 
-	- `drawRect()`
-	- `drawArc()`
-	- `drawEllipse()`
-	- `drawLine()`
-	- `drawQuadratic()`
-	- `drawBezier()`
-	- `drawVector()`
-	- `drawGraph()`
-	- `drawPolygon()`
-	- `drawImage()`
-	- `drawText()`
+  - `drawRect()`
+  - `drawArc()`
+  - `drawEllipse()`
+  - `drawLine()`
+  - `drawQuadratic()`
+  - `drawBezier()`
+  - `drawVector()`
+  - `drawGraph()`
+  - `drawPolygon()`
+  - `drawImage()`
+  - `drawText()`
 
 ### Supported Events
 
-	- `click`
-	- `dblclick`
-	- `mousedown`
-	- `mouseup`
-	- `mousemove`
-	- `mouseover`
-	- `mouseout`
-	- `dragstart`
-	- `drag`
-	- `dragstop`
-	- `touchstart`
-	- `touchend`
-	- `touchmove`
+  - `click`
+  - `dblclick`
+  - `mousedown`
+  - `mouseup`
+  - `mousemove`
+  - `mouseover`
+  - `mouseout`
+  - `dragstart`
+  - `drag`
+  - `dragstop`
+  - `touchstart`
+  - `touchend`
+  - `touchmove`

@@ -4,8 +4,8 @@
 
 Using the `setLayer()` method, you can set the properties of a layer. The method's arguments include:
 
-	1. The `name` or index of the layer, or the layer itself
-	2. The object of properties to set.
+  1. The `name` or index of the layer, or the layer itself
+  2. The object of properties to set.
 
 Note that this method does not automatically redraw the canvas.
 

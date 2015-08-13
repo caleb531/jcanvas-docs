@@ -76,6 +76,5 @@ $('canvas').drawEllipse({
 });
 ```
 
-
 ### Notes
 By default, the pattern repeats on both the X- and Y-axis

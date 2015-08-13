@@ -33,7 +33,6 @@ $('canvas').scaleCanvas({
 .restoreCanvas();
 ```
 
-
 ### Scaling an individual shape
 
 Rather than scaling the entire canvas, you can scale an individual shape using any of these three properties: `scale`, `scaleX`, or `scaleY`.

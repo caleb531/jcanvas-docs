@@ -83,7 +83,6 @@ $('canvas').animateLayer('box', {
 }, 1000);
 ```
 
-
 To solve this problem, by using a function as the layer's fill/stroke style, you can achieve a gradient which moves with its layer. Note that the below example assumes that the gradient's coordinates are relative to the layer's size and position.
 
 ```javascript

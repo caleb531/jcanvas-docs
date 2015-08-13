@@ -28,10 +28,10 @@ $('canvas').drawPolygon({
 ### Concave Polygons
 
 To create concave polygons (polygons that point inward), include the `concavity` property.  
-	- A value greater than `0` will cause the sides to point inward.
-	- A value less than `0` will cause the sides to point outward.
-	- A value equal to `0` does not project at all.
-	- A value of `1` will render the polygon invisible, because the sides will point in completely.
+  - A value greater than `0` will cause the sides to point inward.
+  - A value less than `0` will cause the sides to point outward.
+  - A value equal to `0` does not project at all.
+  - A value of `1` will render the polygon invisible, because the sides will point in completely.
 
 ```javascript
 // Draw a star

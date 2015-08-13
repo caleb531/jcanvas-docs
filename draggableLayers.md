@@ -47,10 +47,10 @@ $('canvas')
 ### Drag Events
 
 You can provide callbacks for when any drag event occurs by defining `dragstart`, `drag`, `dragstop`, and `dragcancel` callbacks.  
-	- `dragstart`: Triggers when you start dragging a layer
-	- `drag`: Triggers as you drag a layer
-	- `dragstop`: Triggers when you stop dragging a layer
-	- `dragcancel`: Triggers when you drag a layer off the edge of the canvas
+  - `dragstart`: Triggers when you start dragging a layer
+  - `drag`: Triggers as you drag a layer
+  - `dragstop`: Triggers when you stop dragging a layer
+  - `dragcancel`: Triggers when you drag a layer off the edge of the canvas
 
 ```javascript
 $('canvas')

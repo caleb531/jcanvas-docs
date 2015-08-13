@@ -4,9 +4,9 @@ To draw text on the canvas, use the `drawText()` method.
 
 The resulting text on the canvas is determined by the value of the `text` property, as well as any of the following font properties:
 
-	- `fontStyle`
-	- `fontSize`
-	- `fontFamily`
+  - `fontStyle`
+  - `fontSize`
+  - `fontFamily`
 
 ```javascript
 $('canvas').drawText({
