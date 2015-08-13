@@ -1,6 +1,6 @@
 ## Clear Canvas
 
-This `clearCanvas()` clears all or any part of the canvas.
+This `clearCanvas()` clears all or any part of the canvas. Note that this method *cannot* be used on jCanvas layers.
 
 ### Clear Entire Canvas
 
