@@ -1,6 +1,6 @@
 ## Paths
 
-A path in jCanvas consists of one or more connected [lines](/jcanvas/docs/lines/), [arcs](/jcanvas/docs/arcs/), [curves](/jcanvas/docs/curves/), or [vectors](/jcanvas/docs/vectors/).
+A path in jCanvas consists of one or more connected [lines](lines.md), [arcs](arcs.md), [curves](curves.md), or [vectors](vectors.md).
 
 ### Basic usage
 
@@ -103,7 +103,7 @@ Also note that the subpath objects inherit default property values from the glob
 
 ### Arrows
 
-Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See [the section on arrows](/jcanvas/docs/arrows/) for descriptions of the arrow properties.
+Just like every other path type in jCanvas, generic paths support arrows at either end of the path. See [the section on arrows](arrows.md) for descriptions of the arrow properties.
 
 For generic paths, arrow properties must be specified in a subpath object, not the entire path object.
 

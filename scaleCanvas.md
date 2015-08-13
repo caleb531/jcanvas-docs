@@ -72,4 +72,4 @@ $('canvas').restoreCanvas({
 
 The `scaleX` and `scaleY` values are multiples of the canvas's current width/height (i.e. `1` is the baseline).
 
-To revert to the canvas's previous state, call the `[restoreCanvas()](/jcanvas/docs/restoreCanvas/)` method. However, you do not need to call this method when scaling an individual shape.
+To revert to the canvas's previous state, call the `[restoreCanvas()](restoreCanvas.md)` method. However, you do not need to call this method when scaling an individual shape.
