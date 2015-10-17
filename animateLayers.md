@@ -71,7 +71,7 @@ This capability is especially useful when using the below `animateLayerGroup()` 
 
 You can also animate all layers in a layer group using the `animateLayerGroup()` method.
 
-The method accepts the same basic arguments as the `animateLayer()` method, 
+The method accepts the same basic arguments as the `animateLayer()` method,
 
 ```javascript
 $('canvas')
@@ -137,8 +137,27 @@ You can also delay animation for all layers in a group using the `delayLayerGrou
 $('canvas').delayLayerGroup('myGroup', 500);
 ```
 
+### Running a function at every step
+
+Just like jQuery, the `animateLayer()` method in jCanvas supports an alternate syntax for providing additional options (like a `step` callback).
+
+```javascript
+$('canvas').animateLayer('myBox', {
+  x: 200
+}, {
+  duration: 1000,
+  easing: 'swing',
+  step: function (now, fx, layer) {
+    // do something for each step of the animation
+  },
+  complete: function (layer) {
+    // still do something at end of animation
+  }
+
+});
+```
+
 ### Notes
 
-The syntax for the `animateLayer()` method is almost identical to jQuery's `animate()` method. Therefore, callback functions such as [`step`](http://api.jquery.com/animate/#step) are still available for use.
 Multiple `animateLayer()` calls can be queued up rather than using multiple callback functions.
 The callback parameter for the `animateLayerGroup()` method will run when *each* layer in the group finishes animating.
