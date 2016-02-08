@@ -24,7 +24,7 @@ You also need to add jCanvas to your page somehow (usually a `<script>` element 
 
 ### Drawing
 
-HTML5 provides [a native JavaScript API](https://developer.mozilla.org/en/Canvas_tutorial/Drawing_shapes) for drawing on the canvas. However, we will be using jCanvas instead.
+HTML5 provides [a native JavaScript API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes) for drawing on the canvas. However, we will be using jCanvas instead.
 
 Using jCanvas requires basic knowledge of [using jQuery](http://docs.jquery.com/Tutorials:How_jQuery_Works).
 
