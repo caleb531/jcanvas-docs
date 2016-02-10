@@ -122,6 +122,12 @@ These are descriptions of every jCanvas property, their supported methods, and t
   - *Methods:* All drawing methods
   - *Values:* `'transparent'`, any valid color string
 
+### flipArcText
+
+  - *Description:* Indicates if the arc text is to be flipped such that it would be readable if curved upward like a smile (normally, the text would be upside-down in that case)
+  - *Methods:* `drawText()` (only when a `radius` is supplied, implying arc text)
+  - *Values:* `false`, `true`
+
 ### fn
 
   - *Description:* A callback function

@@ -223,3 +223,34 @@ $('canvas').drawText({
 ```
 
 Technically speaking, the value of the `letterSpacing` property represents a multiple of *pi*, which in turn represents the angular distance between each letter. For example, a value of `0.05` implies that each character is 9 degrees apart (0.05&pi; is equivalent to 9&deg;)
+
+#### Flipping arc text
+
+Sometimes, you may wish to orient the text such that it curves upward (like a smile). Normally, attempting to do so will yield undesirable flipped text.
+
+```javascript
+$('canvas').drawText({
+  fillStyle: '#c33',
+  fontFamily: 'Ubuntu, sans-serif',
+  fontSize: 18,
+  text: 'THIS IS THE FIRST LINE\nTHIS IS THE SECOND LINE\nTHIS IS THE THIRD LINE',
+  x: 160, y: 200,
+  radius: 150,
+  rotate: 180
+});
+```
+
+However, you can set the `flipArcText` property to `true` and the text will be flipped to be readable again.
+
+```javascript
+$('canvas').drawText({
+  fillStyle: '#c33',
+  fontFamily: 'Ubuntu, sans-serif',
+  fontSize: 18,
+  text: 'THIS IS THE FIRST LINE\nTHIS IS THE SECOND LINE\nTHIS IS THE THIRD LINE',
+  x: 160, y: 200,
+  radius: 150,
+  rotate: 180,
+  flipArcText: true
+});
+```
