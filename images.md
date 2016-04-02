@@ -104,17 +104,17 @@ Now, the `sx` and `sy` properties define the top-left corner of the crop region,
 
 ### Images and Layers
 
-Beginning with version 13.04.05, image layers will always load completely before successive layers are drawn.
+Beginning with version 13.04.05, image layers will always load completely before successive layers are drawn, as long as you use `addLayer()` in conjunction with `drawLayers()`:
 
 ```javascript
-$('canvas').drawImage({
-  layer: true,
+$('canvas').addLayer({
+  type: 'image',
   source: 'images/big-fish.jpg',
   x: 150, y: 150,
   width: 200, height: 125
 })
-.drawArc({
-  layer: true,
+.addLayer({
+  type: 'arc',
   fillStyle: '#69f',
   strokeStyle: '#000',
   strokeWidth: 2,
