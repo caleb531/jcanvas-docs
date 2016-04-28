@@ -257,24 +257,19 @@ This is a reference of every jCanvas method, for quick access.
   - Returns
     - `jQuery`
 
-### [restoreCanvas( )](restoreCanvas.md)
+### restoreCanvas( )
 
   - Syntax
     - `restoreCanvas( properties )`
   - Returns
     - `jQuery`
+  - Notes
+    - For usage details, see the documentation for [`rotateCanvas()`](rotateCanvas.md), [`scaleCanvas()`](scaleCanvas.md), [`translateCanvas()`](translateCanvas.md), or [Masking](masking.md).
 
 ### [rotateCanvas( )](rotateCanvas.md)
 
   - Syntax
     - `rotateCanvas( properties )`
-  - Returns
-    - `jQuery`
-
-### [saveCanvas( )](saveCanvas.md)
-
-  - Syntax
-    - `saveCanvas( properties )`
   - Returns
     - `jQuery`
 
