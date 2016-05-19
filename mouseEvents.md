@@ -32,7 +32,7 @@ When calling the `animateLayer()` method, you should pass it the layer object to
 
 ```javascript
 // Create five cascading stars
-for (var i=0; i&lt;5; i+=1) {
+for (var i=0; i<5; i+=1) {
 
   $('canvas').drawPolygon({
     layer: true,
