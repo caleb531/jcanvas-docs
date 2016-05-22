@@ -33,7 +33,26 @@ $('canvas').drawRect({
 });
 ```
 
-Please note that translating a shape changes its center of transformation (which will affect how the layer is rotated).
+Please note that you can offset the center of rotation by specifying the `translateX` and `translateY` properties.
+
+```javascript
+// Rectangle rotates from its center
+$('canvas').drawRect({
+  fillStyle: '#c33',
+  x: 150, y: 100,
+  width: 150, height: 80,
+  rotate: 30
+});
+// Rectangle rotates from its top-left corner
+$('canvas').drawRect({
+  fillStyle: '#6c3',
+  x: 150, y: 100,
+  width: 150, height: 80,
+  translateX: 75, // width / 2
+  translateY: 40, // height / 2
+  rotate: 30
+});
+```
 
 ### Layers
 
