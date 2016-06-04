@@ -127,4 +127,4 @@ $('canvas').addLayer({
 
 ### Notes
 
-Internet Explorer 9 has a bug which prevents images from drawing on the canvas if they have not loaded. To fix this, use an existing `&lt;img&gt;` DOM element as the value for the `source` property.
+Internet Explorer 9 has a bug which prevents images from drawing on the canvas if they have not loaded. To fix this, use an existing `<img>` DOM element as the value for the `source` property.
