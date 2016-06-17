@@ -4,7 +4,7 @@
 
 The `addLayer()` method adds a layer to the canvas in the form of an object or a function. The layer is *not* drawn after calling this method.
 
-If the input is an object, you must specify the `method` property (i.e. the name of the method associated with the properties you specify). 
+If the input is an object, you must specify the `type` property (i.e. the type of drawing associated with the properties you specify). Recognized types include `rectangle`, `arc`, `line`, `quadratic`, `bezier`, `text`, and many others.
 
 ```javascript
 // Create a rectangle layer
