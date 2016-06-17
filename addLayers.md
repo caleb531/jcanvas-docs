@@ -66,12 +66,27 @@ $('canvas').drawRect({
 To dynamically add an existing layer to a group, use the `addLayerToGroup()` method.
 
 ```javascript
+$('canvas').drawRect({
+  layer: true,
+  name: 'box',
+  fillStyle: '#585',
+  x: 100, y: 100,
+  width: 100, height: 50
+});
 $('canvas').addLayerToGroup('box', 'myBoxes');
 ```
 
 To dynamically remove an existing layer from a group, use the `removeLayerFromGroup()` method. Note that this does not remove the layer from jCanvas.
 
 ```javascript
+$('canvas').drawRect({
+  layer: true,
+  groups: ['myBoxes'],
+  name: 'box',
+  fillStyle: '#585',
+  x: 100, y: 100,
+  width: 100, height: 50
+});
 $('canvas').removeLayerFromGroup('box', 'myBoxes');
 ```
 
