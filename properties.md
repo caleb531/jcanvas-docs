@@ -80,6 +80,12 @@ These are descriptions of every jCanvas property, their supported methods, and t
   - *Methods:* `drawImage()`, `createPattern()`
   - *Values:* `''`, `'anonymous'`, `'use-credentials'`
 
+### cursors
+
+  - *Description:* Displays a specific cursor when a particular layer event fires.
+  - *Methods:* All drawing methods
+  - *Values:* An object where the keys are event names and the values are valid CSS cursor values. For examples of each cursor value, visit [Mozilla's example page](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+
 ### data
 
   - *Description:* An object that can store any user-defined data for a jCanvas layer

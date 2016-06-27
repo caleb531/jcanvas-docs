@@ -51,7 +51,7 @@ $('canvas').drawArc({
 
 ### The `cursors` property
 
-The `cursors` property is used to display a specific cursor when a particular layer event fires. For instance, a draggable
+The `cursors` property is used to display a specific cursor when a particular layer event fires.
 
 ```javascript
 $('canvas').drawText({
