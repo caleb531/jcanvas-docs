@@ -9,7 +9,7 @@ You can draw an arc using the `drawArc()` method. The size of an arc is determin
 jCanvas considers zero degrees to lie due north of the arc (like the 12 on an analog clock).
 
 ```javascript
-// Draw a 90&deg; arc
+// Draw a 90° arc
 $('canvas').drawArc({
   strokeStyle: '#000',
   strokeWidth: 5,
