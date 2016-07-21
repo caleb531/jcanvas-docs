@@ -109,7 +109,7 @@ Beginning with version 13.04.05, image layers will always load completely before
 ```javascript
 $('canvas').addLayer({
   type: 'image',
-  source: 'images/big-fish.jpg',
+  source: 'images/fish.jpg',
   x: 150, y: 150,
   width: 200, height: 125
 })
