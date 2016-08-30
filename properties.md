@@ -42,13 +42,13 @@ These are descriptions of every jCanvas property, their supported methods, and t
 
   - *Description:* If an arc is drawn in the counterclockwise direction
   - *Methods:* `drawArc()`
-  - *Values:* `false`, `false`
+  - *Values:* `false`, `true`
 
 ### closed
 
   - *Description:* If a path is closed before it is filled/stroked
   - *Methods:* `drawArc()`, `drawLine()`, `drawQuadratic()`, `drawBezier()`
-  - *Values:* `false`, `false`
+  - *Values:* `false`, `true`
 
 ### compositing
 
@@ -228,7 +228,7 @@ These are descriptions of every jCanvas property, their supported methods, and t
 
   - *Description:* Whether the current shape is used to mask future shapes
   - *Methods:* All drawing methods
-  - *Values:* `false`, `false`
+  - *Values:* `false`, `true`
 
 ### maxWidth
 
