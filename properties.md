@@ -227,7 +227,7 @@ These are descriptions of every jCanvas property, their supported methods, and t
 ### mask
 
   - *Description:* Whether the current shape is used to mask future shapes
-  - *Methods:* All drawing methods
+  - *Methods:* All drawing methods except `drawText`
   - *Values:* `false`, `true`
 
 ### maxWidth
