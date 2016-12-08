@@ -2,4 +2,4 @@
 *Copyright 2016, Caleb Evans*  
 *Released under the MIT license*
 
-These pages comprise the same jCanvas documentation used on the site. However, to track changes and receive feedback, they are made available on GitHub for your convenience.
+All jCanvas documentation files have been moved to their new home in the [jcanvas-site](https://github.com/caleb531/jcanvas-site) repository.
